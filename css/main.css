@@ -160,12 +160,10 @@ h3 {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
-  /* float: left; */
+  float: left;
   text-transform: uppercase;
-  font-size: 2.4em;
+  font-size: 1.4em;
   line-height: 1;
-  text-align: center;
-  margin-bottom: .2em;
   color: yellow;
 }
 
@@ -328,10 +326,9 @@ h3 {
 }
 
 .winery_menu {
-  /*position: absolute;
-   bottom: 0;
-   right: 0;*/
-  text-align: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .winery_menu a {
@@ -339,7 +336,7 @@ h3 {
   font-style: normal;
   font-weight: 700;
   display: inline-block;
-  margin: 0 1em;
+  margin: 0 0 0 2em;
   color: white;
   float: none;
   font-size: .8em;
