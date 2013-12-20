@@ -117,6 +117,11 @@ Helper
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+.active_link {
+  padding-bottom: .2em;
+  border-bottom: 2px solid yellow;
+}
+
 /* ==========================================================================
 Helper
    ========================================================================== */
@@ -125,12 +130,11 @@ h1 {
   color: white;
   font-family: "futura-pt",sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
-  border: 2px solid white;
   display: inline-block;
-  padding: .3em .8em;
+  margin-bottom: .5em;
 }
 
 h2 {
@@ -156,12 +160,13 @@ h3 {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
-  float: left;
+  /* float: left; */
   text-transform: uppercase;
-  font-size: 1.6em;
-  margin-top: .15em;
+  font-size: 2.4em;
   line-height: 1;
-  color: red;
+  text-align: center;
+  margin-bottom: .2em;
+  color: yellow;
 }
 
 /* ==========================================================================
@@ -180,9 +185,7 @@ h3 {
   width: 90%;
 }
 
-.mainnav {
-  padding-top: 1.3em;
-  padding-bottom: 1em;
+.mainnav_container {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -190,13 +193,26 @@ h3 {
   background: rgba(255, 255, 255, 0.98);
 }
 
+.mainnav {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+
 .knockout.mainnav {
   background: rgba(0, 0, 0, 0.9);
 }
 
-.wordmark {
-  width: 6em;
+.navigaton_container {
+  position: relative;
+  font-size: .8em;
+}
+
+.branding_container {
   float: left;
+}
+
+.wordmark {
+  width: 8.5em;
 }
 
 .wordmark .color {
@@ -212,10 +228,12 @@ h3 {
 }
 
 .cart_total {
-  float: right;
   font-size: 1.3em;
   line-height: 1;
   margin-top: 0.1em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .other_cart_totals, .overall_total, .cart_label {
@@ -240,10 +258,8 @@ h3 {
 
 .arrow_indicator {
   width: 100%;
-  height: 10px;
-  margin-top: -10px;
+  height: 8px;
   z-index: 10;
-  position: absolute;
   overflow: hidden;
 }
 
@@ -275,12 +291,17 @@ h3 {
   text-align: center;
   width: 100%;
   position: absolute;
-  margin-top: 2em;
+}
+
+.placeholder_logo {
+  width: 12em;
+  width: 7em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .winery_about {
   font-size: 1.1em;
-  margin-top: 2em;
   width: 66%;
 }
 
@@ -292,25 +313,42 @@ h3 {
   display: inline-block;
 }
 
-.slider_menu {
-  display: block;
-  float: none;
-  text-align: center;
-  background: #0d0d0d;
-  padding: .7em 0 0.2em 0;
+.winery_header {
+  position: absolute;
+  width: 100%;
 }
 
-.slider_menu a {
+.header_content {
+  background: rgba(13, 13, 13, 0);
+  padding: 3.2em 0 0.35em 0;
+}
+
+.winery_header_content {
+  position: relative;
+}
+
+.winery_menu {
+  /*position: absolute;
+   bottom: 0;
+   right: 0;*/
+  text-align: center;
+}
+
+.winery_menu a {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
   display: inline-block;
-  padding: 0 1em;
+  margin: 0 1em;
   color: white;
   float: none;
   font-size: .8em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
-.slider_menu.second {
+.wines_control {
   width: 100%;
+  border-top: 10px solid black;
 }
 
 .collections {
@@ -321,7 +359,7 @@ h3 {
 .collections a, .view a {
   padding: 0;
   color: black;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .view {
@@ -377,23 +415,33 @@ h3 {
 .triangle-left {
   width: 0;
   height: 0;
-  border-bottom: 10px solid #0d0d0d;
+  border-top: 10px solid #0d0d0d;
   border-right: 10px solid transparent;
 }
 
 .triangle-right {
   width: 0;
   height: 0;
-  border-bottom: 10px solid #0d0d0d;
+  border-top: 10px solid #0d0d0d;
   border-left: 10px solid transparent;
 }
 
 .flex_border.first {
-  width: 48.2%;
+  width: 79%;
 }
 
 .flex_border.second {
-  width: 50%;
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+  width: 20%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
 }
 
 .products {
