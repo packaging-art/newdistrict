@@ -6,12 +6,12 @@ newdistrict.github.io
 ### 1. Fixed navigation/cart area. 
 
 File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart.html>
-Preview: <http://deadtype.ca/newdistrict/>
-
+Preview: <http://deadtype.ca/newdistrict/>  
+  
 
 ----
-
-
+  
+  
 This section includes a wordmark, which should take the user back to the main "new district page" (whatever that entails in the current version of the site).
 
 Opposite to the wordmark is the cart indicator. Due to the complicated nature of potential ordering options such as ordering single bottles, cases, and various 'mix and match' sets there is a number of elements needed for this section.
