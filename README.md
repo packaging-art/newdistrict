@@ -5,7 +5,7 @@ newdistrict.github.io
 
 ### 1. Fixed navigation/cart area. 
 
-File: main-nav-cart.html Preview: deadtype.ca/newdistrict
+File: main-nav-cart.html Preview: <deadtype.ca/newdistrict>
 
 
 ----
