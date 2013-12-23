@@ -7,6 +7,10 @@
 /* ==========================================================================
    Core Variables
    ========================================================================== */
+.brand_color {
+  color: red;
+}
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -122,31 +126,41 @@ Helper
   border-bottom: 2px solid red;
 }
 
+.margin_module > *:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.margin_module > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* ==========================================================================
 Helper
    ========================================================================== */
-h1 {
-  /* font-size: 3em; */
-  color: white;
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+h1 {
+  color: white;
   line-height: 1;
   display: inline-block;
   margin-bottom: .5em;
 }
 
 h2 {
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 600;
   padding: .5em .8em;
   border: 2px solid black;
   display: inline-block;
   text-transform: uppercase;
   margin-bottom: 1.2em;
   font-size: 1.3em;
+  color: red;
 }
 
 h3 {
@@ -156,15 +170,19 @@ h3 {
   font-weight: 400;
 }
 
-.winery_title, .cart_total {
-  font-family: "futura-pt",sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  /*float: left;*/
+.winery_title {
+  color: white;
+  display: inline-block;
+}
+
+.cart_indicator div {
+  display: inline-block;
+}
+
+.winery_title, .cart_indicator {
   text-transform: uppercase;
   font-size: 1em;
   line-height: 1;
-  color: red;
 }
 
 /* ==========================================================================
@@ -183,6 +201,11 @@ h3 {
   width: 94%;
 }
 
+.content {
+  margin-bottom: 5em;
+}
+
+/* Fixed navigation/notification/cart-indicator bar */
 .mainnav_container {
   position: fixed;
   bottom: 0;
@@ -192,61 +215,69 @@ h3 {
 }
 
 .mainnav {
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-}
-
-.knockout.mainnav {
-  background: rgba(0, 0, 0, 0.9);
+  padding-top: 1.3em;
+  padding-bottom: 1.3em;
 }
 
 .navigaton_container {
   position: relative;
-  font-size: .8em;
-}
-
-.branding_container {
-  float: left;
 }
 
 .wordmark {
-  width: 8.5em;
-}
-
-.wordmark .color {
-  color: black;
-}
-
-.separator {
+  width: 6.9em;
   float: left;
-  margin: 0 .6em 0 .6em;
-  margin-top: -.1em;
-  font-size: 1.8em;
-  line-height: 1;
 }
 
-.cart_total {
-  font-size: 1.3em;
-  line-height: 1;
-  margin-top: 0.1em;
+.cart_item + .cart_item:before {
+  content: '+';
+  margin: 0 .5em;
+  font-size: .9em;
+  vertical-align: 2px;
+}
+
+.cart_indicator {
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-bottom: -.15em;
 }
 
-.other_cart_totals, .overall_total, .cart_label {
+.cart_number {
+  font-size: 1.35em;
+  line-height: .85;
+}
+
+.cart_item_separator {
+  margin: 0 .5em;
+  font-size: 1em;
+  vertical-align: 1px;
+}
+
+.cart_comment {
   font-size: .5em;
-  margin-left: .1em;
-  vertical-align: 6px;
+  margin-left: .2em;
   color: black;
 }
 
-.knockout .other_cart_totals, .knockout .overall_total, .knockout .cart_label {
-  color: white;
+/* Notification Section Styles */
+.notification_message {
+  text-align: right;
+  width: 90%;
+  float: right;
 }
 
-.cart_label {
-  margin-right: .6em;
+.notification_control {
+  float: left;
+  padding-bottom: 0;
+  width: .7em;
+}
+
+.notification {
+  padding: 1.4em 0 1.2em 0;
+}
+
+.notification + .notification {
+  border-top: 1px solid #d9d9d9;
 }
 
 .arrow_indicator_container {
@@ -277,7 +308,7 @@ h3 {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   top: 0;
 }
 
@@ -329,13 +360,10 @@ h3 {
 }
 
 .winery_menu {
-  /*position: absolute;
-  bottom: 0;
-  right: 0;*/
   margin-bottom: -.55em;
   display: block;
   text-align: right;
-  margin-top: -1.2em;
+  margin-top: -1.65em;
 }
 
 .winery_menu a, .our_wines {
@@ -347,13 +375,9 @@ h3 {
   color: white;
   float: none;
   font-size: .8em;
-  letter-spacing: 1px;
 }
 
 .search_button {
-  /*width: .65em;
-  float: right;
-  margin-top: -1.2em;*/
   width: .7em;
   float: right;
   vertical-align: 1px;
