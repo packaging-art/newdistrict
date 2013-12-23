@@ -1,9 +1,9 @@
 newdistrict.github.io
 =====================
 
-Front End Components
+## Front End Components
 
-1. Fixed navigation/cart area. 
+### 1. Fixed navigation/cart area. 
 
 File: main-nav-cart.html Preview: deadtype.ca/newdistrict
 
