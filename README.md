@@ -71,4 +71,12 @@ When the user is in the overall market place vs a specific store the cart indica
 File: main-nav-cart_notification_center.html Preview: deadtype.ca/notifications.html
 
 
-There is a range of potential notifications that can potentially happen in future. Ben/Elin should be able to define 
+An area for notifications (ex. the sale/shipping cost message Ben/Elin discussed earlier). Notifications  fade in and fade out. When numerous notifications occur they stack on top of each other.
+
+There is three potential behaviors:
+
+1. Permanent notification, without an option to dismiss it. In this case this notification should always stay at the bottom closest to the "fixed navigation/cart area". If others appear they would appear above it. 
+
+2. Dismissable notification, — users can dismiss it by clicking the x button. This type of notification typically requires users attention and likely links to an action or several through links in the notification text. Ex. 'A bottle of Zinfandel 2012 in your Estate Farms Cart is running low on stock. Complete the purchase now.' would take the user to the cart when pressed.
+
+3. Dismissable time-controlled notification, - will fade out after a set period of time or a user can dismiss it immediately by clicking the x button.
