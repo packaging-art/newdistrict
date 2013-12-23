@@ -66,7 +66,7 @@ When the user is in the overall market place vs a specific store the cart indica
 
 
 
-2. Notifications Section
+###2. Notifications Section
 
 File: main-nav-cart_notification_center.html Preview: deadtype.ca/notifications.html
 
