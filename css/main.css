@@ -226,6 +226,7 @@ h3 {
 .wordmark {
   width: 6.9em;
   float: left;
+  line-height: .9;
 }
 
 .cart_item + .cart_item:before {
