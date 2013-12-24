@@ -3,6 +3,9 @@ newdistrict.github.io
 
 # Front End Components
 
+1. [Fixed navigation/cart area.](#Fixed_navigation/cart_area)
+2. [Notifications Section](#configuring-html-inspector)
+
 ## 1. Fixed navigation/cart area. 
 
 File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart.html>  
@@ -67,7 +70,7 @@ When the user is in the overall market place vs a specific store the cart indica
 
 ----
 
-##2. Notifications Section
+## 2. Notifications Section
 
 File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart_notification_center.html>  
 Preview: <http://deadtype.ca/newdistrict/notifications.html>
