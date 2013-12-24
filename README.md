@@ -1,9 +1,9 @@
 newdistrict.github.io
 =====================
 
-## Front End Components
+# Front End Components
 
-### 1. Fixed navigation/cart area. 
+## 1. Fixed navigation/cart area. 
 
 File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart.html>  
 Preview: <http://deadtype.ca/newdistrict/>
@@ -53,7 +53,7 @@ Using the following indicators we can provide a clear indicator to the user abou
 ----
 
 
-The indicators have comments next to them to explain the numbers. These need to adjust with the changes in the number in order to have proper wording. For example '1 bottle in cart' vs '2 bottles in care' and '4 bottles out of 12 in 1 mix and match set" vs '6 bottles out of 24 in 3 mix and match sets'.
+The indicators have comments next to them to explain the numbers. These need to adjust with the changes in the number in order to have proper wording. For example '1 bottle in cart' vs '2 bottles in cart' and '4 bottles out of 12 in 1 mix and match set" vs '6 bottles out of 24 in 3 mix and match sets'.
 
 
 ----
@@ -67,18 +67,18 @@ When the user is in the overall market place vs a specific store the cart indica
 
 ----
 
-###2. Notifications Section
+##2. Notifications Section
 
-File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart_notification_center.html>
+File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart_notification_center.html>  
 Preview: <http://deadtype.ca/newdistrict/notifications.html>
 
 
-An area for notifications (ex. the sale/shipping cost message Ben/Elin discussed earlier). Notifications  fade in and fade out. When numerous notifications occur they stack on top of each other.
+An area for notifications. Notifications fade in and fade out. When numerous notifications occur they stack on top of each other.
 
 There is three potential behaviors:
 
 1. Permanent notification, without an option to dismiss it. In this case this notification should always stay at the bottom closest to the "fixed navigation/cart area". If others appear they would appear above it. 
 
-2. Dismissable notification, — users can dismiss it by clicking the x button. This type of notification typically requires users attention and likely links to an action or several through links in the notification text. Ex. 'A bottle of Zinfandel 2012 in your Estate Farms Cart is running low on stock. Complete the purchase now.' would take the user to the cart when pressed.
+2. Dismissable notification, — users can dismiss it by clicking the x button. This type of notification typically requires users attention and likely links to a single or several actions through links in the notification text. Ex. 'A bottle of Zinfandel 2012 in your Estate Farms Cart is running low on stock. Complete the purchase now.' This notification would take the user to the cart when pressed or alternatively provide three links, to the Zinfandel 2012 full wine page, to Estate Farms Cart and directly to the cart in order to complete the purshase. 
 
 3. Dismissable time-controlled notification, - will fade out after a set period of time or a user can dismiss it immediately by clicking the x button.
