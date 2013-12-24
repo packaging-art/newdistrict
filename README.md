@@ -23,7 +23,7 @@ Opposite to the wordmark is the cart indicator. Due to the complicated nature of
 ----
 
 
-Using the following indicators we can provide a clear indicator to the user about the state of their cart from anywhere in the website:
+Using the following indicators we can provide clear information to the user about the state of their cart from anywhere in the website:
 
 
 1. Total number of bottles in current cart. This excludes total number of bottles in mix and match sets as they are technically (as per guidance from Ben/Elin) not in cart until set is complete. Single bottles and cases immediately go to the cart total, mix and match orders stay in their 'mix and match' subcart until the set is full at which point it moves in the cart total with the singles bottles and cases.
