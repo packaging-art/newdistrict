@@ -3,8 +3,8 @@ newdistrict.github.io
 
 # Front End Components
 
-1. [Fixed navigation/cart area.](#Fixed_navigation/cart_area)
-2. [Notifications Section](#configuring-html-inspector)
+1. [Fixed navigation/cart area.](#1-fixed-navigationcart-area)
+2. [Notifications Section](#2-notifications-section)
 
 ## 1. Fixed navigation/cart area. 
 
