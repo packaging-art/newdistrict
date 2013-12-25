@@ -33,5 +33,9 @@ function viewport() {
 
 $(document).ready(function() {
     viewport();
-    $(window).bind('resize', view_adjust);
+
+    $(window).resize(function() {
+        viewport();
+        $(window).bind('resize', view_adjust);
+    }); 
 });
