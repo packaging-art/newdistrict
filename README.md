@@ -130,5 +130,5 @@ Additionally there is a vertically/horizontally centered placeholder for an opti
 
 Preview Clean: <http://deadtype.ca/newdistrict>
 
-Preview With tint/logo: <http://deadtype.ca/newdistrict/hero_withlogo>
+Preview With tint/logo: <http://deadtype.ca/newdistrict/winery_hero_plus_logo.html>
 
