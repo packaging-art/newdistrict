@@ -5,11 +5,12 @@ newdistrict.github.io
 
 1. [Fixed navigation/cart area](#1-fixed-navigationcart-area)
 2. [Notifications Section](#2-notifications-section)
+3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
 
 ## 1. Fixed navigation/cart area  
 
 File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart.html>  
-Preview: <http://deadtype.ca/newdistrict/>
+Preview: <http://deadtype.ca/newdistrict/>  
 
 ***
 
@@ -84,4 +85,50 @@ There is three potential behaviors:
 
 2. Dismissable notification, — users can dismiss it by clicking the x button. This type of notification typically requires users attention and likely links to a single or several actions through links in the notification text. Ex. 'A bottle of Zinfandel 2012 in your Estate Farms Cart is running low on stock. Complete the purchase now.' This notification would take the user to the cart when pressed or alternatively provide three links, to the Zinfandel 2012 full wine page, to Estate Farms Cart and directly to the cart in order to complete the purshase. 
 
-3. Dismissable time-controlled notification, - will fade out after a set period of time or a user can dismiss it immediately by clicking the x button.
+3. Dismissable time-controlled notification, - will fade out after a set period of time or a user can dismiss it immediately by clicking the x button.   
+
+----
+
+## 3. Winery Hero Banner/Navigation
+
+Preview: <http://deadtype.ca/newdistrict>
+
+This section consists of 4 major components; constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added).  
+
+The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.  
+
+Each slide should have a specfic address, so that a specific slide can be linked to.
+
+1. [Winery Title/Navigation](#1-winery-titlenavigation)
+2. [Winery Hero Photo Slide](#2-winery-hero-photo-slide)
+
+
+### 1. Winery Title/Navigation  
+
+The purpose of the title/navigation is to provide a consistent way to navigate between the slides included in this section.  
+
+Clicking on the title should take the user to thef 'first slide/landing page' (Winery Hero Photo).  
+
+Then there are 3 links in the navigation linking user to the 'first slide/landing page' (Winery Hero Photo), 'location slide', and 'about the winery' slide.  
+
+The section always sits on top of the slides.
+
+
+### 2. Winery Hero Photo Slide
+
+The purpose for the initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area).
+
+Ben and Elin need controls to add the background image and potenially a second smaller portrait sized image (will be used for art direction on smaller portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos and create dynamic media queries in CSS to replace images on low and high resolution screens.
+
+Ben and Elin also need a control to set the primary color of [winery Title/Navigation](#1-winery-titlenavigation) to be either black or white. This will help them art direct photos, whether they are light or dark.
+
+Above the photo is a tint div which should enable Ben and Elin to add a white, black or no overlay to the photo and set its opacity.
+
+With these controls this cover slide can be customized be used effectively with a variety of photos.
+
+Additionally there is a vertically/horizontally centered placeholder for an optional logo, which can be used to add an inline SVG logo (inline SVG will enable us to provide a CSS control for changing the logo color vs uploading two images). Ben/Elin need to be able to change size, opacity and color (either black or white). If browser does not support inline SVG (<=IE8) we can just hide this div.
+
+Preview Clean: <http://deadtype.ca/newdistrict>
+
+Preview With tint/logo: <http://deadtype.ca/newdistrict/hero_withlogo>
+
