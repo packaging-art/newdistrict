@@ -36,6 +36,5 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         viewport();
-        $(window).bind('resize', view_adjust);
     }); 
 });

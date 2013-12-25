@@ -291,6 +291,8 @@ line-height: 1;
   border-top: 1px solid hsl(0,0%,85%);
 }
 
+/* Arrow Indicator */
+
 .arrow_indicator_container {
   width:100%;
   overflow: hidden;
@@ -309,6 +311,14 @@ line-height: 1;
     display: block;
     float: left;
     background: hsla(0,0%,5%,1);
+}
+
+/* Winery Hero Banner */
+
+.winery_header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 }
 
 .hero_slider {
@@ -351,12 +361,6 @@ margin:0 .5em;
 margin-top: 1.6em;
 }
 
-
-.winery_header {
-  position: absolute;
-  width: 100%;
-
-}
 
 .header_content {
     background: hsla(0,0%,5%,0);

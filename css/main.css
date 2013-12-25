@@ -281,6 +281,7 @@ h3 {
   border-top: 1px solid #d9d9d9;
 }
 
+/* Arrow Indicator */
 .arrow_indicator_container {
   width: 100%;
   overflow: hidden;
@@ -299,6 +300,13 @@ h3 {
   display: block;
   float: left;
   background: #0d0d0d;
+}
+
+/* Winery Hero Banner */
+.winery_header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 }
 
 .hero_slider {
@@ -344,11 +352,6 @@ h3 {
   width: 1.5em;
   margin: 0 .5em;
   margin-top: 1.6em;
-}
-
-.winery_header {
-  position: absolute;
-  width: 100%;
 }
 
 .header_content {
