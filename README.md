@@ -95,11 +95,19 @@ Preview: <http://deadtype.ca/newdistrict>
 
 This section consists of 4 major components; constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added).  
 
-The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.
+The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.  
+
+Each slide should have a specfic address, so that a specific slide can be linked to.
 
 1. [Winery Title/Navigation](#1-winery-titlenavigation)
 2. [Winery Photo Banner/Landing Page](#2-notifications-section)
 
 
-### 1. Winery Title/Navigation
+### 1. Winery Title/Navigation  
+
+The purpose of the title/navigation is to provide a consistent way to navigate between the slides included in this section.  
+
+Clicking on the title should take the user to thef 'first slide/landing page' (Winery Hero Photo).  
+
+Then there are 3 links in the navigation linking user to the 'first slide/landing page' (Winery Hero Photo), 'location slide', and 'about the winery' slide.
 
