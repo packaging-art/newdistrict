@@ -116,8 +116,6 @@ The section always sits on top of the slides.
 
 ### 2. Winery Hero Photo Slide
 
-Preview: <http://deadtype.ca/newdistrict>
-
 The purpose for the initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area).
 
 Ben and Elin need controls to add the background image and potenially a second smaller portrait sized image (will be used for art direction on smaller portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos and create dynamic media queries in CSS to replace images on low and high resolution screens.
@@ -129,3 +127,8 @@ Above the photo is a tint div which should enable Ben and Elin to add a white, b
 With these controls this cover slide can be customized be used effectively with a variety of photos.
 
 Additionally there is a vertically/horizontally centered placeholder for an optional logo, which can be used to add an inline SVG logo (inline SVG will enable us to provide a CSS control for changing the logo color vs uploading two images). Ben/Elin need to be able to change size, opacity and color (either black or white). If browser does not support inline SVG (<=IE8) we can just hide this div.
+
+Preview Clean: <http://deadtype.ca/newdistrict>
+
+Preview With tint/logo: <http://deadtype.ca/newdistrict/hero_withlogo>
+
