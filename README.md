@@ -132,3 +132,5 @@ Preview Clean: <http://deadtype.ca/newdistrict>
 
 Preview With tint/logo: <http://deadtype.ca/newdistrict/winery_hero_plus_logo.html>
 
+Because of the full heigh nature of this slide, it works well for setting the them to the winery but it may not be completely clear there is wine selection below. To counter this, we include a 'Browse Our Products' link below. Clicking it will smooth scrool the page to the section immediately below.
+
