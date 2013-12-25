@@ -100,7 +100,7 @@ The functionality of the section largely mirrors Royal slider example at <http:/
 Each slide should have a specfic address, so that a specific slide can be linked to.
 
 1. [Winery Title/Navigation](#1-winery-titlenavigation)
-2. [Winery Photo Banner/Landing Page](#2-notifications-section)
+2. [Winery Hero Photo Slide](#2-winery-hero-photo-slide)
 
 
 ### 1. Winery Title/Navigation  
@@ -109,5 +109,8 @@ The purpose of the title/navigation is to provide a consistent way to navigate b
 
 Clicking on the title should take the user to thef 'first slide/landing page' (Winery Hero Photo).  
 
-Then there are 3 links in the navigation linking user to the 'first slide/landing page' (Winery Hero Photo), 'location slide', and 'about the winery' slide.
+Then there are 3 links in the navigation linking user to the 'first slide/landing page' (Winery Hero Photo), 'location slide', and 'about the winery' slide.  
+
+
+### 2. Winery Hero Photo Slide
 
