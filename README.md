@@ -93,7 +93,9 @@ There is three potential behaviors:
 
 Preview: <http://deadtype.ca/newdistrict>
 
-This section consists of 4 major components, constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added). The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or expand to accommodate the length of included content (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.
+This section consists of 4 major components; constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added).  
+
+The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.
 
 1. [Winery Title/Navigation](#1-winery-titlenavigation)
 2. [Winery Photo Banner/Landing Page](#2-notifications-section)
