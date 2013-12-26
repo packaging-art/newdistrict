@@ -73,7 +73,7 @@ When the user is in the overall market place vs a specific store the cart indica
 
 ## 2. Notifications Section
 
-File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart_notification_center.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main-nav-cart_notifications.html>  
 Preview: <http://deadtype.ca/newdistrict/notifications.html>
 
 
@@ -107,7 +107,7 @@ Each slide should have a specfic address, so that a specific slide can be linked
 
 ### 1. Winery Title/Navigation  
 
-File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/winery_hero_title_navigation.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/slider_navigation.html>  
 Preview: <http://deadtype.ca/newdistrict>
 
 
@@ -122,9 +122,8 @@ The section always sits on top of the slides.
 
 ### 2. Winery Hero Photo Slide  
 
-File: <>  
-Preview Clean: <http://deadtype.ca/newdistrict>  
-Preview With Tint/Logo: <http://deadtype.ca/newdistrict/winery_hero_plus_logo.html>
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_photo_slide.html>  
+Preview: <http://deadtype.ca/newdistrict>  
 
 The purpose for the initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area).
 
@@ -140,7 +139,13 @@ Additionally there is a vertically/horizontally centered placeholder for an opti
 
 Because of the full heigh nature of this slide, it works well for setting the them to the winery but it may not be completely clear there is wine selection below. To counter this, we include a 'Browse Our Products' link below. Clicking it will smooth scroll the page to the section immediately below.  
 
-### 3. Location Slide 
+### 3. Location Slide  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide.html>  
+MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_api_call.html>  
+MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html>  
+Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>
+
 
 
 
