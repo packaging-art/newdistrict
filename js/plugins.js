@@ -25,7 +25,7 @@
 
 function viewport() {
     var height = $(window).height();
-    var menu_height = $(".mainnav_container").height();
+    var menu_height = $(".mainnav").outerHeight();
     var view_adjust = height - menu_height;
     view_adjust = parseInt(view_adjust) + 'px';
     $(".hero_slider").css('height',view_adjust);
@@ -38,3 +38,6 @@ $(document).ready(function() {
         viewport();
     }); 
 });
+
+
+
