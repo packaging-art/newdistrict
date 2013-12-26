@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -108,6 +109,10 @@ fieldset {
  */
 textarea {
   resize: vertical;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -344,6 +349,7 @@ h3 {
 
 .hero_slider {
   height: 1000px;
+  /* without a height definition location slide starts collapsed, but with this about and index page experience height jumps — need to look into this*/
   position: relative;
 }
 
