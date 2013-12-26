@@ -11,7 +11,7 @@
    ========================================================================== */
 
 $brand_color: red;
-$mainbackground_color: white;
+$mainbackground_color: hsl(0,0%,98%);
 $controls_color: #222;
 
 .brand_color {
@@ -208,7 +208,7 @@ line-height: 1;
 .maincontainer, .content_wrap, .social_media, .winery_about, .slider_menu, .detail_collection, .winery_hero_banner {margin-left: auto; margin-right: auto;}
 
 .maincontainer {max-width: 1300px;}
-.content_wrap {width:94%;}
+.content_wrap {width:95%;}
 
 .content {margin-bottom: 5em;}
 
@@ -223,10 +223,10 @@ line-height: 1;
 }
 
 .mainnav {
-  padding-top: 1.4em;
+  padding-top: 1.5em;
   padding-bottom: 1.3em;
-  /*box-shadow: 1px -6px 11px -10px hsla(0,0%, 70%, .8);*/
-  border-top: 1px solid hsl(0,0%,90%);
+  /*box-shadow: 1px -6px 11px -10px hsla(0,0%, 70%, .8);
+  border-top: 1px solid hsl(0,0%,90%);*/
 }
 
 .navigaton_container {
@@ -268,6 +268,7 @@ line-height: 1;
   font-size: .55em;
   margin-left: .2em;
   color: black;
+  white-space: nowrap;
 }
 
 
@@ -321,7 +322,7 @@ line-height: 1;
 .winery_header {
   width: 100%;
   z-index: 1000;
-  padding: 1.25em 0 1.25em 0;
+  padding: 1.35em 0 1.15em 0;
 
 }
 
@@ -331,6 +332,7 @@ line-height: 1;
   padding: .2em .5em;
   border: 2px solid $controls_color;
   font-size: .95em;
+  white-space: nowrap;
 }
 
 .winery_menu {
@@ -345,7 +347,7 @@ margin-top: -1.5em;
     margin: 0 0 0 2em;
     color:$controls_color;
     float:none;
-    font-size: .75em;
+    font-size: .7em;
 }
 
 .our_wines {
@@ -355,6 +357,7 @@ margin-top: -1.5em;
 
 
 .hero_slider {
+  height: 1000px;
 position: relative;
 }
 
@@ -429,6 +432,9 @@ width:100%;
   width:100%;
 }
 
+.frame {
+    border: 2px solid black;
+}
 
 .collections {float:left; display: inline-block;}
 .collections a, .view a {padding: 0; color:black;

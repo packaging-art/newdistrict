@@ -52,7 +52,7 @@ body {
   font-family: "minion-pro",sans-serif;
   font-style: normal;
   font-weight: 400;
-  background: white;
+  background: #fafafa;
 }
 
 /*
@@ -201,7 +201,7 @@ h3 {
 }
 
 .content_wrap {
-  width: 94%;
+  width: 95%;
 }
 
 .content {
@@ -214,14 +214,14 @@ h3 {
   bottom: 0;
   width: 100%;
   z-index: 1000;
-  background: white;
+  background: #fafafa;
 }
 
 .mainnav {
-  padding-top: 1.4em;
+  padding-top: 1.5em;
   padding-bottom: 1.3em;
-  /*box-shadow: 1px -6px 11px -10px hsla(0,0%, 70%, .8);*/
-  border-top: 1px solid #e6e6e6;
+  /*box-shadow: 1px -6px 11px -10px hsla(0,0%, 70%, .8);
+  border-top: 1px solid hsl(0,0%,90%);*/
 }
 
 .navigaton_container {
@@ -263,6 +263,7 @@ h3 {
   font-size: .55em;
   margin-left: .2em;
   color: black;
+  white-space: nowrap;
 }
 
 /* Notification Section */
@@ -311,7 +312,7 @@ h3 {
 .winery_header {
   width: 100%;
   z-index: 1000;
-  padding: 1.25em 0 1.25em 0;
+  padding: 1.35em 0 1.15em 0;
 }
 
 .winery_title {
@@ -320,6 +321,7 @@ h3 {
   padding: .2em .5em;
   border: 2px solid #222222;
   font-size: .95em;
+  white-space: nowrap;
 }
 
 .winery_menu {
@@ -333,7 +335,7 @@ h3 {
   margin: 0 0 0 2em;
   color: #222222;
   float: none;
-  font-size: .75em;
+  font-size: .7em;
 }
 
 .our_wines {
@@ -341,6 +343,7 @@ h3 {
 }
 
 .hero_slider {
+  height: 1000px;
   position: relative;
 }
 
@@ -410,6 +413,10 @@ h3 {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.frame {
+  border: 2px solid black;
 }
 
 .collections {
