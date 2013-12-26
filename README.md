@@ -74,7 +74,7 @@ When the user is in the overall market place vs a specific store the cart indica
 ## 2. Notifications Section
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main-nav-cart_notifications.html>  
-Preview: <http://deadtype.ca/newdistrict/notifications.html>
+Preview: <http://deadtype.ca/newdistrict/notifications_demo.html>
 
 
 An area for notifications. Notifications fade in and fade out. When numerous notifications occur they stack on top of each other.
