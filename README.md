@@ -95,7 +95,7 @@ Preview: <http://deadtype.ca/newdistrict>
 
 This section consists of 4 major components; constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added).  
 
-The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height.  
+The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — a possible height for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height. 
 
 Each slide should have a specfic address, so that a specific slide can be linked to.
 
@@ -125,11 +125,11 @@ The section always sits on top of the slides.
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_photo_slide.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
-The purpose for the initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area).
+The purpose for this home page / initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area). The basic script included does an ok job at doing this but does not work as well as it should.
 
 Ben and Elin need controls to add the background image and potenially a second smaller portrait sized image (will be used for art direction on smaller portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos and create dynamic media queries in CSS to replace images on low and high resolution screens.
 
-Ben and Elin also need a control to set the primary color of [winery Title/Navigation](#1-winery-titlenavigation) to be either black or white. This will help them art direct photos, whether they are light or dark.
+Ben and Elin also need a control to set the primary color of [winery Title/Navigation](#1-winery-titlenavigation) to be either black or white. This will help them art direct photos, whether they are light or dark. However this may not be neccesary anymore as the image is not frame by text and white space.
 
 Above the photo is a tint div which should enable Ben and Elin to add a white, black or no overlay to the photo and set its opacity.
 
@@ -137,14 +137,23 @@ With these controls this cover slide can be customized be used effectively with 
 
 Additionally there is a vertically/horizontally centered placeholder for an optional logo, which can be used to add an inline SVG logo (inline SVG will enable us to provide a CSS control for changing the logo color vs uploading two images). Ben/Elin need to be able to change size, opacity and color (either black or white). If browser does not support inline SVG (<=IE8) we can just hide this div.
 
-Because of the full heigh nature of this slide, it works well for setting the them to the winery but it may not be completely clear there is wine selection below. To counter this, we include a 'Browse Our Products' link below. Clicking it will smooth scroll the page to the section immediately below.  
+Because of the full heigh nature of this slide, it works well for setting the theme to the winery but it may not be completely clear there is wine selection below. To counter this, we include a 'Browse Our Products' link below. Clicking it will smooth scroll the page to the section immediately below.  
 
 ### 3. Location Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide.html>  
 MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_api_call.html>  
 MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html>  
-Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>
+Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>  
+
+Location slide uses [Mapbox]<https://www.mapbox.com/tour/> to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. completely custom design) and can have Ben and Elin easily customize each winery map with a tint of their brand color.  
+
+```
+<script>
+var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
+    .setView([40, -74.50], 9);
+</script>
+```
 
 
 
