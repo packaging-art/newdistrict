@@ -25,8 +25,9 @@
 
 function viewport() {
     var height = $(window).height();
-    var menu_height = $(".mainnav_container").height();
-    var view_adjust = height - menu_height;
+    var menu_height = $(".mainnav").outerHeight();
+    var header_height = $(".winery_header").outerHeight();
+    var view_adjust = height - menu_height - header_height;
     view_adjust = parseInt(view_adjust) + 'px';
     $(".hero_slider").css('height',view_adjust);
 }
@@ -38,3 +39,6 @@ $(document).ready(function() {
         viewport();
     }); 
 });
+
+
+
