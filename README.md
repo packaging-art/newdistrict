@@ -102,6 +102,7 @@ Each slide should have a specfic address, so that a specific slide can be linked
 1. [Winery Title/Navigation](#1-winery-titlenavigation)
 2. [Winery Hero Photo Slide](#2-winery-hero-photo-slide)
 3. [Location Slide](#3-location-slide)
+4. [About Slide](#4-about-slide)
 
 
 
@@ -157,7 +158,13 @@ var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
 </script>
 ```  
 
-As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps.
+As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps.   
+
+### 4. About Slide  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/about_slide.html>  
+Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
+
 
 
 
