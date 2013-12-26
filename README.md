@@ -146,14 +146,18 @@ MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_include
 MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html>  
 Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>  
 
-Location slide uses [Mapbox]<https://www.mapbox.com/tour/> to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. completely custom design) and can have Ben and Elin easily customize each winery map with a tint of their brand color.  
+Location slide uses [Mapbox](https://www.mapbox.com/tour/) to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. a completely custom tile design for new distric) and can have Ben and Elin easily create multiple maps and customize each to fit the brand of the winery (ex. have monochrome maps with the highlight color using the main brand color).  
+
+After they do that editing in browser they will have the following code that they need to plug into New District.
 
 ```
 <script>
 var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
     .setView([40, -74.50], 9);
 </script>
-```
+```  
+
+As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code in there but that will be universal across and I will finalize the settings before the we complete the project.
 
 
 
