@@ -401,7 +401,9 @@ h3 {
   border-right: 1px solid black;*/
 }
 .winery_about .website {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .separator {
