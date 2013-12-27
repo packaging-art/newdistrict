@@ -185,6 +185,8 @@ This slide is very similar to [About Slide](#4-about-slide), B/E need to be able
 
 The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-photo-slide), [Location Slide](#3-location-slide).  
 
+--- 
+
 ## 4. Wine Categories/Header/View Controls
 
 
