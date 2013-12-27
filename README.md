@@ -165,7 +165,11 @@ As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/m
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/about_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
 
-About slide lets wineries include some written information about them,
+About slide lets wineries include some written information about themselves. 
+
+Underlying the slide is an optional background image (same idea applies as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide)) and an optional 'tint' div with the same controls as above. The idea is that the about information can be overlayed on top of image if it is approproate or may be set on a clean white background.
+
+The actual content includes an optional title and a content section (which may be limited by character count — this part has not been finalized yet. B/E should be able to be set the title or content to to black or white color.
 
 ### 5. Contact Slide
 
