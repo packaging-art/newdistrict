@@ -122,7 +122,8 @@ textarea {
     resize: vertical;
 }
 
-a {text-decoration: none;}
+a {text-decoration: none;
+color: $controls_color;}
 /* ==========================================================================
 Helper
    ========================================================================== */
@@ -170,7 +171,6 @@ text-transform: uppercase;
 
 h1 {
 @extend .headline;
-color: white;
 line-height: 1;
 display: inline-block;
 margin-bottom:.5em;
@@ -370,6 +370,10 @@ background: hsla(0,0%,0%,.4);
 top:0;
 }
 
+.dark.tint {
+  background: hsla(0,0%,0%,.8)!important;
+}
+
 
 .placeholder_logo {width:12em;
 width: 7em;
@@ -378,8 +382,16 @@ margin-bottom: 1.5em;
 }
 
 .winery_about {
-    font-size: 1.1em;
-    width: 66%;
+  font-size: 1.1em;
+  width: 76%;
+  padding: 0 3em;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+
+
+.separator {
+  margin: 0 1em;
 }
 
 .social_media {width: 20%;}

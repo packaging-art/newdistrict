@@ -113,6 +113,7 @@ textarea {
 
 a {
   text-decoration: none;
+  color: #222222;
 }
 
 /* ==========================================================================
@@ -161,7 +162,6 @@ Headers
 }
 
 h1 {
-  color: white;
   line-height: 1;
   display: inline-block;
   margin-bottom: .5em;
@@ -361,6 +361,10 @@ h3 {
   top: 0;
 }
 
+.dark.tint {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
 .placeholder_logo {
   width: 12em;
   width: 7em;
@@ -370,7 +374,14 @@ h3 {
 
 .winery_about {
   font-size: 1.1em;
-  width: 66%;
+  width: 76%;
+  padding: 0 3em;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+}
+
+.separator {
+  margin: 0 1em;
 }
 
 .social_media {
