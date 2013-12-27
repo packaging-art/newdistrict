@@ -171,7 +171,7 @@ Underlying the slide is an optional background image (same idea applies as the [
 
 The actual content includes an optional title and a content section (which may be limited by character count — this part has not been finalized yet). B/E should be able to be set the title or content to to black or white color.
 
-The size of this slide behaves slightly differently. Ideally this slide would be the same height as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) or [Location Slide](#3-location-slide). However the content (if not limited by character count) may be longer and not fit this height. 
+The size of this slide behaves slightly differently. Ideally this slide would be the same height as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide), [Location Slide](#3-location-slide) or [Contact Slide](#5-contact-slide). However the content (if not limited by character count) may be longer and not fit this height. 
 
 Thus the height of this section should be set to at least the same height as the two other slides, which is the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [Winery Title/Navigation](#1-winery-titlenavigation). If the div containing this content is longer then app. 75% (or whatever % we decide) of the height of the section then the section height should switch to auto and grow with the content.
 
@@ -181,6 +181,8 @@ File: <https://github.com/deadtype/newdistrict/blob/master/_includes/contact_sli
 Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>  
 
 This slide is very similar to [About Slide](#4-about-slide), B/E need to be able to add an optional photo, set black, white or no overlay and its opacity, adjust color of text to black or white. The content for this section begins with winery website and email and expands to provide more links to social media as they are added.
+
+The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-photo-slide), [Location Slide](#3-location-slide)
 
 
 
