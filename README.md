@@ -175,7 +175,10 @@ The size of this slide behaves slightly differently. Ideally this slide would be
 
 Thus the height of this section should be set to at least the same height as the two other slides, which is the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [Winery Title/Navigation](#1-winery-titlenavigation). If the div containing this content is longer then app. 75% (or whatever % we decide) of the height of the section then the section height should switch to auto and grow with the content.
 
-### 5. Contact Slide
+### 5. Contact Slide  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/contact_slide.html>  
+Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>  
 
 
 
