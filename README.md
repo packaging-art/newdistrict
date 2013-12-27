@@ -6,6 +6,7 @@ newdistrict.github.io
 1. [Fixed navigation/cart area](#1-fixed-navigationcart-area)
 2. [Notifications Section](#2-notifications-section)
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
+4. [Wine Categories/Header/View Controls](#4-wine-categoriesheaderview-controls)
 
 ## 1. Fixed navigation/cart area  
 
@@ -182,7 +183,9 @@ Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>
 
 This slide is very similar to [About Slide](#4-about-slide), B/E need to be able to add an optional photo, set black, white or no overlay and its opacity, adjust color of text to black or white. The content for this section begins with winery website and email and expands to provide more links to social media as they are added.
 
-The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-photo-slide), [Location Slide](#3-location-slide)
+The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-photo-slide), [Location Slide](#3-location-slide).  
+
+## 4. Wine Categories/Header/View Controls
 
 
 
