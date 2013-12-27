@@ -165,15 +165,15 @@ As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/m
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/about_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
 
-'About slide' lets wineries include some written information about themselves. 
+'About Slide' lets wineries include some written information about themselves. 
 
 Underlying the slide is an optional background image (same idea applies as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide)) and an optional 'tint' div with the same controls as in [Winery Hero Photo Slide](#2-winery-hero-photo-slide). The idea is that the 'about' information can be overlayed on top of image if it is approproate or may be set on a clean white background.
 
 The actual content includes an optional title and a content section (which may be limited by character count — this part has not been finalized yet). B/E should be able to be set the title or content to to black or white color.
 
-The size of this slide behaves slightly differently. Ideally this slide would be the same height as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) or [Location Slide](#3-location-slide). However the content (if not limited by character count) may be longer and not fit in this are. 
+The size of this slide behaves slightly differently. Ideally this slide would be the same height as the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) or [Location Slide](#3-location-slide). However the content (if not limited by character count) may be longer and not fit this height. 
 
-Thus the height of this section should be set to at least the same height as the two other slides, which is the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [winery Title/Navigation](#1-winery-titlenavigation). If the div containing this content is longer then app. 75% (or whatever % we decide) of the height of the section then the section height should switch to auto and grow as the content grows.
+Thus the height of this section should be set to at least the same height as the two other slides, which is the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [Winery Title/Navigation](#1-winery-titlenavigation). If the div containing this content is longer then app. 75% (or whatever % we decide) of the height of the section then the section height should switch to auto and grow with the content.
 
 ### 5. Contact Slide
 
