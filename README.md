@@ -93,7 +93,7 @@ There is three potential behaviors:
 
 Preview: <http://deadtype.ca/newdistrict>
 
-This section consists of 4 major components; constant navigation/winery title and 3 content slides (which potentially could expand in future to more as more content is added).  
+This section consists of 4 major components; constant navigation/winery title and 4 content slides (which potentially could expand in future to more as more content is added).  
 
 The functionality of the section largely mirrors Royal slider example at <http://dimsemenov.com/plugins/royal-slider/content-slider/>. The section height can varied depending on the design/content of individual slides. For example it could be tied to the viewport (intro slide) or a proportion of it (ex. 75% — a possible height for the the location slide) or start at viewport height or expand to accommodate the length of included content if it is longer then viewport (ex. about slide). The slides will use fade-out/fade-in transition, while sliding to change height. 
 
@@ -103,6 +103,7 @@ Each slide should have a specfic address, so that a specific slide can be linked
 2. [Winery Hero Photo Slide](#2-winery-hero-photo-slide)
 3. [Location Slide](#3-location-slide)
 4. [About Slide](#4-about-slide)
+5. [Contact Slide](#5-contact-slide)
 
 
 
@@ -114,11 +115,11 @@ Preview: <http://deadtype.ca/newdistrict>
 
 The purpose of the title/navigation is to provide a consistent way to navigate between the slides included in this section.  
 
-Clicking on the title should take the user to thef 'first slide/landing page' (Winery Hero Photo).  
+Clicking on the winery title should take the user to thef 'first slide/landing page' (Winery Hero Photo).  
 
-Then there are 3 links in the navigation linking user to the 'first slide/landing page' (Winery Hero Photo), 'location slide', and 'about the winery' slide.  
+Then there are 3 links in the navigation linking user to the additional 3 slides 'about', 'location', and 'conctact'.  
 
-The section always sits on top of the slides.
+This section always sits on top of the slides (whether overlapping the slide or not — currently not in this visual iteration).
 
 
 ### 2. Winery Hero Photo Slide  
@@ -126,19 +127,18 @@ The section always sits on top of the slides.
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_photo_slide.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
-The purpose for this home page / initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and a script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area). The basic script included does an ok job at doing this but does not work as well as it should.
+The purpose for this home page / initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and needs script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [winery Title/Navigation](#1-winery-titlenavigation). The basic script currenltly included does an ok job at doing this but with some minor miscalculations.
 
-Ben and Elin need controls to add the background image and potenially a second smaller portrait sized image (will be used for art direction on smaller portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos and create dynamic media queries in CSS to replace images on low and high resolution screens.
+Ben and Elin need controls to add the background image and potenially a second smaller portrait sized image (can be used for art direction in order to provide a more fitting image on smaller, portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos (will request Ben/Elin to upload high resolution versions) and create dynamic media queries in CSS to replace images on low and high resolution screens.
 
-Ben and Elin also need a control to set the primary color of [winery Title/Navigation](#1-winery-titlenavigation) to be either black or white. This will help them art direct photos, whether they are light or dark. However this may not be neccesary anymore as the image is not frame by text and white space.
+B/E also need a control to set the primary color of [winery Title/Navigation](#1-winery-titlenavigation) to be either black or white. This will help them art direct photos, whether they are light or dark. However this may not be neccesary anymore as this section is above the image.
 
-Above the photo is a tint div which should enable Ben and Elin to add a white, black or no overlay to the photo and set its opacity.
+Above the photo is an optional 'tint' div which should enable Ben and Elin to add a white, black overlay to the photo and set its opacity. Alternatively is the photo does not require it they should be able to select no overlay in which case the div is hopefully not generated. The purpose of this div is to prepare certain photos for overlay of content over the image.
 
-With these controls this cover slide can be customized be used effectively with a variety of photos.
 
-Additionally there is a vertically/horizontally centered placeholder for an optional logo, which can be used to add an inline SVG logo (inline SVG will enable us to provide a CSS control for changing the logo color vs uploading two images). Ben/Elin need to be able to change size, opacity and color (either black or white). If browser does not support inline SVG (<=IE8) we can just hide this div.
+Currently the overlayed content a vertically/horizontally centered placeholder for an optional logo, which can be used to add an inline SVG logo (inline SVG will enable us to provide a CSS control for changing the logo color vs uploading two images). Ben/Elin need to be able to change size, opacity and color (either black or white). If browser does not support inline SVG (<=IE8) we can just hide this div.
 
-Because of the full heigh nature of this slide, it works well for setting the theme to the winery but it may not be completely clear there is wine selection below. To counter this, we include a 'Browse Our Products' link below. Clicking it will smooth scroll the page to the section immediately below.  
+Because of the full heigh nature of this slide, it works well for setting the theme to the winery but it may not be completely clear there is wine selection below. To counter this, there is an optional 'Browse Our Wines' link below. Clicking it will smooth scroll the page to the section immediately below. B/E need controls to turn it off or on and set its text.
 
 ### 3. Location Slide  
 
@@ -147,9 +147,9 @@ MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_include
 MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html>  
 Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>  
 
-Location slide uses [Mapbox](https://www.mapbox.com/tour/) to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. a completely custom tile design for new distric) and can have Ben and Elin easily create multiple maps and customize each to fit the brand of the winery (ex. have monochrome maps with the highlight color using the main brand color).  
+Location slide uses [Mapbox](https://www.mapbox.com/tour/) to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. a completely custom tile design for new distric) and can have Ben and Elin easily create multiple maps and customize each to fit the brand of the winery (ex. have monochrome maps with the highlight color using the winery brand color).  
 
-After they do that editing in browser the site will generate code for them that they will need to plug into New District. Example:
+After they do the editing in browser, Mapbox will generate code for them to plug into New District. Example:
 
 ```
 <script>
@@ -158,12 +158,16 @@ var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
 </script>
 ```  
 
-As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps.   
+As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps. We need a way to have them plug in this generic info provided into site, which will not overrule the custom settings added. 
 
 ### 4. About Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/about_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
+
+About slide lets wineries include some written information about them,
+
+### 5. Contact Slide
 
 
 
