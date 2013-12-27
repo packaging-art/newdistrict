@@ -225,7 +225,7 @@ h3 {
 .mainnav {
   padding-top: 1.5em;
   padding-bottom: 1.3em;
-  box-shadow: 1px -6px 11px -10px rgba(153, 153, 153, 0.8);
+  box-shadow: 1px -7px 11px -15px rgba(153, 153, 153, 0.8);
   /* border-top: 1px solid hsl(0,0%,90%);*/
 }
 
@@ -357,7 +357,7 @@ h3 {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   top: 0;
 }
 
@@ -399,6 +399,9 @@ h3 {
   line-height: 1.6;
   /*border-left: 1px solid black;
   border-right: 1px solid black;*/
+}
+.winery_about .website {
+  font-size: 1.4em;
 }
 
 .separator {

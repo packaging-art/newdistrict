@@ -226,7 +226,7 @@ line-height: 1;
 .mainnav {
   padding-top: 1.5em;
   padding-bottom: 1.3em;
-  box-shadow: 1px -6px 11px -10px hsla(0,0%, 60%, .8);
+  box-shadow: 1px -7px 11px -15px hsla(0,0%, 60%, .8);
  /* border-top: 1px solid hsl(0,0%,90%);*/
 }
 
@@ -366,7 +366,7 @@ position: relative;
 height: 100%;
 width: 100%;
 position: absolute;
-background: hsla(0,0%,0%,.2);
+background: hsla(0,0%,0%,.3);
 top:0;
 }
 
@@ -409,6 +409,10 @@ width:100%;
   line-height: 1.6;
   /*border-left: 1px solid black;
   border-right: 1px solid black;*/
+
+  .website {
+    font-size: 1.4em;
+  }
 }
 
 
