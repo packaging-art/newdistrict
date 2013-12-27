@@ -180,6 +180,8 @@ Thus the height of this section should be set to at least the same height as the
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/contact_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>  
 
+This slide is very similar to [About Slide](#4-about-slide), B/E need to be able to add an optional photo, set black, white or no overlay and its opacity, adjust color of text to black or white. The content for this section begins with winery website and email and expands to provide more links to social media as they are added.
+
 
 
 
