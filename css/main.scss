@@ -11,7 +11,7 @@
    ========================================================================== */
 
 $brand_color: red;
-$mainbackground_color: hsl(0,0%,98%);
+$mainbackground_color: hsl(0,0%,100%);
 $controls_color: #222;
 
 .brand_color {
@@ -124,6 +124,7 @@ textarea {
 
 a {text-decoration: none;
 color: $controls_color;}
+
 /* ==========================================================================
 Helper
    ========================================================================== */
@@ -157,6 +158,19 @@ Helper
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+.button {padding: .2em .5em;
+border: 2px solid black;
+font-weight: 600;}
+
+
+.box_rotate {
+  -webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
+     -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
+      -ms-transform: rotate(180deg);  /* IE 9 */
+       -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
+          transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
 /* ==========================================================================
 Headers
    ========================================================================== */
@@ -178,13 +192,13 @@ margin-bottom:.5em;
 
 h2 {
 @extend .headline;
-padding: .5em .8em;
-border: 2px solid black;
+/*padding: .5em .8em;
+border: 2px solid black;*/
 display: inline-block;
 text-transform: uppercase;
-margin-bottom: 1.2em;
-font-size: 1.3em;
-color: $brand_color;
+font-size: 2.4em;
+/*color: $brand_color;*/
+line-height: .9;
 }
 
 h3 {font-style: italic;
@@ -226,8 +240,8 @@ line-height: 1;
 .mainnav {
   padding-top: 1.5em;
   padding-bottom: 1.3em;
-  box-shadow: 1px -7px 11px -15px hsla(0,0%, 60%, .8);
- /* border-top: 1px solid hsl(0,0%,90%);*/
+ /*  box-shadow: 1px -10px 11px -14px hsla(0,0%, 60%, .6);*/
+ border-top: 1px solid hsl(0,0%,92%);
 }
 
 .navigaton_container {
@@ -236,7 +250,7 @@ line-height: 1;
 
 .wordmark {
   width: 6.9em;
-  float:left;
+  float: left;
   line-height: .9;
 }
 
@@ -311,11 +325,11 @@ line-height: 1;
 }
 
 .separator--left, .separator--right {
-    height: 100%;
-    width: 45%;
-    display: block;
-    float: left;
-    background: hsla(0,0%,5%,1);
+  height: 100%;
+  width: 45%;
+  display: block;
+  float: left;
+  background: hsla(0,0%,5%,1);
 }
 
 /* Winery Hero Banner */
@@ -324,7 +338,6 @@ line-height: 1;
   width: 100%;
   z-index: 1000;
   padding: 1.35em 0 1.15em 0;
-
 }
 
 .winery_title {
@@ -337,37 +350,49 @@ line-height: 1;
 }
 
 .winery_menu {
-display: block;
-text-align: right;
-margin-top: -1.5em;
+  display: block;
+  text-align: right;
+  margin-top: -1.5em;
 }
 
 .winery_menu a, .our_wines {
-    @extend .headline;
-    display: inline-block;
-    margin: 0 0 0 2em;
-    color:$controls_color;
-    float:none;
-    font-size: .7em;
+  @extend .headline;
+  display: inline-block;
+  margin: 0 0 0 2em;
+  color:$controls_color;
+  float:none;
+  font-size: .7em;
 }
 
 .our_wines {
+  position:absolute;
+  bottom:0;
+  margin:0;
+  margin-bottom:1em;
+  text-align: center;
+  width:100%;
   color: white;
 }
 
-
+.link_back {
+  @extend .headline;
+  color: black;
+  text-align: center;
+  font-size: .7em;
+margin-bottom: 0em;
+margin-top: .85em;}
 
 .hero_slider {
   height: 1000px; /* without a height definition location slide starts collapsed, but with this about and index page experience height jumps — need to look into this*/
-position: relative;
+  position: relative;
 }
 
 .tint {
-height: 100%;
-width: 100%;
-position: absolute;
-background: hsla(0,0%,0%,.3);
-top:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: hsla(0,0%,0%,.3);
+  top:0;
 }
 
 .dark.tint {
@@ -375,30 +400,77 @@ top:0;
 }
 
 
-.placeholder_logo {width:12em;
-width: 7em;
-margin: 0 auto;
-margin-bottom: 1.5em;
+.placeholder_logo {
+  width:12em;
+  width: 7em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
 }
 
 .down_arrow {
   display: block;
-  width: 2em;
+  width: 1.5em;
   margin: 0 auto;
 }
 
-.wines_control {
-width: 100%;
+.winery_name {
+  display: inline-block;
 }
 
-.our_wines {
-position:absolute;
-bottom:0;
-margin:0;
-margin-bottom:1em;
-text-align: center;
-width:100%;
+/*.winery_name:before {
+  content: url(/img/arrow_down.svg);
+}*/
+
+.winery_hero_banner + .wines_control_container {
+  margin-top: 2em;
 }
+
+.link_back + .wines_control_container {
+  margin-top: 0em;
+}
+
+.wines_control_container {
+  width: 100%;
+ margin-top: 1.5em;
+
+  .content_wrap {
+    position: relative;
+  }
+}
+
+.wines_control {
+  @extend .headline;
+  margin-left: 0;
+  font-size: .7em;
+  color: black;
+  padding: .15em .5em;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.collection {
+  float: left;
+}
+
+.winery_control_title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 600;
+  margin-top: .15em;
+}
+
+.view {
+  float: right;
+}
+
+.detail_collection {padding: 6em 0 4em 0; text-align: center;
+width: 66%; font-weight: 400;
+}
+
+.detail_collection p {font-size: 1.2em;}
 
 /* Winery About */
 
@@ -411,9 +483,10 @@ width:100%;
   border-right: 1px solid black;*/
 
   .website {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: 1px;
   }
 }
 
@@ -432,17 +505,18 @@ width:100%;
 
 .social_media_link {
   @extend .headline;
-font-size: .7em;
-margin: 0 1em;
+  font-size: .7em;
+  margin: 0 1em;
 }
 
-.social_media img {display: inline-block;
-width: 1.5em;
-margin:0 .8em;
+.social_media img {
+  display: inline-block;
+  width: 1.5em;
+  margin:0 .8em;
 }
 
 .winery_header_content {
-position: relative;
+  position: relative;
 }
 
 .search_button {
@@ -467,6 +541,9 @@ vertical-align: 1px;
 
 
 
+.view_label {
+  font-style: italic;
+}
 .collections {float:left; display: inline-block;}
 .collections a, .view a {padding: 0; color:black;
 margin-top: 3em;}
@@ -550,11 +627,7 @@ border-left: 10px solid transparent;
 }
 .grid_item {width: 33.3%; float:left;}
 
-.detail_collection {padding: 2em 0; text-align: center;
-width: 66%; font-weight: 400;
-}
 
-.detail_collection p {font-size: 1.2em;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
