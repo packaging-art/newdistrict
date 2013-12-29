@@ -202,9 +202,9 @@ The third control is the winery title, which keeps the user aware of the store t
 
 ----
 
-While exploring wine selection it is important to have these cotrols constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no).
+While exploring wine selection it is important to have these controls constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no).
 
-
+Preview of fixed controls over the wine page <http://deadtype.ca/newdistrict/wine_selection_only.html>
 
 
 
