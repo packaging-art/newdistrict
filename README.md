@@ -224,12 +224,9 @@ If the user got to the page with the 'Winery Hero Banner' present:
 
 1. 'Categories/Controls' start offscreen, below the 'Winery Hero Banner'.  
 
-2. Once the user scrolls and 'Categories/Controls' get to the top they become fixed and stick to the top of the screen. If the user scrolls back immediately they get back to the 'Winery Hero Banner'. Naturally 'Categories/Controls' become unfixed if the user scroll back up. A good demo of this is [Food Studio Website](http://foodstudio.no).
-
-Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
+2. Once the user scrolls and 'Categories/Controls' get to the top they become fixed and stick to the top of the screen. If the user scrolls back immediately they get back to the 'Winery Hero Banner'. Naturally 'Categories/Controls' become unfixed if the user scroll back up. A good demo of this is [Food Studio Website](http://foodstudio.no). Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
 
 3. For the next 300-500px (number can be decided after) of downward scroll: if the user changes their mind and scrolls back to the top they get back to the 'Winery Hero Banner. This lets the users who are just exploring the site initially see that there is a wine selection below and still easily get back to the top section to explore the details about the winery. 
-
 Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
 
 4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  
