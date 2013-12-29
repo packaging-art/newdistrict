@@ -194,17 +194,63 @@ Preview: <http://deadtype.ca/newdistrict>
 
 This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view').
 
-Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both will act like the collection button does on [hard graft](http://www.hardgraft.com).
+Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both will act like the collection button does on [hard graft](http://www.hardgraft.com). Making a selection in either of these controls at any point of the page sets the user to the top of the wine selection section.
 
-Selectin a specific collection hides all wines in not that collection. 'Select collection' control is independent from 'select view' contorl — meaning that if the site is set to grid view changing collection does not reset the view. If the winery has set no collections the button still remains here, however it will only have one choice — 'all wines'.
+Selectin a specific collection hides all wines in not that collection. 'Select collection' control is independent from 'select view' control — meaning that if the site is set to grid view changing collection does not reset the view. If the winery has set no collections the button still remains here, however it will only have one choice — 'all wines'.
 
-The third control is the winery title, which keeps the user aware of the store they are in and provides a way to smooth scroll up to the top for when user has scrolled down deep into the wine selection page.
+The third control is the 'winery title', which sits in between the two select controls, keeps the user aware of the store they are in, and provides a way to smooth scroll up to the top for when user has scrolled down deep into the wine selection page. Alternatively it also let users get back to 'Winery Hero Banner' — more on this below.
 
 ----
 
 While exploring wine selection it is important to have these controls constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no).
 
-Preview of fixed controls over the wine page <http://deadtype.ca/newdistrict/wine_selection_only.html>
+Preview of fixed controls over the wine page: <http://deadtype.ca/newdistrict/wine_selection_only.html>
+
+
+---- 
+
+Notice that the preview above lacks the Winery Hero Banner.  
+
+The goal is to focus the user on the wine selection once they get to it without having additional distractions. So effectively the site has two section 'Winery Hero Banner' - which informs about the store and the 'Wine Selection Section' - which lets users shop the wines. 
+
+The design of the 'Wine Selection Section' aims to have it be able to stand alone, even without the 'Winery Hero Banner'. Having a way to show just the wine selection standalone also lets us provide users with a link directly to the store.
+
+
+---  
+
+The behaviour for the controls and presence/absence of the 'Winery Hero Banner' is as follows.
+
+If the user got to the page with the 'Winery Hero Banner' present:
+
+1. 'Categories/Controls' start offscreen, below the 'Winery Hero Banner'.  
+
+2. Once the user scrolls and 'Categories/Controls' get to the top they become fixed and stick to the top of the screen. If the user scrolls back immediately they get back to the 'Winery Hero Banner'. 'Categories/Controls' become unfixed if the user scroll back up. A good demo of this is [Food Studio Website](http://foodstudio.no).  
+  
+      Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
+
+3. For the next 300-500px (number can be decided after) of downward scroll — if the user changes their mind and scrolls back to the top they get back to the 'Winery Hero Banner. This lets the users who are just exploring the site initially see that there is a wine selection below and still easily get back to the top section to explore the details about the winery.   
+  
+      Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
+
+4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  At this point 'Winery Hero Banner' gets hidden and cannot be returned to by scrolling anymore. Reasoning being the user can scroll up and down quickly, select collections and change views in their focused shopping section without accidentaly getting back the 'Winery Hero Banner' and breaking the experience.  
+  
+       Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Wine Selection Section' with the 'Winery Hero Banner' hidden and not available via scrolling.  
+  
+       Once the user is at the top of the wine selection section an arrow pointing up appears at the top of the 'winery title' — here clicking on either the arrow or the 'winery title' should reveal the 'Winery Hero Banner' and smooth scroll up to it.  
+
+5. Once the user has scrolled past >500px once and has turned off the 'Winery Hero Banner' or alternatively got to the 'Wine Selection Section' via a direct link the behaviour of the 'winery title' is as follows:  
+  
+      a) If the user is at the top of the 'Wine Selection Section' the the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+
+      b) If the user is within the 0px-500px of the top (or better yet the length of the 'Category Description' — discussed below) then the 'winery title' still retains the arrow above it and clicking either of them links user back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+      
+      c) If the user is past >500px from the top of the 'Wine Selection Section' then the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smooth scrolling to the top of it. Once there the arrow fades in again and we get back to situation a) 
+      
+----
+
+The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specfic link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content of the 'Winery Hero Banner', — defer and lazy load them upon request.
+
+Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.
 
 
 
