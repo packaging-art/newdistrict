@@ -7,6 +7,7 @@ newdistrict.github.io
 2. [Notifications Section](#2-notifications-section)
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
+5. [Wine Category Info](#5-wine-category-info)
 
 ## 1. Fixed navigation/cart area  
 
@@ -250,7 +251,9 @@ If the user got to the page with the 'Winery Hero Banner' present:
 
 The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specific link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content of the 'Winery Hero Banner', — defer and lazy load them upon request.
 
-Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.
+Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.  
+
+## 5. Wine Category Info
 
 
 
