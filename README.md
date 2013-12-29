@@ -229,9 +229,7 @@ If the user got to the page with the 'Winery Hero Banner' present:
 3. For the next 300-500px (number can be decided after) of downward scroll: if the user changes their mind and scrolls back to the top they get back to the 'Winery Hero Banner. This lets the users who are just exploring the site initially see that there is a wine selection below and still easily get back to the top section to explore the details about the winery. 
 Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
 
-4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  
-
-At this point 'Winery Hero Banner' gets hidden. Reasoning being the user can scroll up and down quickly, select collections and change views in their focused shopping section without accidentaly getting back the 'Winery Hero Banner' and breaking the experience.
+4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  At this point 'Winery Hero Banner' gets hidden. Reasoning being the user can scroll up and down quickly, select collections and change views in their focused shopping section without accidentaly getting back the 'Winery Hero Banner' and breaking the experience.
 
 
 
