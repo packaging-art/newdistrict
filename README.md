@@ -194,7 +194,13 @@ Preview: <http://deadtype.ca/newdistrict>
 
 This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view'). The other link is the winery title and provides a way to smooth scroll up to the top when user is deep into the wine selection page.
 
-Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both act like the collection button does on [hard graft](www.hardgraft.com)
+Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both will act like the collection button does on [hard graft](http://www.hardgraft.com).
+
+Selectin a specific collection hides all wines in not that collection. 'Select collection' control is independent from 'select view' contorl — meaning that if the site is set to grid view changing collection does not reset the view.
+
+----
+
+While exploring wine selection it is important to have these cotrols constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no)
 
 
 
