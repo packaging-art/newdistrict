@@ -248,7 +248,7 @@ If the user got to the page with the 'Winery Hero Banner' present:
       
 ----
 
-The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specfic link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content, — defer and lazy load only when user opens the 'Wine Selection Section'
+The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specfic link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content of the 'Winery Hero Banner', — defer and lazy load them upon request.
 
 Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.
 
