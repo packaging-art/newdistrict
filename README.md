@@ -6,7 +6,7 @@ newdistrict.github.io
 1. [Fixed navigation/cart area](#1-fixed-navigationcart-area)
 2. [Notifications Section](#2-notifications-section)
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
-4. [Wine Categories/Header/View Controls](#4-wine-categoriesheaderview-controls)
+4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 
 ## 1. Fixed navigation/cart area  
 
@@ -187,7 +187,25 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 
 --- 
 
-## 4. Wine Categories/Header/View Controls
+## 4. Wine Categories/Controls   
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_controls.html>  
+Preview: <http://deadtype.ca/newdistrict>   
+
+This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view').
+
+Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both will act like the collection button does on [hard graft](http://www.hardgraft.com).
+
+Selectin a specific collection hides all wines in not that collection. 'Select collection' control is independent from 'select view' contorl — meaning that if the site is set to grid view changing collection does not reset the view. If the winery has set no collections the button still remains here, however it will only have one choice — 'all wines'.
+
+The third control is the winery title, which keeps the user aware of the store they are in and provides a way to smooth scroll up to the top for when user has scrolled down deep into the wine selection page.
+
+----
+
+While exploring wine selection it is important to have these controls constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no).
+
+Preview of fixed controls over the wine page <http://deadtype.ca/newdistrict/wine_selection_only.html>
+
 
 
 
