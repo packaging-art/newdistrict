@@ -192,6 +192,10 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_controls.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
+This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view'). The other link is the winery title and provides a way to smooth scroll up to the top when user is deep into the wine selection page.
+
+Both 'select collection' and 'select view' will reveal a drop down menu where user can select the wine collection or the view (this one only includes two options 'Editorial View' - aka. banner and 'At A Glance View' — aka. grid view. Both act like the collection button does on [hard graft](www.hardgraft.com)
+
 
 
 
