@@ -240,11 +240,11 @@ If the user got to the page with the 'Winery Hero Banner' present:
 
 5. Once the user has scrolled past >500px once and has turned off the 'Winery Hero Banner' or alternatively got to the 'Wine Selection Section' via a direct link the behaviour of the 'winery title' is as follows:  
   
-      a) If the user is at the top the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+      a) If the user is at the top of the 'Wine Selection Section' the the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
 
-      b) If the user is within the 0px-500px of the top (or better yet the lenth of the 'Category Description' — discussed below) the the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+      b) If the user is within the 0px-500px of the top (or better yet the length of the 'Category Description' — discussed below) then the 'winery title' still retains the arrow above it and clicking either of them links user back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
       
-      c) If the user is past >500px from the top the the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smoothscrolling to the top of it. Once there the arrow fades in and this becomes a)
+      c) If the user is past >500px from the top of the 'Wine Selection Section' then the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smooth scrolling to the top of it. Once there the arrow fades in again and we get back to situation a)
 
 
 
