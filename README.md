@@ -244,7 +244,13 @@ If the user got to the page with the 'Winery Hero Banner' present:
 
       b) If the user is within the 0px-500px of the top (or better yet the length of the 'Category Description' — discussed below) then the 'winery title' still retains the arrow above it and clicking either of them links user back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
       
-      c) If the user is past >500px from the top of the 'Wine Selection Section' then the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smooth scrolling to the top of it. Once there the arrow fades in again and we get back to situation a)
+      c) If the user is past >500px from the top of the 'Wine Selection Section' then the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smooth scrolling to the top of it. Once there the arrow fades in again and we get back to situation a) 
+      
+----
+
+The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specfic link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content, — defer and lazy load only when user opens the 'Wine Selection Section'
+
+Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.
 
 
 
