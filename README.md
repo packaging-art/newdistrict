@@ -8,6 +8,8 @@ newdistrict.github.io
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 5. [Wine Category Info](#5-wine-category-info)
+6. [Grid Product View ](#6-grid-product-view)
+
 
 ## 1. Fixed navigation/cart area  
 
@@ -260,8 +262,10 @@ File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_select
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
+  
+## 6. Grid Product View  
 
-
-
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>  
+Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 
