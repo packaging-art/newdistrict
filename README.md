@@ -6,7 +6,7 @@ newdistrict.github.io
 1. [Fixed navigation/cart area](#1-fixed-navigationcart-area)
 2. [Notifications Section](#2-notifications-section)
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
-4. [Wine Categories/Header/View Controls](#4-wine-categoriesheaderview-controls)
+4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 
 ## 1. Fixed navigation/cart area  
 
@@ -187,7 +187,13 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 
 --- 
 
-## 4. Wine Categories/Header/View Controls
+## 4. Wine Categories/Controls   
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_controls.html>  
+Preview: <http://deadtype.ca/newdistrict>   
+
+
+
 
 
 
