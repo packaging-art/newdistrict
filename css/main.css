@@ -116,6 +116,10 @@ a {
   color: #222222;
 }
 
+.knockout a {
+  color: white;
+}
+
 /* ==========================================================================
 Helper
    ========================================================================== */
@@ -168,6 +172,12 @@ Helper
   /* Opera 10.50-12.00 */
   transform: rotate(180deg);
   /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 /* ==========================================================================
@@ -418,6 +428,10 @@ h3 {
 /*.winery_name:before {
   content: url(/img/arrow_down.svg);
 }*/
+.fixed + .detail_collection {
+  margin-top: 2.8em;
+}
+
 .winery_hero_banner + .wines_control_container {
   margin-top: 2em;
 }
@@ -440,7 +454,7 @@ h3 {
   color: black;
   padding: .15em .5em;
   border: 1px solid black;
-  display: inline-block;
+  background: white;
 }
 
 .collection {
