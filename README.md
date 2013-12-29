@@ -232,11 +232,19 @@ If the user got to the page with the 'Winery Hero Banner' present:
   
       Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Winery Hero Banner'.
 
-4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  At this point 'Winery Hero Banner' gets hidden. Reasoning being the user can scroll up and down quickly, select collections and change views in their focused shopping section without accidentaly getting back the 'Winery Hero Banner' and breaking the experience.  
+4. If scrolled down far enough > 500px (number can be decided after) we assume the user is in the 'explore the wines/shopping' mode.  At this point 'Winery Hero Banner' gets hidden and cannot be returned to by scrolling anymore. Reasoning being the user can scroll up and down quickly, select collections and change views in their focused shopping section without accidentaly getting back the 'Winery Hero Banner' and breaking the experience.  
   
        Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Wine Selection Section' with the 'Winery Hero Banner' hidden and not available via scrolling.  
   
-       Once the user is at the top of the wine selection section an arrow pointing up appears at the top of the 'winery title' — here clicking 
+       Once the user is at the top of the wine selection section an arrow pointing up appears at the top of the 'winery title' — here clicking on either the arrow or the 'winery title' should reveal the 'Winery Hero Banner' and smooth scroll up to it.  
+
+5. Once the user has scrolled past >500px once and has turned off the 'Winery Hero Banner' or alternatively got to the 'Wine Selection Section' via a direct link the behaviour of the 'winery title' is as follows:  
+  
+      a) If the user is at the top the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+
+      b) If the user is within the 0px-500px of the top (or better yet the lenth of the 'Category Description' — discussed below) the the 'winery title' has an arrow above it and both of them link back to the 'Winery Hero Banner' revealing it and smooth scrolling to the top of it.  
+      
+      c) If the user is past >500px from the top the the arrow fades away and the 'winery title' now links the user to the top of the 'Wine Selection Section' by smoothscrolling to the top of it. Once there the arrow fades in and this becomes a)
 
 
 
