@@ -259,6 +259,7 @@ Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Sli
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
+This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
 
 
 
