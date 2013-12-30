@@ -719,7 +719,7 @@ h3 {
   position: relative;
 }
 
-.grid_framed:nth-child(3n) {
+.products .grid_framed:nth-of-type(3n) {
   margin-right: 0;
 }
 
@@ -738,10 +738,15 @@ h3 {
 }
 
 /* Banner Product View */
+.banner_preview .grid_framed:not(.active) {
+  opacity: .2;
+}
+
 .banner {
   min-height: 600px;
   float: left;
   width: 100%;
+  margin-bottom: 3%;
 }
 
 /* ==========================================================================
