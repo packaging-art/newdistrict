@@ -178,12 +178,13 @@ Helper
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1000;
 }
 
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .social_media_link {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .grid_addtocart, .social_media_link, .grid_title, .grid_price {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -448,13 +449,13 @@ h3 {
   position: relative;
 }
 
-.wines_control {
+.wines_control, .grid_addtocart {
   margin-left: 0;
   font-size: .7em;
   color: black;
   padding: .15em .5em;
   border: 1px solid black;
-  background: white;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .collection {
@@ -468,7 +469,7 @@ h3 {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 600;
-  margin-top: .15em;
+  margin-top: .3em;
 }
 
 .view {
@@ -476,7 +477,7 @@ h3 {
 }
 
 .detail_collection {
-  padding: 6em 0 4em 0;
+  padding: 7em 0 5em 0;
   text-align: center;
   width: 66%;
   font-weight: 400;
@@ -651,6 +652,88 @@ h3 {
 .grid_item {
   width: 33.3%;
   float: left;
+}
+
+.grid_title {
+  font-size: 1.6em;
+  padding: 0;
+  line-height: .9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+}
+.grid_title .wine_year, .grid_title .wine_volume {
+  font-size: .4em;
+  color: black;
+  margin-top: .3em;
+}
+
+.wine_year {
+  position: absolute;
+  top: 0;
+}
+
+.wine_volume {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.grid_price {
+  position: absolute;
+  bottom: .8em;
+  left: 1em;
+  /* line-height: .9; */
+  font-size: .8em;
+  padding: .15em 0 0 0;
+}
+
+.price_separator {
+  margin: 0 .35em;
+  font-size: .6em;
+  vertical-align: 1px;
+  font-weight: 400;
+}
+
+.grid_action_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.grid_addtocart {
+  background: transparent;
+  display: inline-block;
+}
+
+.grid_framed {
+  width: 31.33333%;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  position: relative;
+}
+
+.grid_framed:nth-child(3n) {
+  margin-right: 0;
+}
+
+.wine_info_container {
+  padding: 1.2em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.wine_info {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 /* ==========================================================================
