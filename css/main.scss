@@ -457,7 +457,7 @@ margin-top: .85em;}
   margin-left: 0;
   font-size: .7em;
   color: black;
- padding: .15em .5em;
+padding: .25em .5em .15em .5em;
    border: 1px solid black;
 background: hsla(0,0%,100%,.4);
 }
@@ -660,33 +660,32 @@ text-align: center;
  .wine_year, .wine_volume {
   font-size: .4em;
   color: black;
-  margin-top:.3em;
+  margin-top:.7em;
  }
 }
 
 .wine_year {
-  position: absolute;
+  
   top: 0;
 }
 
-.wine_volume {
+.wine_volume, .grid_price {
+  @extend .headline;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
+    font-size: .7em;
+  color: black;
+  margin-top:.3em;
 }
 
 .grid_price {
-    @extend .headline;
-position: absolute;
-bottom: .8em;
-left: 1em;
-/* line-height: .9; */
-font-size:.8em;
-padding: .15em 0 0 0;
+left: 0;
+right: auto
 }
 
 .price_separator {
-  margin: 0 .35em;
+  margin: 0 .9em;
 font-size: .6em;
 vertical-align: 1px;
 font-weight: 400;
@@ -741,9 +740,30 @@ position:relative;
   float: left;
   width: 100%;
   margin-bottom: 3%;
+  position: relative;
 }
 
+.banner_tint {
+  height: 100%;
+width: 100%;
+position: absolute;
+background: rgba(0, 0, 0, 0.3);
+top: 0;
+padding:2em;
+}
 
+.banner_title {
+  @extend .headline;
+  font-size: 2em;
+  float: right;
+}
+ 
+.banner_writeup {
+  font-size: 1.2em;
+  text-align: right;
+  width:33%;
+  float:right;
+}
 
 /* ==========================================================================
    Helper classes
