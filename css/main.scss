@@ -60,6 +60,7 @@ body {
     font-style: normal;
     font-weight: 400;
     background: $mainbackground_color;
+    font-size: .7em;
 }
 
 /*
@@ -638,6 +639,9 @@ border-left: 10px solid transparent;
 .products {
     margin-top: 2em;
 }
+
+/* Grid Product View */
+
 .grid_item {width: 33.3%; float:left;}
 
 
@@ -703,7 +707,6 @@ display: inline-block;
 }
 
 .grid_framed {
-  width: 31.33333%;
 float: left;
 margin-right: 3%;
 margin-bottom:3%;
@@ -727,6 +730,15 @@ position:relative;
   height: 100%;
   width: 100%;
 }
+
+/* Banner Product View */
+
+.banner {
+  min-height: 600px;
+  float: left;
+width: 100%;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -836,6 +848,14 @@ position:relative;
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    body {
+      font-size: 1em;
+    }
+
+    .grid_framed {
+  width: 31.33333%;
+}
+
 }
 
 @media print,

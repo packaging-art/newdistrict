@@ -54,6 +54,7 @@ body {
   font-style: normal;
   font-weight: 400;
   background: white;
+  font-size: .7em;
 }
 
 /*
@@ -649,6 +650,7 @@ h3 {
   margin-top: 2em;
 }
 
+/* Grid Product View */
 .grid_item {
   width: 33.3%;
   float: left;
@@ -711,7 +713,6 @@ h3 {
 }
 
 .grid_framed {
-  width: 31.33333%;
   float: left;
   margin-right: 3%;
   margin-bottom: 3%;
@@ -733,6 +734,13 @@ h3 {
 .wine_info {
   position: relative;
   height: 100%;
+  width: 100%;
+}
+
+/* Banner Product View */
+.banner {
+  min-height: 600px;
+  float: left;
   width: 100%;
 }
 
@@ -838,6 +846,13 @@ h3 {
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
+  body {
+    font-size: 1em;
+  }
+
+  .grid_framed {
+    width: 31.33333%;
+  }
 }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
