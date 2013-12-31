@@ -9,6 +9,8 @@ newdistrict.github.io
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 5. [Wine Category Info](#5-wine-category-info)
 6. [Grid Product View ](#6-grid-product-view)
+7. [Banner Product View ](#6-banner-product-view)
+
 
 
 ## 1. Fixed navigation/cart area  
@@ -270,6 +272,11 @@ This is a simple section which reflects the selected collection via title, selec
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
+
+## 7. Banner Product View  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_banner.html>  
+Preview: <http://deadtype.ca/newdistrict>  
 
 
 
