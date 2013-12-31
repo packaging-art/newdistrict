@@ -4,21 +4,15 @@ title: new district
 ---
 
 <div class="content">
-
-		{% include slider_navigation.html %}
-
+	{% include slider_navigation.html %}
 	<div class='winery_hero_banner content_wrap'>
 		{% include contact_slide.html %}
 	</div>
-
-
-		{% include wine_selection_controls.html %}
-		{% include wine_selection_info.html %}
-		
+	{% include wine_selection_controls.html %}
+	{% include wine_selection_info.html %}
 	<div class="maincontainer products content_wrap clearfix">
 		{% include product_view_grid.html %}
 		{% include preview_helpers/extra_grid_items.html %}
 	</div>
 </div>
-
 {% include main-nav-cart.html %}

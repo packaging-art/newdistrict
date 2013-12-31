@@ -9,6 +9,8 @@ newdistrict.github.io
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 5. [Wine Category Info](#5-wine-category-info)
 6. [Grid Product View ](#6-grid-product-view)
+7. [Banner Product View ](#6-banner-product-view)
+
 
 
 ## 1. Fixed navigation/cart area  
@@ -71,6 +73,8 @@ Individual stores will show current store cart total, current store mix and matc
 
 When the user is in the overall market place vs a specific store the cart indicator should show total combined numbers for bottles in all stores.
 
+The exact orderering in presence of these will be finalized as towards the end of the project.
+
 
 
 ----
@@ -81,7 +85,7 @@ File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main-nav-ca
 Preview: <http://deadtype.ca/newdistrict/notifications_demo.html>
 
 
-An area for notifications. Notifications fade in and fade out. When numerous notifications occur they stack on top of each other.
+An area for notifications. Notifications should fade in and fade out. When numerous notifications occur they should stack on top of each other.
 
 There is three potential behaviors:
 
@@ -265,7 +269,24 @@ This is a simple section which reflects the selected collection via title, selec
   
 ## 6. Grid Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
+
+Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as the grid items require a consistent look between included items and background-position controls are not precise enough for this. 
+
+Information needed to be generated and editable is Name, Year, Price, and Volume.
+
+Two controls are necessary: 'add to cart' and 'more info'. Clicking 'more info' should fade in the banner associated with the grid item as well as lower opacity of all other grid items. As grid items fade out and banner is faded in, 'more info' link transfroms into 'hide info'. Clicking 'hide info' reverses the interaction by hiding the banner and fading in other items. Alternatively clicking anywhere outside of the active grid item or displayed banner should activate the 'hide info' interaction.
+
+Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
+
+
+
+## 7. Banner Product View  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_banner.html>  
+Preview: <http://deadtype.ca/newdistrict>  
+
+
 
 
