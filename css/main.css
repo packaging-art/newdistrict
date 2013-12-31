@@ -185,7 +185,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .grid_addtocart, .social_media_link, .grid_title, .wine_volume, .grid_price, .banner_title {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .action, .social_media_link, .grid_title, .wine_volume, .grid_price, .banner_title {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -450,7 +450,7 @@ h3 {
   position: relative;
 }
 
-.wines_control, .grid_addtocart {
+.wines_control, .action {
   margin-left: 0;
   font-size: .7em;
   color: black;
@@ -697,14 +697,22 @@ h3 {
   vertical-align: 1px;
 }
 
-.grid_action_container {
+.action_container {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
 }
 
-.grid_addtocart {
+.action_container.left {
+  text-align: left;
+}
+
+.action_container.right {
+  text-align: right;
+}
+
+.action {
   background: transparent;
   display: inline-block;
 }
@@ -721,7 +729,7 @@ h3 {
 }
 
 .wine_info_container {
-  padding: 1.2em;
+  padding: 1.3em 1.2em 1.15em;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -739,6 +747,17 @@ h3 {
   position: absolute;
   margin-top: .3em;
   width: 100%;
+}
+
+.hide_info {
+  display: none;
+}
+
+.active .hide_info {
+  display: inline-block;
+}
+.active .show_info {
+  display: none;
 }
 
 .banner_preview .grid_framed:not(.active) {
@@ -783,14 +802,15 @@ h3 {
 
 .banner_center {
   text-align: center;
+  margin: 5em 0;
 }
 .banner_center .banner_content_width {
   text-align: center;
   width: 66%;
 }
 .banner_center .banner_writeup {
-  margin-top: 8em;
-  margin-bottom: 8em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .banner_title {
@@ -809,15 +829,22 @@ h3 {
   font-size: .55em;
   vertical-align: 2px;
 }
-.banner .grid_addtocart {
+.banner .action {
   color: white;
   border-color: white;
+}
+.banner .action + .action {
+  margin-left: .8em;
 }
 
 .banner_writeup {
   font-size: 1.1em;
-  margin-top: 13em;
+  margin-top: 12em;
   margin-bottom: 2em;
+}
+
+.link_through {
+  font-style: italic;
 }
 
 .grid_framed .link_back {
