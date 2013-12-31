@@ -657,14 +657,14 @@ right: 0;
 color: white;
 text-align: center;
 
- .wine_year, .wine_volume {
+ .wine_meta_info, .wine_volume {
   font-size: .4em;
   color: black;
   margin-top:.7em;
  }
 }
 
-.wine_year {
+.wine_meta_info {
   top: 0;
 }
 
@@ -800,7 +800,7 @@ margin-bottom:8em;
 }
 
 .banner {
-  .wine_year {
+  .wine_meta_info {
   font-size: .3em;
   line-height: .9;
   margin-top: 0.35em;

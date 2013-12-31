@@ -667,13 +667,13 @@ h3 {
   color: white;
   text-align: center;
 }
-.grid_title .wine_year, .grid_title .wine_volume {
+.grid_title .wine_meta_info, .grid_title .wine_volume {
   font-size: .4em;
   color: black;
   margin-top: .7em;
 }
 
-.wine_year {
+.wine_meta_info {
   top: 0;
 }
 
@@ -799,7 +799,7 @@ h3 {
   line-height: .9;
 }
 
-.banner .wine_year {
+.banner .wine_meta_info {
   font-size: .3em;
   line-height: .9;
   margin-top: 0.35em;
