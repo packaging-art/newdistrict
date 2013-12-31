@@ -15,13 +15,9 @@ title: new district
 		{% include wine_selection_controls.html %}
 		{% include wine_selection_info.html %}
 		
-	<div class="maincontainer products clearfix">
-		<div class='grid_item'>
-		<img src='img/grid.jpg'>
-		</div>
-			<div class='grid_item'>
-		<img src='img/grid2.jpg'>
-		</div>
+	<div class="maincontainer products content_wrap clearfix">
+		{% include product_view_grid.html %}
+		{% include preview_helpers/extra_grid_items.html %}
 	</div>
 </div>
 
