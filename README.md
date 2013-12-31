@@ -9,7 +9,7 @@ newdistrict.github.io
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 5. [Wine Category Info](#5-wine-category-info)
 6. [Grid Product View ](#6-grid-product-view)
-7. [Banner Product View ](#6-banner-product-view)
+7. [Banner Product View ](#7-banner-product-view)
 
 
 
