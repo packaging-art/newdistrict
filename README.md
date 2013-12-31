@@ -272,11 +272,11 @@ This is a simple section which reflects the selected collection via title, selec
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
-Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as it requires a consisten look between grid items. Background-position controls are not precise enough for this. 
+Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as the grid items require a consistent look between included items and background-position controls are not precise enough for this. 
 
 Information needed to be generated and editable is Name, Year, Price, and Volume.
 
-Two controls are necessary, 'add to cart' and 'more info'. Clicking more info should reveal the banner associated with the grid item as well as fade out the other items.
+Two controls are necessary: 'add to cart' and 'more info'. Clicking 'more info' should fade in the banner associated with the grid item as well as lower opacity of all other grid items. As grid items fade out and banner is faded in, 'more info' link transfroms into 'hide info'. Clicking 'hide info' reverses the interaction by hiding the banner and fading in other items. Alternatively clicking anywhere outside of the active grid item or displayed banner should activate the 'hide info' interaction.
 
 Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
 
