@@ -71,6 +71,8 @@ Individual stores will show current store cart total, current store mix and matc
 
 When the user is in the overall market place vs a specific store the cart indicator should show total combined numbers for bottles in all stores.
 
+The exact orderering in presence of these will be finalized as towards the end of the project.
+
 
 
 ----
@@ -81,7 +83,7 @@ File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main-nav-ca
 Preview: <http://deadtype.ca/newdistrict/notifications_demo.html>
 
 
-An area for notifications. Notifications fade in and fade out. When numerous notifications occur they stack on top of each other.
+An area for notifications. Notifications should fade in and fade out. When numerous notifications occur they should stack on top of each other.
 
 There is three potential behaviors:
 
@@ -265,7 +267,10 @@ This is a simple section which reflects the selected collection via title, selec
   
 ## 6. Grid Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
+
+
+
 
 
