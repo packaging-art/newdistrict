@@ -287,6 +287,10 @@ Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html>
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_banner.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
+Baner view is similar to the Winery Hero Photo Slide.
 
+Ben and Elin need controls to add the background image and potentially a second smaller portrait sized image (can be used for art direction in order to provide a more fitting image on smaller, portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos (will request Ben/Elin to upload high resolution versions) and create dynamic media queries in CSS to replace images on low and high resolution screens.
+
+Overlaying the image there is an optional tint division, which should let B/E set its colour to black, white or transparent, and set the opacity. On top of the image lie three possible text layouts (activated by css classes: 'banner_left', 'banner_center' and 'banner_right'). B/E need controls to change color to black or white and choose one of the three layouts/
 
 
