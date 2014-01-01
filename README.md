@@ -15,7 +15,7 @@ newdistrict.github.io
 
 ## 1. Fixed navigation/cart area  
 
-File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main-nav-cart.html>  
+File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main_navigation/main-nav-cart.html>  
 Preview: <http://deadtype.ca/newdistrict/>  
 
 ***
@@ -81,7 +81,7 @@ The exact orderering in presence of these will be finalized as towards the end o
 
 ## 2. Notifications Section
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main-nav-cart_notifications.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main_navigation/main-nav-cart_notifications.html>  
 Preview: <http://deadtype.ca/newdistrict/notifications_demo.html>
 
 
@@ -117,7 +117,7 @@ Each slide should have a specfic address, so that a specific slide can be linked
 
 ### 1. Winery Title/Navigation  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/slider_navigation.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/slider_navigation.html>  
 Preview: <http://deadtype.ca/newdistrict>
 
 
@@ -132,7 +132,7 @@ This section always sits on top of the slides (whether overlapping the slide or 
 
 ### 2. Winery Hero Photo Slide  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_photo_slide.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/hero_photo_slide.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
 The purpose for this home page / initial slide is to give the winery a magazine style full height cover page. The slide will have a place for a background image and needs script attached to ensure it dynamically resizes to always fit the height of the viewport minus the height of the [fixed navigation/cart area](#1-fixed-navigationcart-area) and the [winery Title/Navigation](#1-winery-titlenavigation). The basic script currently included does an ok job at doing this but with some minor miscalculations.
@@ -150,9 +150,9 @@ Because of the full height nature of this slide, it works well for setting the t
 
 ### 3. Location Slide  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide.html>  
-MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_api_call.html>  
-MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide.html>  
+MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide_api_call.html>  
+MAP Script code: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide_script_call.html>  
 Preview: <http://deadtype.ca/newdistrict/location_slide_demo.html>  
 
 Location slide uses [Mapbox](https://www.mapbox.com/tour/) to generate a map for each winery. This is used instead of Google or Bing maps as it allows for a high level of customization for the map overall (ex. a completely custom tile design for new district) and can have Ben and Elin easily create multiple maps and customize each to fit the brand of the winery (ex. have monochrome maps with the highlight color using the winery brand color).  
@@ -166,11 +166,11 @@ var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
 </script>
 ```  
 
-As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps. We need a way to have them plug in this generic info provided into site, which will not overrule the custom settings added. 
+As you can see from [Demo Script](https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide_script_call.html) there is additional code which I added (ex. enabling Retina tiles) which will be universal across all maps. We need a way to have them plug in this generic info provided into site, which will not overrule the custom settings added. 
 
 ### 4. About Slide  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/about_slide.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/about_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
 
 'About Slide' lets wineries include some written information about themselves. 
@@ -185,7 +185,7 @@ Thus the height of this section should be set to at least the same height as the
 
 ### 5. Contact Slide  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/contact_slide.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/contact_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>  
 
 This slide is very similar to [About Slide](#4-about-slide), B/E need to be able to add an optional photo, set black, white or no overlay and its opacity, adjust color of text to black or white. The content for this section begins with winery website and email and expands to provide more links to social media as they are added.
@@ -196,7 +196,7 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 
 ## 4. Wine Categories/Controls   
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_selection_controls.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_info_controls/product_selection_controls.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
 This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view').
@@ -262,14 +262,14 @@ Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Sli
 
 ## 5. Wine Category Info  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_selection_info.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_info_controls/product_selection_info.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
   
 ## 6. Grid Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_grid.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_previews/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as the grid items require a consistent look between included items and background-position controls are not precise enough for this. 
@@ -278,13 +278,13 @@ Information needed to be generated and editable is Name, Year, Price, and Volume
 
 Two controls are necessary: 'add to cart' and 'more info'. Clicking 'more info' should fade in the banner associated with the grid item as well as lower opacity of all other grid items. As grid items fade out and banner is faded in, 'more info' link transfroms into 'hide info'. Clicking 'hide info' reverses the interaction by hiding the banner and fading in other items. Alternatively clicking anywhere outside of the active grid item or displayed banner should activate the 'hide info' interaction.
 
-Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
+Preview: <http://deadtype.ca/newdistrict/grid_focusedon_banner.html> 
 
 
 
 ## 7. Banner Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_view_banner.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_previews/product_view_banner.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
 Baner view is similar to the Winery Hero Photo Slide.
