@@ -15,7 +15,7 @@ newdistrict.github.io
 
 ## 1. Fixed navigation/cart area  
 
-File: <https://github.com/deadtype/newdistrict/blob/gh-pages/_includes/main_navigation/main-nav-cart.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main_navigation/main-nav-cart.html>  
 Preview: <http://deadtype.ca/newdistrict/>  
 
 ***
