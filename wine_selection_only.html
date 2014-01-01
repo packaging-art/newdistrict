@@ -10,7 +10,14 @@ title: new district
 	</div>
 	{% include wine_selection_info.html %}
 	<div class="maincontainer products content_wrap clearfix">
+		{% include section_separator.html label='2012' %}
 		{% include preview_helpers/extra_grid_items.html %}
+		{% include product_view_grid.html %}
+	</div>
+	{% include section_separator.html label='2011' %}
+	<div class="maincontainer products content_wrap clearfix">
+		{% include preview_helpers/extra_grid_items.html %}
+		{% include product_view_grid.html %}
 	</div>
 </div>
 {% include main-nav-cart.html %}

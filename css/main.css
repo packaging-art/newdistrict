@@ -138,7 +138,7 @@ Helper
 
 .perfect_center {
   left: 50%;
-  top: 52%;
+  top: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   text-align: center;
@@ -185,7 +185,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .action, .social_media_link, .grid_title, .wine_volume, .grid_price, .banner_title {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .action, .social_media_link, .grid_title, .wine_volume, .grid_price, .banner_title, .overlay_label {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -238,6 +238,7 @@ h3 {
 
 .content_wrap {
   width: 95%;
+  position: relative;
 }
 
 .content {
@@ -431,7 +432,7 @@ h3 {
   content: url(/img/arrow_down.svg);
 }*/
 .fixed + .detail_collection {
-  margin-top: 2.8em;
+  margin-top: 4em;
 }
 
 .winery_hero_banner + .wines_control_container {
@@ -478,7 +479,7 @@ h3 {
 }
 
 .detail_collection {
-  padding: 7em 0 5em 0;
+  padding: 7em 0 4em 0;
   text-align: center;
   width: 66%;
   font-weight: 400;
@@ -720,8 +721,12 @@ h3 {
 .grid_framed {
   float: left;
   margin-right: 3%;
-  margin-bottom: 3%;
+  margin-top: 3%;
   position: relative;
+}
+
+.products .grid_framed:nth-child(-n+3) {
+  margin-top: 0;
 }
 
 .products .grid_framed:nth-of-type(3n) {
@@ -768,7 +773,15 @@ h3 {
   width: 100%;
   margin-bottom: 3%;
   position: relative;
+}
+
+.banner.active {
   float: left;
+  margin-bottom: 0;
+}
+
+.grid_framed.active {
+  margin-bottom: 3%;
 }
 
 .banner_tint {
@@ -854,6 +867,31 @@ h3 {
 }
 .grid_framed .link_back .arrow {
   width: 1.8em;
+}
+
+/* Section Separator */
+.divider_container {
+  margin: 3em 0;
+  position: relative;
+}
+
+.label_holder {
+  text-align: center;
+}
+
+.divider {
+  border-top: 1px solid lightgray;
+  width: 100%;
+}
+
+.overlay_label {
+  padding: .1em 1.2em;
+  background: white;
+  font-size: .8em;
+  display: inline-block;
+  z-index: 1000;
+  position: relative;
+  line-height: 1;
 }
 
 /* ==========================================================================

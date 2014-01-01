@@ -10,8 +10,10 @@ title: new district
 	</div>
 	{% include wine_selection_controls.html %}
 	{% include wine_selection_info.html %}
+
 	<div class="maincontainer products content_wrap clearfix">
-		<section class='banner active' style="background:url('img/banner1v1.jpg') center center; background-size:cover;">
+		{% include section_separator.html label='2012' %}
+		<section class='banner' style="background:url('img/banner1v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint'>
 				<div class='banner_right'>
 					<div class='banner_content_width knockout'>
@@ -31,7 +33,7 @@ title: new district
 				</div>
 			</div>
 		</section>
-		<section class='banner active' style="background:url('img/banner3v1.jpg') center center; background-size:cover;">
+		<section class='banner' style="background:url('img/banner3v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint dark'>
 				<div class='banner_center'>
 					<div class='banner_content_width knockout'>
@@ -51,7 +53,9 @@ title: new district
 				</div>
 			</div>
 		</section>
-		<section class='banner active' style="background:url('img/banner2v1.jpg') center center; background-size:cover;">
+			{% include section_separator.html label='2011' %}
+
+		<section class='banner' style="background:url('img/banner2v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint '>
 				<div class='banner_left'>
 					<div class='banner_content_width knockout'>
