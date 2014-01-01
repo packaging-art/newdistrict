@@ -196,7 +196,7 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 
 ## 4. Wine Categories/Controls   
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_controls.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_selection_controls.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
 This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view').
@@ -243,7 +243,7 @@ If the user got to the page with the 'Winery Hero Banner' present:
   
        Clicking on the 'winery title' in this stage should smooth scroll the user to the top of the 'Wine Selection Section' with the 'Winery Hero Banner' hidden and not available via scrolling.  
   
-       Once the user is at the top of the wine selection section an arrow pointing up appears at the top of the 'winery title' (File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>)
+       Once the user is at the top of the wine selection section an arrow pointing up appears at the top of the 'winery title' (File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_selection_info.html>)
  — here clicking on either the arrow or the 'winery title' should reveal the 'Winery Hero Banner' and smooth scroll up to it.  
 
 5. Once the user has scrolled past >500px once and has turned off the 'Winery Hero Banner' or alternatively got to the 'Wine Selection Section' via a direct link the behavior of the 'winery title' is as follows:  
@@ -262,7 +262,7 @@ Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Sli
 
 ## 5. Wine Category Info  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/wine_selection_info.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_selection_info.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
