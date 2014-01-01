@@ -4,15 +4,15 @@ title: new district
 ---
 
 <div class="content">
-	{% include slider_navigation.html %}
+	{% include hero_banner/slider_navigation.html %}
 	<div class='winery_hero_banner content_wrap'>
-		{% include hero_photo_slide.html %}
+		{% include hero_banner/hero_photo_slide.html %}
 	</div>
-	{% include wine_selection_controls.html %}
-	{% include wine_selection_info.html %}
+	{% include product_controls/wine_selection_controls.html %}
+	{% include product_controls/wine_selection_info.html %}
 
 	<div class="maincontainer products content_wrap clearfix">
-		{% include section_separator.html label='2012' %}
+		{% include misc/section_separator.html label='2012' %}
 		<section class='banner' style="background:url('img/banner1v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint'>
 				<div class='banner_right'>
@@ -53,7 +53,7 @@ title: new district
 				</div>
 			</div>
 		</section>
-			{% include section_separator.html label='2011' %}
+			{% include misc/section_separator.html label='2011' %}
 
 		<section class='banner' style="background:url('img/banner2v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint '>
@@ -77,4 +77,4 @@ title: new district
 		</section>
 	</div>
 </div>
-{% include main-nav-cart.html %}
+{% include main_navigation/main-nav-cart.html %}

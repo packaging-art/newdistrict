@@ -5,15 +5,15 @@ title: new district
 
 
 <div class="content">
-	{% include slider_navigation.html %}
+	{% include hero_banner/slider_navigation.html %}
 	<div class='winery_hero_banner content_wrap'>
-		{% include about_slide.html %}
+		{% include hero_banner/about_slide.html %}
 	</div>
-	{% include wine_selection_controls.html %}
-	{% include wine_selection_info.html %}	
+	{% include product_controls/wine_selection_controls.html %}
+	{% include product_controls/wine_selection_info.html %}	
 	<div class="maincontainer products content_wrap clearfix">
-		{% include product_view_grid.html %}
-		{% include preview_helpers/extra_grid_items.html %}
+		{% include product_previews/product_view_grid.html %}
+		{% include demo_preview_helpers/extra_grid_items.html %}
 	</div>
 </div>
-{% include preview_helpers/main-nav-cart_with_notifications.html %}
+{% include demo_preview_helpers/main-nav-cart_with_notifications.html %}

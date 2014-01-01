@@ -479,7 +479,7 @@ h3 {
 }
 
 .detail_collection {
-  padding: 7em 0 4em 0;
+  padding: 8em 0 5em 0;
   text-align: center;
   width: 66%;
   font-weight: 400;
@@ -503,6 +503,8 @@ h3 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
+  border-bottom: 1px solid white;
+  padding: .6em 1.6em;
 }
 
 .separator {
@@ -512,9 +514,8 @@ h3 {
 .social_media {
   display: inline-block;
   text-align: center;
-  margin-top: 1em;
+  margin-top: .8em;
   padding-top: .5em;
-  border-top: 2px solid white;
 }
 
 .social_media_link {
@@ -725,7 +726,7 @@ h3 {
   position: relative;
 }
 
-.products .grid_framed:nth-child(-n+3) {
+.products .grid_framed:nth-of-type(-n+3) {
   margin-top: 0;
 }
 
@@ -873,6 +874,7 @@ h3 {
 .divider_container {
   margin: 3em 0;
   position: relative;
+  display: block;
 }
 
 .label_holder {
@@ -882,6 +884,8 @@ h3 {
 .divider {
   border-top: 1px solid lightgray;
   width: 100%;
+  position: absolute;
+  top: 50%;
 }
 
 .overlay_label {
