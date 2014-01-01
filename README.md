@@ -10,6 +10,8 @@ newdistrict.github.io
 5. [Wine Category Info](#5-wine-category-info)
 6. [Grid Product View ](#6-grid-product-view)
 7. [Banner Product View ](#7-banner-product-view)
+8. [Section Separator ](#8-section-separator)
+
 
 
 
@@ -291,6 +293,13 @@ Baner view is similar to the Winery Hero Photo Slide.
 
 Ben and Elin need controls to add the background image and potentially a second smaller portrait sized image (can be used for art direction in order to provide a more fitting image on smaller, portrait sized screens). We will need to generate a 1X and 2X images from uploaded photos (will request Ben/Elin to upload high resolution versions) and create dynamic media queries in CSS to replace images on low and high resolution screens.
 
-Overlaying the image there is an optional tint division, which should let B/E set its colour to black, white or transparent, and set the opacity. On top of the image lie three possible text layouts (activated by css classes: 'banner_left', 'banner_center' and 'banner_right'). B/E need controls to change color to black or white and choose one of the three layouts/
+Overlaying the image there is an optional tint division, which should let B/E set its colour to black, white or transparent, and set the opacity. On top of the image lie three possible text layouts (activated by css classes: 'banner_left', 'banner_center' and 'banner_right'). B/E need controls to change color to black or white and choose one of the three layouts.  
+
+## 8. Section Separator 
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/misc/section_separator.html>  
+Preview: <http://deadtype.ca/newdistrict>   
+
+A small helper component used to separate sections of content. For example it can be used to segregate production years in the product section
 
 
