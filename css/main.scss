@@ -381,15 +381,20 @@ line-height: 1;
   text-align: center;
   width:100%;
   color: white;
+  margin-bottom: .8em;
+
+  .arrow {
+    font-size: 1.2em;
+  margin-top: .4em;
+  margin-bottom: 0;
+  }
 }
 
 .link_back {
   @extend .headline;
   color: black;
   text-align: center;
-  font-size: .9em;
-  margin-bottom: .15em;
-  margin-top: .25em;
+
 }
 
 .hero_slider {
@@ -419,9 +424,9 @@ line-height: 1;
 
 .arrow {
   display: inline-block;
-  width: 1.5em;
   margin: 0 auto;
-  font-size: 1.4em;
+  font-size: .9em;
+  margin-bottom: .15em;
   margin-top: .25em;
 }
 
