@@ -378,7 +378,6 @@ line-height: 1;
   position:absolute;
   bottom:0;
   margin:0;
-  margin-bottom:1em;
   text-align: center;
   width:100%;
   color: white;
@@ -388,9 +387,10 @@ line-height: 1;
   @extend .headline;
   color: black;
   text-align: center;
-  font-size: .7em;
-margin-bottom: 0em;
-margin-top: .85em;}
+  font-size: .9em;
+  margin-bottom: .15em;
+  margin-top: .25em;
+}
 
 .hero_slider {
   height: 1000px; /* without a height definition location slide starts collapsed, but with this about and index page experience height jumps — need to look into this*/
@@ -421,6 +421,8 @@ margin-top: .85em;}
   display: inline-block;
   width: 1.5em;
   margin: 0 auto;
+  font-size: 1.4em;
+  margin-top: .25em;
 }
 
 .winery_name {
@@ -462,6 +464,11 @@ padding: .25em .5em .15em .5em;
 background: hsla(0,0%,100%,.4);
 }
 
+.arrow_symbol {
+  margin-right: .5em;
+  font-size: .85em;
+}
+
 .collection {
   float: left;
 }
@@ -488,8 +495,13 @@ background: hsla(0,0%,100%,.4);
 
   .product_meta_info {
     font-size: .8em;
-    margin-top: .5em;
+    margin-top: 1.6em;
   }
+  .price_separator {
+  margin: 0 1.5em;
+  font-size: .6em;
+  vertical-align: 2px;
+ }
 }
 
 .detail_collection p {font-size: 1.2em;}

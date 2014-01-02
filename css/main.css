@@ -379,7 +379,6 @@ h3 {
   position: absolute;
   bottom: 0;
   margin: 0;
-  margin-bottom: 1em;
   text-align: center;
   width: 100%;
   color: white;
@@ -388,9 +387,9 @@ h3 {
 .link_back {
   color: black;
   text-align: center;
-  font-size: .7em;
-  margin-bottom: 0em;
-  margin-top: .85em;
+  font-size: .9em;
+  margin-bottom: .15em;
+  margin-top: .25em;
 }
 
 .hero_slider {
@@ -422,6 +421,8 @@ h3 {
   display: inline-block;
   width: 1.5em;
   margin: 0 auto;
+  font-size: 1.4em;
+  margin-top: .25em;
 }
 
 .winery_name {
@@ -460,6 +461,11 @@ h3 {
   background: rgba(255, 255, 255, 0.4);
 }
 
+.arrow_symbol {
+  margin-right: .5em;
+  font-size: .85em;
+}
+
 .collection {
   float: left;
 }
@@ -486,7 +492,12 @@ h3 {
 }
 .detail_collection .product_meta_info {
   font-size: .8em;
-  margin-top: .5em;
+  margin-top: 1.6em;
+}
+.detail_collection .price_separator {
+  margin: 0 1.5em;
+  font-size: .6em;
+  vertical-align: 2px;
 }
 
 .detail_collection p {
