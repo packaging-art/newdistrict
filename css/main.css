@@ -488,19 +488,23 @@ h3 {
 }
 
 .detail_collection {
-  padding: 8em 0 5em 0;
+  padding: 8em 0 4em 0;
   text-align: center;
   width: 66%;
   font-weight: 400;
 }
 .detail_collection .product_meta_info {
-  font-size: .8em;
-  margin-top: 1.6em;
+  font-size: .75em;
+  margin-top: .6em;
 }
 .detail_collection .price_separator {
   margin: 0 1.5em;
   font-size: .6em;
   vertical-align: 2px;
+}
+
+.collection_description {
+  margin-top: 4em;
 }
 
 .detail_collection p {
