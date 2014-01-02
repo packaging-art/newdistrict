@@ -185,7 +185,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .action, .social_media_link, .grid_title, .wine_volume, .grid_price, .banner_title, .overlay_label {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .wines_control, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -484,6 +484,10 @@ h3 {
   width: 66%;
   font-weight: 400;
 }
+.detail_collection .product_meta_info {
+  font-size: .8em;
+  margin-top: .5em;
+}
 
 .detail_collection p {
   font-size: 1.2em;
@@ -669,13 +673,13 @@ h3 {
   color: white;
   text-align: center;
 }
-.grid_title .wine_meta_info, .grid_title .wine_volume {
+.grid_title .product_meta_info, .grid_title .wine_volume {
   font-size: .4em;
   color: black;
   margin-top: .7em;
 }
 
-.wine_meta_info {
+.product_meta_info {
   top: 0;
 }
 
@@ -833,7 +837,7 @@ h3 {
   line-height: .9;
 }
 
-.banner .wine_meta_info {
+.banner .product_meta_info {
   font-size: .3em;
   line-height: .9;
   margin-top: 0.35em;

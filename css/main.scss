@@ -480,8 +480,16 @@ background: hsla(0,0%,100%,.4);
   float: right;
 }
 
-.detail_collection {padding: 8em 0 5em 0; text-align: center;
-width: 66%; font-weight: 400;
+.detail_collection {
+  padding: 8em 0 5em 0;
+  text-align: center;
+  width: 66%;
+  font-weight: 400;
+
+  .product_meta_info {
+    font-size: .8em;
+    margin-top: .5em;
+  }
 }
 
 .detail_collection p {font-size: 1.2em;}
@@ -658,14 +666,15 @@ right: 0;
 color: white;
 text-align: center;
 
- .wine_meta_info, .wine_volume {
+ .product_meta_info, .wine_volume {
   font-size: .4em;
   color: black;
   margin-top:.7em;
  }
 }
 
-.wine_meta_info {
+.product_meta_info {
+  @extend .headline;
   top: 0;
 }
 
@@ -831,7 +840,7 @@ position:relative;
 }
 
 .banner {
-  .wine_meta_info {
+  .product_meta_info {
   font-size: .3em;
   line-height: .9;
   margin-top: 0.35em;
