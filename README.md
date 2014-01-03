@@ -313,5 +313,19 @@ Preview: <http://deadtype.ca/newdistrict>
 
 This page is reached via the more info link in Banner View. The design recycles components used on other pages.  
 
-It starts with fixed navigation similar to the
+It starts with fixed [navigation pattern](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_controls.html) similar to the [Wine Categories/Controls](#4-wine-categoriescontrols) but adjusted for the actions needed on this page:  
 
+The left link duplicates the functionality of the back button. It needs to be be aware of the state of the previous page and reflect if in the wording. For example, — if user reached the 'Full Product Page' from product view focused on 'Summer 2007 Reds Collection' this button would say "Back to Summer 2007 Reds". It should also have a max character limit after it which it would be appended with an ellipsis. This prevents the design breaking in case of excessively long names, while retaining its contextual information.  
+
+The link on the righ is 'add to cart'.  
+
+In the middle once again we have the winery title, which behaves identically to the extensive interactions described in the [Wine Categories/Controls](#4-wine-categoriescontrols). If page is scrolled down, clicking it smooth scrolls the user to the top of the page. If user is at the top of the page, the arrow fades in and clicking either he arrow or the winery title, unhides the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation) and smooth scrolls to the top.
+
+----   
+
+Below the fixed navigation we recycle the Wine Title/Meta info pattern used on the 'Grid Product View' to show the wine title and information such as 'price', 'volume' and 'year of make'. 
+
+
+This is follow by an image below.  
+
+Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'. Below it are several sections such as 
