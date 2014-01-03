@@ -127,6 +127,15 @@ a {text-decoration: none;
 color: $controls_color;}
 .knockout a {color: white;}
 
+p {margin:0;}
+p + p {margin-top: 1.2em;}
+
+ul, menu, dir {
+  list-style-type: none;
+  padding: 0;
+  marging: 0;
+}
+
 /* ==========================================================================
 Helper
    ========================================================================== */
@@ -178,9 +187,9 @@ font-weight: 600;}
   position: fixed;
   width:100%;
   top:0;
-    z-index: 1000;
-
+  z-index: 10000;
 }
+
 /* ==========================================================================
 Headers
    ========================================================================== */
@@ -191,7 +200,6 @@ font-style: normal;
 font-weight: 700;
 text-transform: uppercase;
 }
-
 
 h1 {
 @extend .headline;
@@ -217,7 +225,6 @@ padding: 1em 0;
 font-weight: 400;
 }
 
-
 .cart_indicator div {display:inline-block}
 
 .winery_title, .cart_indicator {
@@ -230,7 +237,7 @@ line-height: 1;
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.maincontainer, .content_wrap, .social_media, .winery_about, .slider_menu, .detail_collection, .winery_hero_banner {margin-left: auto; margin-right: auto;}
+.maincontainer, .content_wrap, .social_media, .winery_about, .slider_menu, .major_section_header, .winery_hero_banner, .product_summary_section {margin-left: auto; margin-right: auto;}
 
 .maincontainer {max-width: 1300px;}
 .content_wrap {width:95%; position: relative;}
@@ -438,19 +445,20 @@ line-height: 1;
   content: url(/img/arrow_down.svg);
 }*/
 
-.fixed + .detail_collection {
-  margin-top: 4em;
+.fixed + .major_section_header {
+  margin-top: 12em;
+  margin-bottom: 8em;
 }
 
-.winery_hero_banner + .wines_control_container {
+.winery_hero_banner + .controls_container {
   margin-top: 2em;
 }
 
-.link_back + .wines_control_container {
+.link_back + .controls_container {
   margin-top: 0em;
 }
 
-.wines_control_container {
+.controls_container {
   width: 100%;
  margin-top: 1.5em;
 
@@ -459,7 +467,7 @@ line-height: 1;
   }
 }
 
-.wines_control {
+.control_button {
   @extend .headline;
   margin-left: 0;
   font-size: .7em;
@@ -478,7 +486,7 @@ background: hsla(0,0%,100%,.4);
   float: left;
 }
 
-.winery_control_title {
+.controls_container_title {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -492,11 +500,11 @@ background: hsla(0,0%,100%,.4);
   float: right;
 }
 
-.detail_collection {
-  padding: 8em 0 4em 0;
+.major_section_header {
   text-align: center;
   width: 66%;
   font-weight: 400;
+  margin: 8em auto 4em auto;
 
   .product_meta_info {
     font-size: .75em;
@@ -513,7 +521,7 @@ background: hsla(0,0%,100%,.4);
   margin-top: 4em;
 }
 
-.detail_collection p {font-size: 1.2em;}
+.major_section_header p {font-size: 1.2em;}
 
 /* Winery About */
 
@@ -666,7 +674,7 @@ border-left: 10px solid transparent;
   flex: 1;
 }
 
-.products {
+.section_container {
     margin-top: 2em;
 }
 
@@ -736,7 +744,7 @@ text-align: center;
 }
 
 .action {
-  @extend .wines_control;
+  @extend .control_button;
   @extend .headline;
 background: transparent;
 display: inline-block;
@@ -749,11 +757,11 @@ margin-top:3%;
 position:relative;
 }
 
-.products .grid_framed:nth-of-type(-n+3) {
+.section_container .grid_framed:nth-of-type(-n+3) {
   margin-top: 0;
 }
 
-.products .grid_framed:nth-of-type(3n) {
+.section_container .grid_framed:nth-of-type(3n) {
   margin-right:0;
 }
 
@@ -898,18 +906,22 @@ margin-bottom:2em;
   position:absolute;
   text-align: center;
   width: 100%;
+  margin-top: .35em;
+
   .arrow {
     width:1.8em;
   }
 }
 
-
 /* Section Separator */
 
 .divider_container {
-  margin: 3em 0;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
   position: relative;
   display: block;
+  width:75%;
 }
 
 .label_holder {
@@ -934,6 +946,39 @@ z-index: 1000;
 position: relative;
 line-height:1;
 }
+
+/* Full Product Page */
+
+.focused_writeup {
+  margin: 4em auto;
+  font-size: 1.2em;
+  width: 66%;
+  text-align: center;
+  line-height: 1.55;
+}
+
+.product_summary_section {
+  width: 50%;
+  text-align: justify;
+
+  .product_summary_header {
+  width:85%
+  }
+
+  .product_summary_content {
+
+  }
+}
+
+.awards {
+  text-align: center;
+  font-style: italic;
+
+  li + li {
+    margin-top:1em;
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

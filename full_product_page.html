@@ -6,18 +6,57 @@ title: new district
 <div class="content">
 	<div class='fixed'>
 		{% include misc/link_to_section.html %}
-		{% include product_page/product_page_controls.html %}
+		{% include product_full_page/product_full_page_controls.html %}
 	</div>
-	{% include product_page/product_page_intro.html %}
-	<div class="maincontainer products content_wrap clearfix">
-		<img src='img/hero3.jpg'>
+	{% include product_full_page/product_full_page_intro.html %}
+	<div class="maincontainer  content_wrap clearfix">
+		<img src='img/banner1v1.jpg'>
 	</div>
-	<div class='content_wrap'>
-		{% include misc/section_separator.html label='2011' %}
+	<div class="maincontainer  content_wrap clearfix">
+
+	<div class='focused_writeup'>
+		<p>Black Grape Winery is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location. The new site has great views of the valley and is surrounded by vineyards on all sides.</p>
 	</div>
-	<div class="maincontainer products content_wrap clearfix">
-		{% include demo_preview_helpers/extra_grid_items.html %}
-		{% include product_previews/product_view_grid.html %}
+
+		<div class='product_summary_section'>
+			<div class='product_summary_header content_wrap'>
+				{% include misc/section_separator.html label='tasting notes' %}
+			</div>
+			<div class='product_summary_content'>
+				<p>Black Grape Winery is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location. The new site has great views of the valley and is surrounded by vineyards on all sides.</p>
+			</div>
+		</div>
+
+		<div class='product_summary_section'>
+			<div class='product_summary_header content_wrap'>
+				{% include misc/section_separator.html label='food pairings' %}
+			</div>
+			<div class='product_summary_content'>
+				<p>Black Grape Winery is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location. The new site has great views of the valley and is surrounded by vineyards on all sides.</p>
+			</div>
+		</div>
+
+		<div class='product_summary_section'>
+			<div class='product_summary_header content_wrap'>
+				{% include misc/section_separator.html label='additional info' %}
+			</div>
+			<div class='product_summary_content'>
+				<p>Black Grape Winery is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location. The new site has great views of the valley and is surrounded by vineyards on all sides.</p>
+			</div>
+		</div>
+
+
+		<div class='product_summary_section'>
+			<div class='product_summary_header content_wrap'>
+				{% include misc/section_separator.html label='awards' %}
+			</div>
+			<Ul class='product_summary_content awards'>
+				<li>Award</li>
+				<li>Award 2</li>
+				<li>Award 3</li>
+			</ul>
+		</div>
+
 	</div>
 </div>
 {% include main_navigation/main-nav-cart.html %}

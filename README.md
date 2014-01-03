@@ -198,7 +198,7 @@ The height of the slides behaves like [Winery Hero Photo Slide](#2-winery-hero-p
 
 ## 4. Wine Categories/Controls   
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_info_controls/product_selection_controls.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview_info_controls/product_selection_controls.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
 This section provides users with controls to focus available wine to a specific collection ('select collection') or change the view ('select view').
@@ -264,14 +264,14 @@ Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Sli
 
 ## 5. Wine Category Info  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_info_controls/product_selection_info.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview_info_controls/product_selection_info.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
   
 ## 6. Grid Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_previews/product_view_grid.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
 
 Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as the grid items require a consistent look between included items and background-position controls are not precise enough for this. 
@@ -286,7 +286,7 @@ Preview: <http://deadtype.ca/newdistrict/grid_focusedon_banner.html>
 
 ## 7. Banner Product View  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_previews/product_view_banner.html>  
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_banner.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
 Banner view is similar to the Winery Hero Photo Slide.
