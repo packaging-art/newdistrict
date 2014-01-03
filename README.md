@@ -213,7 +213,7 @@ The third control is the 'winery title', which sits in between the two select co
 
 While exploring wine selection it is important to have these controls constantly available to the user. Thus the section needs to become fixed to the top of the screen after it reaches the top of the screen, an good example of this is [Food Studio Website](http://foodstudio.no).
 
-Preview of fixed controls over the wine page: <http://deadtype.ca/newdistrict/wine_selection_only.html>
+Preview of fixed controls over the wine page: <http://deadtype.ca/newdistrict/product_preview.html>
 
 
 ---- 
@@ -258,21 +258,21 @@ If the user got to the page with the 'Winery Hero Banner' present:
       
 ----
 
-The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/wine_selection_only.html> needs to have a specific link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content of the 'Winery Hero Banner', — defer and lazy load them upon request.
+The standalone 'Wine Selection Section' aka <http://deadtype.ca/newdistrict/product_preview.html> needs to have a specific link attached to it so that it can be linked to directly. This way we can also potentially avoid forcing the user to download the images and content of the 'Winery Hero Banner', — defer and lazy load them upon request.
 
 Additionally clicking on the Browse our Wines link in the [Winery Hero Photo Slide](#2-winery-hero-photo-slide) should smooth scroll the users to this standalone, linked 'Wine Selection Section' and hide the 'Winery Hero Banner'.  
 
 ## 5. Wine Category Info  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview_info_controls/product_selection_info.html>  
-Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
+Preview: <http://deadtype.ca/newdistrict/product_preview.html>  
 
 This is a simple section which reflects the selected collection via title, selected view by the description below the title and an optional blurb of text below it which describes the selected collection.
   
 ## 6. Grid Product View  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_grid.html>  
-Preview: <http://deadtype.ca/newdistrict/wine_selection_only.html>  
+Preview: <http://deadtype.ca/newdistrict/product_preview.html>  
 
 Ben/Elin need controls to add an image. As suggested before in the winery hero slide we will need to generate a 1X and 2X images from uploaded photos. For this section we are not using a background image, as the grid items require a consistent look between included items and background-position controls are not precise enough for this. 
 
