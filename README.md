@@ -311,3 +311,7 @@ Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/product_f
 
 Preview: <http://deadtype.ca/newdistrict>   
 
+This page is reached via the more info link in Banner View. The design recycles components used on other pages.  
+
+It starts with fixed navigation similar to the
+
