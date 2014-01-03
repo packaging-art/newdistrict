@@ -1,16 +1,17 @@
 newdistrict.github.io
 =====================
 
-# Front End Components
+# Front End Parts
 
 1. [Fixed navigation/cart area](#1-fixed-navigationcart-area)
 2. [Notifications Section](#2-notifications-section)
 3. [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation)
 4. [Wine Categories/Controls](#4-wine-categoriescontrols)
 5. [Wine Category Info](#5-wine-category-info)
-6. [Grid Product View ](#6-grid-product-view)
-7. [Banner Product View ](#7-banner-product-view)
-8. [Section Separator ](#8-section-separator)
+6. [Grid Product View](#6-grid-product-view)
+7. [Banner Product View](#7-banner-product-view)
+8. [Section Separator](#8-section-separator)
+9. [Full Product Page](#9-full-product-page)
 
 
 
@@ -302,4 +303,11 @@ Preview: <http://deadtype.ca/newdistrict>
 
 A small helper component used to separate sections of content. For example it can be used to segregate production years in the product section.
 
+## 9. Full Product Page  
+  
+Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_controls.html> 
+<https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_intro.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html>
+
+Preview: <http://deadtype.ca/newdistrict>   
 
