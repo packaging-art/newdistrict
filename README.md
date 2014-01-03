@@ -307,7 +307,8 @@ A small helper component used to separate sections of content. For example it ca
   
 Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_controls.html> 
 <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_intro.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html>
 
 Preview: <http://deadtype.ca/newdistrict>   
 
@@ -323,9 +324,9 @@ In the middle once again we have the winery title, which behaves identically to 
 
 ----   
 
-Below the fixed navigation we recycle the Wine Title/Meta info pattern used on the 'Grid Product View' to show the wine title and information such as 'price', 'volume' and 'year of make'. 
+Below the fixed navigation we recycle the [Wine Title/Meta info pattern](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_intro.html) used on the 'Grid Product View' to show the wine title and information such as 'price', 'volume' and 'year of make'. 
 
 
-This is follow by an image below.  
+This is follow by an image below, this may be the same image used on banner or a different image alltogether. Likely uploaded by B/E it will need to accept two versions: portrait for small screens and landscape for larger. 1x and 2X versions will be needed.
 
-Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'. Below it are several sections such as 
+Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'. Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additional Notes'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html)) and 'Awards'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html)). 
