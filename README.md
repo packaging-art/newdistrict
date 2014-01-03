@@ -329,4 +329,6 @@ Below the fixed navigation we recycle the [Wine Title/Meta info pattern](https:/
 
 This is follow by an image below, this may be the same image used on banner or a different image alltogether. Likely uploaded by B/E it will need to accept two versions: portrait for small screens and landscape for larger. 1x and 2X versions will be needed.
 
-Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'. Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additional Notes'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html)) and 'Awards'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html)). 
+Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'.  
+
+Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additional Notes'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html)) and 'Awards'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html)). These will be editable by winery owners in the backend.
