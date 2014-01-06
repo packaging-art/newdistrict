@@ -346,15 +346,15 @@ Files:
 7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
   
 
-Previews:  
-<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+Previews (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section):  
+Unconstrained bottle order — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
+Unconstrained bottle order with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
+Minimum purchase of a case required (single case) — <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
+Minimum purchase of a case required with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
+Minimum purchase of a case required with multiple case quantities — <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
+Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
+'Mix and Match' order that does not complete the set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
+'Mix and Match' order that completes a set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
+'Mix and Match' order that completes a set and still has additional items — <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
 
 'Add to Cart' modal is used universally across the website. 
