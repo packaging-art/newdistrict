@@ -345,6 +345,7 @@ Files:
 6. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
 7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
   
+----  
 
 Previews (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section):   
 
@@ -366,5 +367,6 @@ Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocar
 
 'Mix and Match' order that completes a set and still has additional items — <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
 
+----  
 
 'Add to Cart' modal is used universally across the website. 
