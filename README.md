@@ -336,13 +336,14 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 
 ## 10. 'Add to Cart' Modal  
 
-Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>
+Files:  
+1. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
+2. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+3. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+4. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
+5. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>
+6. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>
+7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>
 
 Previews:  
 <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
@@ -354,3 +355,5 @@ Previews:
 <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
 <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
 <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+
+'Add to Cart' modal is used universally across the website. 
