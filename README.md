@@ -369,4 +369,11 @@ Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocar
 
 ----  
 
-'Add to Cart' modal is used universally across the website. 
+'Add to Cart' modal is used universally across the website.  
+
+The wineries can have a wide range of ordering options and their multiple combinations. Options include uncostrained orders, case orders, mix and match sets and various permuations of how these can work together.  
+
+The design of the modal structures the ordering into a step by step process that should clarify these options.
+
+
+1. 
