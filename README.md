@@ -12,6 +12,7 @@ newdistrict.github.io
 7. [Banner Product View](#7-banner-product-view)
 8. [Section Separator](#8-section-separator)
 9. [Full Product Page](#9-full-product-page)
+10. ['Add to Cart' Modal](#10-add-to-cart-modal)
 
 
 
