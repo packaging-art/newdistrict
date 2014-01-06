@@ -1,0 +1,69 @@
+---
+layout: default
+title: new district
+---
+<div class='modal_context_background'>
+{% include demo_preview_helpers/modal_background_content.html %}
+</div>
+
+<div class='modal_window_super_container'>
+	<div class="modal_window_container clearfix">
+		<div class='modal_cancel'>
+			cancel add to cart
+		</div>
+		<div class='modal_window_content margin_module'>
+			<section class='grid_framed clearfix'>
+				<div class='grid_img_container'>
+					<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+				</div>
+				<div class="wine_info_container">
+					<div class='wine_info'>
+						<div class='grid_title'>
+							<div class='major_title'>Cabernet</br>Sauvignon</div>
+							<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
+						</div>
+								<div class="modal_comment_fixed_container knockout ">
+									<div class='modal_comment'>This wine is available for purchase in single or multiple bottles. It can also be used in mix and match sets.
+									</div>
+								</div>
+					</div>
+				</div>
+			</section>
+
+			{% include misc/section_separator.html label='select quantity' %}
+
+			<section class='modal_action_section clearfix'>
+				
+				<div class='individual_action'>
+					<div class="quantity_entry">
+						<span class='subtract'>-</span>
+						<span class='quantity'>5</span>
+						<span class='add'>+</span>
+					</div>
+				</div>
+			</section>
+
+			{% include misc/section_separator.html label='Select Destination' %}
+
+			<section class='modal_action_section clearfix'>
+				<div class='individual_action'>
+					<div class='action_label'>
+						You can add these 5 bottles to your cart or use them in your 12-bottle mix and match set.
+					</div>
+				</div>
+
+				<div class='action_button_container'>
+						<div class="action_button">
+							<span class='action_choice'>Cart</span>
+						</div>
+						<div class='secondary_divider'>
+							{% include misc/section_separator.html label='or' %}
+						</div>
+						<div class="action_button">
+							<span class='action_choice'>Mix and Match</span>
+						</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>

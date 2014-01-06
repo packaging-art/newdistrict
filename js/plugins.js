@@ -32,13 +32,27 @@ function viewport() {
     $(".hero_slider").css('height',view_adjust);
 }
 
+
+function modal_background() {
+var context_height = $(document).height();
+$('.modal_window_super_container').css('height',context_height);
+}
+
 $(document).ready(function() {
     viewport();
+     $(window).ready(function() {
+        modal_background();
+    }); 
 
     $(window).resize(function() {
         viewport();
+        modal_background();
     }); 
 });
+
+
+
+
 
 
 

@@ -4,21 +4,23 @@ title: new district
 ---
 
 <div class="content">
-	{% include slider_navigation.html %}
+	{% include hero_banner/slider_navigation.html %}
 	<div class='winery_hero_banner content_wrap'>
-		{% include hero_photo_slide.html %}
+		{% include hero_banner/hero_photo_slide.html %}
 	</div>
-	{% include wine_selection_controls.html %}
-	{% include wine_selection_info.html %}
-	<div class="maincontainer products content_wrap clearfix">
-		<section class='banner active' style="background:url('img/banner1v1.jpg') center center; background-size:cover;">
+	{% include product_preview_info_controls/product_selection_controls.html %}
+	{% include product_preview_info_controls/product_selection_info.html %}
+
+	<div class="maincontainer section_container content_wrap clearfix">
+		{% include misc/section_separator.html label='2012' %}
+		<section class='banner' style="background:url('img/banner1v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint'>
 				<div class='banner_right'>
 					<div class='banner_content_width knockout'>
 						<div class='banner_title_container'>
 							<div class='banner_title'>
-								<div class='wine_name'>Cabernet</br>Sauvignon</div>
-								<div class='wine_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
+								<div class='major_title'>Cabernet</br>Sauvignon</div>
+								<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
 							</div>
 						</div>
 						<div class='banner_writeup'>
@@ -31,14 +33,14 @@ title: new district
 				</div>
 			</div>
 		</section>
-		<section class='banner active' style="background:url('img/banner3v1.jpg') center center; background-size:cover;">
+		<section class='banner' style="background:url('img/banner3v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint dark'>
 				<div class='banner_center'>
 					<div class='banner_content_width knockout'>
 						<div class='banner_title_container'>
 							<div class='banner_title'>
-								<div class='wine_name'>Château</br>des Charmes</div>
-								<div class='wine_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
+								<div class='major_title'>Château</br>des Charmes</div>
+								<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
 							</div>
 						</div>
 						<div class='banner_writeup'>
@@ -51,14 +53,16 @@ title: new district
 				</div>
 			</div>
 		</section>
-		<section class='banner active' style="background:url('img/banner2v1.jpg') center center; background-size:cover;">
+			{% include misc/section_separator.html label='2011' %}
+
+		<section class='banner' style="background:url('img/banner2v1.jpg') center center; background-size:cover;">
 			<div class='banner_tint '>
 				<div class='banner_left'>
 					<div class='banner_content_width knockout'>
 						<div class='banner_title_container'>
 							<div class='banner_title'>
-								<div class='wine_name'>Pinot Noir</div>
-								<div class='wine_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
+								<div class='major_title'>Pinot Noir</div>
+								<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
 							</div>
 						</div>
 						<div class='banner_writeup'>
@@ -73,4 +77,4 @@ title: new district
 		</section>
 	</div>
 </div>
-{% include main-nav-cart.html %}
+{% include main_navigation/main-nav-cart.html %}
