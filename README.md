@@ -346,11 +346,11 @@ Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addt
 
 Previews:  
 <http://deadtype.ca/modal_addtocart_unconstrained.html>  
-<http://deadtype.ca/modal_addtocart_unconstrained_plusmix.html>
-<http://deadtype.ca/modal_addtocart_single_case.html>
-<http://deadtype.ca/modal_addtocart_single_case_plusmix.html>
-<http://deadtype.ca/modal_addtocart_multiple_cases.html>
-<http://deadtype.ca/modal_addtocart_mix.html>
-<http://deadtype.ca/modal_addtocart_mix_partial.html>
-<http://deadtype.ca/modal_addtocart_mix_complete.html>
-<http://deadtype.ca/modal_addtocart_mix_overflow.html>
+<http://deadtype.ca/modal_addtocart_unconstrained_plusmix.html>  
+<http://deadtype.ca/modal_addtocart_single_case.html>  
+<http://deadtype.ca/modal_addtocart_single_case_plusmix.html>  
+<http://deadtype.ca/modal_addtocart_multiple_cases.html>  
+<http://deadtype.ca/modal_addtocart_mix.html>  
+<http://deadtype.ca/modal_addtocart_mix_partial.html>  
+<http://deadtype.ca/modal_addtocart_mix_complete.html>  
+<http://deadtype.ca/modal_addtocart_mix_overflow.html>  
