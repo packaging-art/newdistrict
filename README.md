@@ -334,14 +334,23 @@ Past the image we get into the 'wine summary', which is simply the extended vers
 
 Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additional Notes'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html)) and 'Awards'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html)). These will be editable by winery owners in the backend.  
 
-## 10. 'Add to Cart' Modal
+## 10. 'Add to Cart' Modal  
 
-Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_unconstrained.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_unconstrained_plusmix.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_single_case.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_single_case_plusmix.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_multiple_cases.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_mix.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_mix_partial.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_mix_complete.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_addtocart_mix_overflow.html>
+Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_outer_structure.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_cancel.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_image_section.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_quantity_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_destination_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_summary_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_action_section.html>
+
+Previews:  
+<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
+<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_mix.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>
+<http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>
