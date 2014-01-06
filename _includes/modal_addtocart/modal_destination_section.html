@@ -1,0 +1,22 @@
+<!-- This whole section only appears when the item selected has multiple possible cart destinations. For example, the item can be added to cart, to a 'mix and match' set, or to a combination of the two. When  -->
+
+{% include misc/section_separator.html label='Select Destination' %}
+
+<section class='modal_action_section clearfix'>
+	<div class='individual_action'>
+		<div class='action_label'><!-- This comment provides information about what is possible to do with the bottles added in the 'select quantity' section -->
+			You can <span class='highlight'>add all 3 of these cases to your cart</span> or <span class='highlight'>add 2 to cart and use the other 1 in your 12-bottle mix and match set</span>.
+		</div>
+	</div>
+	<div class='action_button_container'>
+			<div class="action_button">
+				<span class='action_choice'>Cart</span>
+			</div>
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='or' %}
+			</div>
+			<div class="action_button">
+				<span class='action_choice'>Cart + 'Mix and Match'</span><!-- This button is contextual and changes from "Mix and Match" to "Cart + 'Mix and Match'" depending on whether the selected quantity of bottles overflows the number required for 'mix and match' or not -->
+			</div>
+		</div>
+</section>

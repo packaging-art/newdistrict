@@ -199,7 +199,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label, .modal_cancel, .modal_comment, .action_label, .quantity_entry, .action_button {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -241,7 +241,7 @@ h3 {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.maincontainer, .content_wrap, .social_media, .winery_about, .slider_menu, .major_section_header, .winery_hero_banner, .product_summary_section {
+.maincontainer, .content_wrap, .social_media, .winery_about, .slider_menu, .major_section_header, .winery_hero_banner, .product_summary_section, .quantity_entry {
   margin-left: auto;
   margin-right: auto;
 }
@@ -400,7 +400,7 @@ h3 {
 }
 .our_wines .arrow {
   font-size: 1.2em;
-  margin-top: .4em;
+  margin-top: .25em;
   margin-bottom: 0;
 }
 
@@ -438,12 +438,13 @@ h3 {
   display: inline-block;
   margin: 0 auto;
   font-size: .9em;
-  margin-bottom: .15em;
-  margin-top: .25em;
+  margin-bottom: .25em;
+  margin-top: .15em;
 }
 
 .winery_name {
   display: inline-block;
+  border-bottom: 1px solid red;
 }
 
 /*.winery_name:before {
@@ -495,7 +496,8 @@ h3 {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 600;
-  margin-top: .3em;
+  margin-top: .15em;
+  line-height: 1.4;
 }
 
 .view {
@@ -929,6 +931,15 @@ h3 {
   top: 50%;
 }
 
+.secondary_divider {
+  width: 50%;
+  margin: 0 auto;
+}
+.secondary_divider .overlay_label {
+  font-size: .7em;
+  color: lightgray;
+}
+
 .overlay_label {
   padding: .1em 1.2em;
   background: white;
@@ -963,6 +974,152 @@ h3 {
   margin-top: 1em;
 }
 
+/* Modal Window */
+.modal_window_super_container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100000;
+  height: 1200px;
+}
+
+.modal_window_container {
+  padding: 0em;
+  width: 28.5%;
+  margin: 5% auto 0;
+}
+
+.modal_cancel {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-size: .8em;
+  background: transparent;
+  width: 50%;
+  margin: 0 auto 2.5em;
+  padding: .3em 0 .2em;
+}
+
+.modal_comment_fixed_container {
+  position: absolute;
+  bottom: 0;
+}
+
+.modal_action_section {
+  margin: 2em auto;
+}
+
+.modal_window_content {
+  background: white;
+  padding-bottom: 3em;
+}
+.modal_window_content .grid_framed {
+  width: 100%;
+  margin: 0;
+  float: inherit;
+  margin-bottom: 2em;
+}
+.modal_window_content .grid_framed .modal_comment {
+  margin-bottom: 0;
+  font-size: .7em;
+  width: 90%;
+}
+.modal_window_content .highlight {
+  color: black;
+}
+.modal_window_content .wine_info_container {
+  padding: 1.4em 1.2em 1em;
+}
+.modal_window_content .our_wines {
+  margin-bottom: 0em;
+}
+.modal_window_content .divider_container {
+  margin: 1em auto 1em;
+  width: 90%;
+}
+.modal_window_content .divider {
+  top: 55%;
+}
+.modal_window_content .secondary_divider .divider_container {
+  width: 100%;
+}
+.modal_window_content .grid_img_container {
+  max-height: 500px;
+  overflow: hidden;
+}
+.modal_window_content .control_button, .modal_window_content .action {
+  width: 50%;
+  display: inline-block;
+  padding: .5em .5em .45em .5em;
+  border: 1px solid black;
+}
+.modal_window_content .control_button + .control_button, .modal_window_content .action + .control_button, .modal_window_content .control_button + .action, .modal_window_content .action + .action {
+  margin-top: .8em;
+}
+
+.modal_mix_match_list {
+  margin: 5.25em auto 5em;
+}
+
+.modal_action_buttons {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.individual_action {
+  margin: 2em auto;
+}
+
+.modal_comment, .action_label {
+  font-size: .65em;
+  margin: 1em auto;
+  display: block;
+  width: 80%;
+  text-align: center;
+}
+
+.action_label {
+  color: #999999;
+}
+
+.action_button_container {
+  margin-top: 3em;
+}
+
+.quantity_entry, .action_button {
+  text-align: center;
+  color: black;
+  position: relative;
+}
+.quantity_entry .subtract, .quantity_entry .add, .action_button .subtract, .action_button .add {
+  position: absolute;
+  font-size: 1.4em;
+  color: black;
+  left: 0;
+  background: white;
+  padding: 0 1em;
+  line-height: 1.3;
+}
+.quantity_entry .add, .action_button .add {
+  right: 0;
+  left: auto;
+}
+.quantity_entry .quantity, .quantity_entry .modal_button, .quantity_entry .action_choice, .action_button .quantity, .action_button .modal_button, .action_button .action_choice {
+  width: 50%;
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  display: inline-block;
+  padding: .2em 0;
+}
+.quantity_entry .action_choice, .action_button .action_choice {
+  font-size: .7em;
+  padding: .66em .5em .5em .5em;
+  background: none;
+}
+
+/* Form styles */
 /* ==========================================================================
    Helper classes
    ========================================================================== */

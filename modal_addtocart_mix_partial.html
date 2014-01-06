@@ -1,0 +1,69 @@
+---
+layout: default
+title: new district
+---
+<div class='modal_context_background'>
+{% include demo_preview_helpers/modal_background_content.html %}
+</div>
+
+<div class='modal_window_super_container'>
+	<div class="modal_window_container clearfix">
+		<div class='modal_window_content'>
+			<section class='grid_framed clearfix'>
+				<div class='grid_img_container'>
+					<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+				</div>
+				<div class="wine_info_container">
+					<div class='wine_info'>
+						<div class='grid_title'>
+							<div class='major_title'>Cabernet</br>Sauvignon</div>
+							<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
+						</div>
+								<div class="modal_comment_fixed_container knockout ">
+									<div class='modal_comment'>This wine is available through 'mix and match'. You need 6 bottles to complete a set and can mix and match available wines.
+									</div>
+								</div>
+					</div>
+				</div>
+			</section>
+
+			{% include misc/section_separator.html label='select quantity' %}
+
+			<section class='modal_action_section clearfix'>
+				
+				<div class='individual_action'>
+					<div class="quantity_entry">
+						<span class='subtract'>-</span>
+						<span class='quantity'>2</span>
+						<span class='add'>+</span>
+					</div>
+				</div>
+
+			</section>
+
+			{% include misc/section_separator.html label='Summary' %}
+
+			<section class='modal_action_section clearfix'>
+				<div class='individual_action'>
+					<div class='action_label'>
+							You are adding 2 bottles of <span class='highlight'>Cabernet Sauvignon 2012</span> to a 6-bottle 'mix and match' set. The set now has 3 bottles and includes:
+
+							<div class='modal_mix_match_list'>
+								<span class='highlight'>2 bottles of Cabernet Sauvignon 2012</span>
+								<div class='secondary_divider'>
+									{% include misc/section_separator.html label='+' %}
+								</div>
+								<span class=''>1 bottle of Pinot Noir 2012</span>
+							</div>
+							 In order to complete the set you will need to add 3 more bottles of this or any other available wine.
+					</div>
+				</div>
+			</section>
+
+			<section class='modal_action_buttons'>
+				<span class='control_button'>Continue Shopping</span>
+			</section>
+
+		</div>
+	</div>
+</div>
