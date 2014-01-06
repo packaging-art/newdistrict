@@ -337,12 +337,12 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 ## 10. 'Add to Cart' Modal  
 
 Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_outer_structure.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_cancel.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_image_section.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_quantity_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_destination_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_summary_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_action_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>
 
 Previews:  
 <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
