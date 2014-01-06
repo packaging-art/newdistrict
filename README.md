@@ -340,10 +340,11 @@ Files:
 1. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
 2. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
 3. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-4. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
-5. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>
-6. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>
-7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>
+4. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
+5. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
+6. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
+7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
+  
 
 Previews:  
 <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
