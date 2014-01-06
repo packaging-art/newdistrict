@@ -336,7 +336,7 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 
 ## 10. 'Add to Cart' Modal  
 
-Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal/modal_outer_structure.html>  
+Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
 <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
 <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
 <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
