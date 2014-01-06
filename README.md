@@ -376,4 +376,4 @@ The wineries can have a wide range of ordering options and their multiple combin
 The design of the modal structures the ordering into a step by step process that should clarify these options.
 
 
-1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' example](http://tympanus.net/Development/ModalWindowEffects/). This is how that starts to look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file is [here](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html).
+1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' example](http://tympanus.net/Development/ModalWindowEffects/). This is how that starts to look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).
