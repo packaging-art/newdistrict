@@ -337,13 +337,13 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 ## 10. 'Add to Cart' Modal  
 
 Files:  
-1. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
-2. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-3. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-4. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
-5. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
-6. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
-7. <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
+1. Outer Structure <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
+2. Cancel Button <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+3. Section 1: Image <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+4. Section 2: Quantity <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
+5. Optional Section 3: Destination <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
+6. Section 4: Summary <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
+7. Section 5: Action Buttons <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
   
 ----  
 
@@ -390,4 +390,6 @@ Wineries can have a wide range of ordering options (including unconstrained orde
   
        The situation is similar for ordering cases. For example when ordering a 6-bottle case and at the same time having a 12-bottle 'mix and match' set open (that must have at least 6 or more bottle spots available, if less then it is impossible to add the case and thus the option should not appear) then this option would present itself as well (See [Preview](http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html)). Same pattern as above to overflow and multiple case orders, — put all in cart or put some in cart and augment the 'mix and match' set with a suitable case.  
   
-       The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear or use the cancel button to exit the 'add to cart' modal.
+       The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear (fade-in) or use the cancel button to exit the 'add to cart' modal.   
+
+6. If 
