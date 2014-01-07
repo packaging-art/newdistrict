@@ -394,4 +394,7 @@ Wineries can have a wide range of ordering options (including unconstrained orde
 
 6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html). If the Destination Section (described above) was not required (if product is not available for both regular order and 'mix and match') this section appears directly after quantity. If Destination section was required, this section appears after user makes a selection.  
   
-       This section provides context about the options the user have selected and outlines what quantities of what bottles are going where.
+       This section provides context about the options the user have selected and outlines what quantities of what bottles are going where. It basically has 2 sections:  
+       1. A summary paragraph ('modal summary') outlining what bottles go where (cart, 'mix and match'), whether the users need to take any actions after, whether a new 'mix and match' set was created.
+       2. "Mix and match" summary ('modal_mix_and_match_summary') — this appears in the scenarios where destination had to be chosen and changes occured to the 'mix and match' set. This would have contain a paragraph describing what is happening to the set and a list ('modal_mix_match_list') listing the items in the set.
+       
