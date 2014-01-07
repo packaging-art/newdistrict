@@ -339,36 +339,54 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 Files:  
 1. Outer Structure  
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
-2. Cancel Button <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-3. Section 1: Image <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-4. Section 2: Quantity <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
-5. Optional Section 3: Destination <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
-6. Section 4: Summary <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
-7. Section 5: Action Buttons <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
+2. Cancel Button  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+3. Section 1: Image  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+4. Section 2: Quantity  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
+5. Optional Section 3: Destination  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
+6. Section 4: Summary  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
+7. Section 5: Action Buttons  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
   
 ----  
 
-Previews (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section):   
+### Previews:  
+(not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section)   
 
-Unconstrained bottle order — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
+Unconstrained bottle order  
+   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
 
-Unconstrained bottle order with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
+Unconstrained bottle order with a 'Mix and Match' set active  
+   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
 
-Minimum purchase of a case required (single case) — <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
+Minimum purchase of a case required (single case)  
+   <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
 
-Minimum purchase of a case required with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
+Minimum purchase of a case required with a 'Mix and Match' set active  
+   <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
 
-Minimum purchase of a case required with multiple case quantities — <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
+Minimum purchase of a case required with multiple case quantities  
+   <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
 
-Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
+Initial 'Mix and Match' order  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
 
-'Mix and Match' order that does not complete the set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
+'Mix and Match' order that does not complete the set  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
 
-'Mix and Match' order that completes a set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
+'Mix and Match' order that completes a set  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
 
-'Mix and Match' order that completes a set and still has additional items — <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+'Mix and Match' order that completes a set and still has additional items  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
 
 ----  
+
+### Structure
 
 'Add to Cart' modal is used universally across the website.  
 
