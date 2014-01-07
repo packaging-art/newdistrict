@@ -282,7 +282,7 @@ Information needed to be generated and editable is Name, Year, Price, and Volume
 
 Two controls are necessary: 'add to cart' and 'more info'. Clicking 'more info' should fade in the banner associated with the grid item as well as lower opacity of all other grid items. As grid items fade out and banner is faded in, 'more info' link transfroms into 'hide info'. Clicking 'hide info' reverses the interaction by hiding the banner and fading in other items. Alternatively clicking anywhere outside of the active grid item or displayed banner should activate the 'hide info' interaction.
 
-Preview: <http://deadtype.ca/newdistrict/grid_focusedon_banner.html> 
+Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
 
 
 
