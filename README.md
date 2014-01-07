@@ -14,7 +14,7 @@ newdistrict.github.io
   
   3. Checkout Page
 
-  The goal is to have items on page and (lazy?) load them on user call, using subtle transitions to fade/slide them-in or out. 
+  The goal is to have items on page and shem them on user call, using subtle transitions to fade/slide them-in or out. 
   
 
 ### 2. Responsive Images   
@@ -25,7 +25,11 @@ newdistrict.github.io
   
   Ideally Ben/Elin would upload a high res photo and the backend would generate 1X and 2X images for the site. Additionaly they should be able to choose to upload two high res photos (landscape ana a portrait alternatives). This can be used in a responsive scenario such as banner photos which change orientation to portrait on small screens and these 2 photos would permit art direction when required or when vs just changing background-position produces less then desirable results.
 
+### 3. Lazy Load
 
+  The site will be image heavy and have a lot of components. We should implement a lazy loading script that makes sure that the elements that are not shown (ex. banner photo in grid view or extra slides in the hero banner) are not loaded until requested.  
+  
+  This should reduce loading and rendering time, lower data usage on mobile devices, and improve performance on older devices.
 
 # Front End Parts
 
