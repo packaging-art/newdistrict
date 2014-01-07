@@ -371,11 +371,13 @@ Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocar
 
 'Add to Cart' modal is used universally across the website.  
 
-The wineries can have a wide range of ordering options and their multiple combinations. Options include unconstrained orders, case orders, mix and match sets and various permuations of how these can work together.  
+The wineries can have a wide range of ordering options which can combine into multiple permutations. Options include unconstrained orders, case orders, mix and match sets and their combinations.  
 
-The design of this modal structures this information into a step by step process that should clarify these options.
+'Add to Cart' modal is designed to process this information into a clear, step by step process.
 
 
-1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' example](http://tympanus.net/Development/ModalWindowEffects/). This is how that starts to look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
+1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' example on this site](http://tympanus.net/Development/ModalWindowEffects/). This is how that starts to look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
 
-2. The only way to exit or cancel out of adding the item to cart sits below the modal window. The darkened background is visible and scrollable but not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html).
+2. The only way to exit or cancel out of adding the item to cart is to click the 'cancel' button which sits below the modal window. The darkened background is visible and scrollable but not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html).  
+
+3. The first part of the modal is the image element — which reuses the "grid product view" element. The key difference comes in the text at the bottom of the image — "modal_comment". This is a place were we provide contextual information about the wine. Such as its availability (single bottle, case or mix and match).
