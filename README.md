@@ -402,5 +402,6 @@ Wineries can have a wide range of ordering options (including unconstrained orde
        
 See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
 
-7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html)
+7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html).   
+
        
