@@ -403,5 +403,11 @@ Wineries can have a wide range of ordering options (including unconstrained orde
          See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
 
 7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html).   
+        
+       This has two buttons: 
+       
+       1. A conditional 'Checkout Now' button, which would hide if the user only has a 'Mix and Match' set and it does not have enough items in it to move it to cart.
+         
+       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'
 
        
