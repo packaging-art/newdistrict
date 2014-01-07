@@ -392,4 +392,6 @@ Wineries can have a wide range of ordering options (including unconstrained orde
   
        The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear (fade-in) or use the cancel button to exit the 'add to cart' modal.   
 
-6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html). If the Destination Section (described above) was not required (if product is not available for both regular order and 'mix and match') this section appears directly after quantity. If Destination section was required, this section appears after user makes a selection.
+6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html). If the Destination Section (described above) was not required (if product is not available for both regular order and 'mix and match') this section appears directly after quantity. If Destination section was required, this section appears after user makes a selection.  
+         
+         This section provides context about the options the user have selected and outlines what quantities of what bottles are going where.
