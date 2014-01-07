@@ -354,7 +354,7 @@ Files:
   
 ----  
 
-### Previews:  
+#### Previews:  
 (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section)   
 
 Unconstrained bottle order  
@@ -386,7 +386,7 @@ Initial 'Mix and Match' order
 
 ----  
 
-### Structure
+#### Structure
 
 'Add to Cart' modal is used universally across the website.  
 
