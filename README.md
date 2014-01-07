@@ -336,21 +336,78 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 
 ## 10. 'Add to Cart' Modal  
 
-Files: <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>
+Files:  
+1. Outer Structure <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
+2. Cancel Button <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+3. Section 1: Image <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+4. Section 2: Quantity <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
+5. Optional Section 3: Destination <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
+6. Section 4: Summary <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
+7. Section 5: Action Buttons <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
+  
+----  
 
-Previews:  
-<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
-<http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+Previews (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section):   
+
+Unconstrained bottle order — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
+
+Unconstrained bottle order with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
+
+Minimum purchase of a case required (single case) — <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
+
+Minimum purchase of a case required with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
+
+Minimum purchase of a case required with multiple case quantities — <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
+
+Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
+
+'Mix and Match' order that does not complete the set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
+
+'Mix and Match' order that completes a set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
+
+'Mix and Match' order that completes a set and still has additional items — <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+
+----  
+
+'Add to Cart' modal is used universally across the website.  
+
+Wineries can have a wide range of ordering options (including unconstrained orders, case orders and 'mix and match' sets) which can combine into multiple permutations. 'Add to Cart' modal is designed to organize this highly varied information into a structured, step by step process.
+
+
+1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background, which should cover the whole site (will need a script for this). An example of this is the ['Super Scaled' transition on this site](http://tympanus.net/Development/ModalWindowEffects/). This is preview of the general look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file showing the external structure is located [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
+
+2. The only way to exit or cancel out of adding the item to cart is to click the ['Cancel' button](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html), which sits below the modal window. The darkened background is transparent and scrollable, showing the site below, but is not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
+
+3. The first part of the modal is the [Image Element](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html) — which reuses the "grid product view" design patter. The key difference comes in the text at the bottom of the image — 'modal_comment'. This is a place were we provide contextual information about the wine. Such as its availability (single bottle, case or mix and match), and any specifics about it. See the various previews for the range of possible comments.
+
+4. The second part is the [Quantity Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html). Depending on the context it can show more or less information about the wine being added. For example in case of the uncostrained order it can exist via a simple field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html)). If the winery has multiple cases sizes then this expands to numerous fields with labels about and below the field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html)).  
+  
+       In uncostrained case the field entry is done in single bottle orders. In the scenario where field entry is about cases the label above states the number of bottles in each case and the number below show how many bottles the case order equates to (ex. 4 6-bottle cases = 24 bottles.  
+
+5. The third part is a conditional [Destination Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html) which only appears when the product being selected is available for both regular order (unconstrained ordering and case based) and 'mix and match' AND there is an open 'mix and match' present. It provides user with information about the options of adding the product and buttons to select the options.  
+  
+       The are to put the selected quantity in 'Cart' or into 'Mix and Match' (if the selected quantity is less then or equal to the amount requried to complete the 'mix and match' set). If the selected quantity is more then required to complete the 'mix and match' set then the button would turn into 'Cart + "Mix and Match". This would complete the set and add the overflow bottles to cart. See [Example](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
+  
+       The situation is similar for ordering cases. For example when ordering a 6-bottle case and at the same time having a 12-bottle 'mix and match' set open (that must have at least 6 or more bottle spots available, if less then it is impossible to add the case and thus the option should not appear) then this option would present itself as well (See [Preview](http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html)). Same pattern as above to overflow and multiple case orders, — put all in cart or put some in cart and augment the 'mix and match' set with a suitable case.  
+  
+       The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear (fade-in) or use the cancel button to exit the 'add to cart' modal.   
+
+6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html). If the Destination Section (described above) was not required (if product is not available for both regular order and 'mix and match') this section appears directly after quantity. If Destination section was required, this section appears after user makes a selection.  
+  
+       This section provides context about the options the user have selected and outlines what quantities of what bottles are going where. It basically has 2 sections:    
+
+       1. A summary paragraph ('modal summary') outlining what bottles go where (cart, 'mix and match'), whether the users need to take any actions after, whether a new 'mix and match' set was created.  
+        
+       2. "Mix and match" summary ('modal_mix_and_match_summary') — this appears in the scenarios where destination had to be chosen and changes occured to the 'mix and match' set. This would have contain a paragraph describing what is happening to the set and a list ('modal_mix_match_list') listing the items in the set.  
+         
+         See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
+
+7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html).   
+        
+       This has two buttons: 
+       
+       1. A conditional 'Checkout Now' button, which would hide if the user only has a 'Mix and Match' set and it does not have enough items in it to move it to cart.
+         
+       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'
+
+       
