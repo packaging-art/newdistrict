@@ -1,10 +1,27 @@
 newdistrict.github.io
 =====================
-# General Site Behaviour
+# Front-End Site Behaviour
 
-### 1. Site Behaviour and Page Structure
+### 1. Site Behaviour and Page Structure   
+  
+  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page.  
+  
+  In terms of user experience there is 3 pages:  
+  
+  1. Main site page, which inlcudes the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation), [Wine Categories/Controls](#4-wine-categoriescontrols) and winery products ([Grid Product View](#6-grid-product-view), [Banner Product View](#7-banner-product-view)). Switching between banner and grid view should be seemless and not force a page reload, same goes for when checking contents of the cart, switching between hero banner slides and so on. This likely means we have items on page and (lazy?) load them on user call, using subtle transitions to fade/slide them-in or out. 
+  
+  2. [Full Product Page](#9-full-product-page).
+  
+  3. Checkout Page
 
-### 2. Responsive Images
+
+### 2. Responsive Images   
+
+  The site will be image heavy and we will need to create a respnsive image solution for this. Design uses both img tags (ex. [grid view](#6-grid-product-view), [full product page](#9-full-product-page), and ['add to cart' Modal](#10-add-to-cart-modal)) and background images [banner product view](#7-banner-product-view).
+  
+  Potentially we can use [picturefill.js](https://github.com/scottjehl/picturefill) for the regular image tags and set up a css background image pattern for the background images.  
+  
+  Ideally Ben/Elin would upload a high res photo and the backend would generate 1X and 2X images for the site. Additionaly they should be able to choose to upload two high res photos (landscape ana a portrait alternatives). This can be used in a responsive scenario such as banner photos which change orientation to portrait on small screens and these 2 photos would permit art direction when required or when vs just changing background-position produces less then desirable results.
 
 
 
