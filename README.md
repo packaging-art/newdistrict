@@ -371,12 +371,10 @@ Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocar
 
 'Add to Cart' modal is used universally across the website.  
 
-The wineries can have a wide range of ordering options which can combine into multiple permutations. Options include unconstrained orders, case orders, mix and match sets and their combinations.  
-
-'Add to Cart' modal is designed to process this information into a clear, step by step process.
+Wineries can have a wide range of ordering options (including unconstrained orders, case orders and 'mix and match' sets) which can combine into multiple permutations. 'Add to Cart' modal is designed to structure this information into a clear, step by step process.
 
 
-1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' example on this site](http://tympanus.net/Development/ModalWindowEffects/). This is how that starts to look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
+1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background. An example of this is the ['Super Scaled' transition on this site](http://tympanus.net/Development/ModalWindowEffects/). This is preview from [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file showing the external structure is located [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
 
 2. The only way to exit or cancel out of adding the item to cart is to click the 'cancel' button which sits below the modal window. The darkened background is visible and scrollable but not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html). The file is [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html).  
 
