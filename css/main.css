@@ -998,7 +998,7 @@ h3 {
   font-size: .8em;
   background: transparent;
   width: 50%;
-  margin: 0 auto 2.5em;
+  margin: 2.5em auto;
   padding: .3em 0 .2em;
 }
 
@@ -1065,7 +1065,7 @@ h3 {
 
 .modal_action_buttons {
   text-align: center;
-  margin-top: 1em;
+  margin: 3em 0 0 0;
 }
 
 .individual_action {
