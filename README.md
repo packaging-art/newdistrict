@@ -2,7 +2,10 @@ newdistrict.github.io
 =====================
 # General Site Behaviour
 
-## 1. Blah
+### 1. Site Behaviour and Page Structure
+
+### 2. Responsive Images
+
 
 
 # Front End Parts
