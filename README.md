@@ -400,3 +400,7 @@ Wineries can have a wide range of ordering options (including unconstrained orde
         
        2. "Mix and match" summary ('modal_mix_and_match_summary') — this appears in the scenarios where destination had to be chosen and changes occured to the 'mix and match' set. This would have contain a paragraph describing what is happening to the set and a list ('modal_mix_match_list') listing the items in the set.
        
+See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
+
+7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html)
+       
