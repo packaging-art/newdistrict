@@ -8,12 +8,14 @@ newdistrict.github.io
   
   In terms of user experience there is 3 pages:  
   
-  1. Main site page, which inlcudes the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation), [Wine Categories/Controls](#4-wine-categoriescontrols) and winery products ([Grid Product View](#6-grid-product-view), [Banner Product View](#7-banner-product-view)). Switching between banner and grid view should be seemless and not force a page reload, same goes for when checking contents of the cart, switching between hero banner slides and so on. This likely means we have items on page and (lazy?) load them on user call, using subtle transitions to fade/slide them-in or out. 
+  1. Main site page, which inlcudes the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation), [Wine Categories/Controls](#4-wine-categoriescontrols) and winery products ([Grid Product View](#6-grid-product-view), [Banner Product View](#7-banner-product-view)). Switching between banner and grid view should be seemless and not force a page reload, same goes for when checking contents of the cart, switching between hero banner slides and so on. 
   
   2. [Full Product Page](#9-full-product-page).
   
   3. Checkout Page
 
+  The goal is to have items on page and (lazy?) load them on user call, using subtle transitions to fade/slide them-in or out. 
+  
 
 ### 2. Responsive Images   
 
