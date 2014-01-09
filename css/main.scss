@@ -254,6 +254,15 @@ line-height: 1;
   background: $mainbackground_color;
 }
 
+.mainnav_container.top {
+  top:0;
+  bottom:auto;
+  .mainnav {
+    border-top: none;
+    border-bottom: 1px solid hsl(0,0%,92%);
+  }
+}
+
 .mainnav {
   padding-top: 1.5em;
   padding-bottom: 1.3em;
@@ -476,6 +485,7 @@ line-height: 1;
 padding: .25em .5em .15em .5em;
    border: 1px solid black;
 background: hsla(0,0%,100%,.4);
+display: inline-block;
 }
 
 .arrow_symbol {
@@ -1147,7 +1157,16 @@ position:relative;
   }
 
 }
-/* Form styles */
+/* Cart */
+
+.cart_content {
+  .major_section_header {
+    .control_button {
+      margin-top: 2em;
+    }
+
+  }
+}
 
 /* ==========================================================================
    Helper classes
