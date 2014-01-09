@@ -488,6 +488,8 @@ h3 {
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.4);
   display: inline-block;
+  z-index: 1000;
+  position: relative;
 }
 
 .arrow_symbol {

@@ -482,10 +482,12 @@ line-height: 1;
   margin-left: 0;
   font-size: .7em;
   color: black;
-padding: .25em .5em .15em .5em;
+  padding: .25em .5em .15em .5em;
    border: 1px solid black;
-background: hsla(0,0%,100%,.4);
-display: inline-block;
+  background: hsla(0,0%,100%,.4);
+  display: inline-block;
+  z-index: 1000;
+  position: relative;
 }
 
 .arrow_symbol {
