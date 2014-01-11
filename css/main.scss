@@ -250,8 +250,17 @@ line-height: 1;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100000;
   background: $mainbackground_color;
+}
+
+.mainnav_container.top {
+  top:0;
+  bottom:auto;
+  .mainnav {
+    border-top: none;
+    border-bottom: 1px solid hsl(0,0%,92%);
+  }
 }
 
 .mainnav {
@@ -473,9 +482,13 @@ line-height: 1;
   margin-left: 0;
   font-size: .7em;
   color: black;
-padding: .25em .5em .15em .5em;
+  padding: .25em .5em .15em .5em;
    border: 1px solid black;
-background: hsla(0,0%,100%,.4);
+  background: hsla(0,0%,100%,.4);
+  display: inline-block;
+  z-index: 1000;
+  position: relative;
+  white-space: nowrap;
 }
 
 .arrow_symbol {
@@ -1080,6 +1093,10 @@ position:relative;
   }
 }
 
+  .control_button + .control_button {
+    margin-left: .1em;
+  }
+
 .modal_mix_match_list {
   margin: 5.25em auto 5em;
 }
@@ -1106,9 +1123,9 @@ position:relative;
   color: hsl(0,0%,60%);
  }
 
-  .action_button_container {
-    margin-top: 3em;
-  }
+.action_button_container {
+  margin-top: 3em;
+}
 
 
 .quantity_entry, .action_button {
@@ -1127,6 +1144,7 @@ position:relative;
     padding:0 1em;
     line-height: 1.3;
   }
+
   .add {
     right:0;
     left: auto;
@@ -1147,7 +1165,166 @@ position:relative;
   }
 
 }
-/* Form styles */
+
+/* Cart */
+
+.cart_indicator {
+  .control {
+    @extend .headline;
+    font-size: .8em;
+  }
+  .control_button {
+    padding: .25em .5em .35em .5em;
+  }
+}
+
+.cart_wrap {
+    margin-top: 5em;
+    margin-bottom: 6em;
+    width: 63%;
+
+  .main_cart_summary {
+    @extend .collection_description;
+    width: 80%;
+    font-size: 1.1em;
+    margin: 0 auto;
+    margin-top: 6em;
+    text-align: center;
+  }
+
+  .grid_title {
+    position:relative;
+    color:black;
+    text-align: left;
+    float: left;
+  }
+}
+
+.main_cart_header {
+  text-align: center;
+}
+
+.major_cart_action {
+
+  .main_cart_total {
+    margin-top: .3em;
+    margin-bottom: 2em;
+  }
+
+  .control_button {
+    margin-top: .5em;
+  }
+}
+
+.cart_content_section {
+  .divider_container {
+    width: 100%;
+  }
+}
+
+.main_cart_total {
+  @extend .headline;
+  font-size: .8em;
+  margin-bottom: 2.45em;
+
+  .price_separator {
+    vertical-align: 2px;
+  }
+}
+
+.main_cart_header + .cart_content {
+  margin-top: 9em;
+}
+
+.winery_name_container + .winery_product {
+}
+
+.winery_product_group {
+  padding: 1.25em 3.5em;
+  border: 1px solid lightgray;
+  margin: 0 -3.5em;
+
+  .divider_container {
+    width: 100%;
+    margin:0;
+  }
+}
+
+.winery_product {
+  margin:4em 0;
+  position: relative;
+
+  .modal_action_section {
+    width: 15em;
+    float: right;
+    margin: 0;
+
+    .individual_action {margin:0;}
+  }
+
+  .cart_item_info {
+    float:right;
+    text-align: right;
+
+    .modal_action_section {
+      width: 100%;
+      margin-bottom: .5em;
+      float: none;
+      font-size: .9em;
+
+      .individual_action {
+        width:12em;
+        float: right;
+      }
+
+    }
+
+    .quantity {
+      width: 100%;
+    }
+
+    .add, .subtract {
+      top: 0;
+      background: transparent;
+      padding: 0 .5em;
+    }
+  }
+
+  .grid_img_container {
+    width: 4.8em;
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.winery_product + .winery_product {
+ /* border-top: 1px solid lightgray;*/
+}
+
+.winery_name_container + .winery_product_group {margin-top:5em;}
+
+.cart_winery_group {
+
+  .winery_name_container {
+    text-align: center;
+  }
+  .main_cart_summary {
+    margin: 3em auto;
+  }
+}
+
+.winery_cart_total {
+  text-align: center;
+  margin-top: 3.5em;
+
+  .major_title {
+    font-size: 1.9em;
+  }
+  .major_cart_action {
+    position: relative;
+    text-align: center;
+  }
+}
 
 /* ==========================================================================
    Helper classes

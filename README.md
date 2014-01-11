@@ -1,5 +1,35 @@
 newdistrict.github.io
 =====================
+# Front-End Site Behaviour
+
+### 1. Site Behaviour and Page Structure   
+  
+  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page.  
+  
+  In terms of user experience there is 3 pages:  
+  
+  1. Main site page, which inlcudes the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation), [Wine Categories/Controls](#4-wine-categoriescontrols) and winery products ([Grid Product View](#6-grid-product-view), [Banner Product View](#7-banner-product-view)). Switching between banner and grid view should be seemless and not force a page reload, same goes for when checking contents of the cart, switching between hero banner slides and so on. 
+  
+  2. [Full Product Page](#9-full-product-page).
+  
+  3. Checkout Page
+
+  The goal is to have items on page and shem them on user call, using subtle transitions to fade/slide them-in or out. 
+  
+
+### 2. Responsive Images   
+
+  The site will be image heavy and we will need to create a respnsive image solution for this. Design uses both img tags (ex. [grid view](#6-grid-product-view), [full product page](#9-full-product-page), and ['add to cart' Modal](#10-add-to-cart-modal)) and background images [banner product view](#7-banner-product-view).
+  
+  Potentially we can use [picturefill.js](https://github.com/scottjehl/picturefill) for the regular image tags and set up a css background image pattern for the background images.  
+  
+  Ideally Ben/Elin would upload a high res photo and the backend would generate 1X and 2X images for the site. Additionaly they should be able to choose to upload two high res photos (landscape ana a portrait alternatives). This can be used in a responsive scenario such as banner photos which change orientation to portrait on small screens and these 2 photos would permit art direction when required or when vs just changing background-position produces less then desirable results.
+
+### 3. Lazy Load
+
+  The site will be image heavy and have a lot of components. We should implement a lazy loading script that makes sure that the elements that are not shown (ex. banner photo in grid view or extra slides in the hero banner) are not loaded until requested.  
+  
+  This should reduce loading and rendering time, lower data usage on mobile devices, and improve performance on older devices.
 
 # Front End Parts
 
@@ -282,7 +312,7 @@ Information needed to be generated and editable is Name, Year, Price, and Volume
 
 Two controls are necessary: 'add to cart' and 'more info'. Clicking 'more info' should fade in the banner associated with the grid item as well as lower opacity of all other grid items. As grid items fade out and banner is faded in, 'more info' link transfroms into 'hide info'. Clicking 'hide info' reverses the interaction by hiding the banner and fading in other items. Alternatively clicking anywhere outside of the active grid item or displayed banner should activate the 'hide info' interaction.
 
-Preview: <http://deadtype.ca/newdistrict/grid_focusedon_banner.html> 
+Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
 
 
 
@@ -337,37 +367,56 @@ Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additio
 ## 10. 'Add to Cart' Modal  
 
 Files:  
-1. Outer Structure <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
-2. Cancel Button <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-3. Section 1: Image <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
-4. Section 2: Quantity <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
-5. Optional Section 3: Destination <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
-6. Section 4: Summary <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
-7. Section 5: Action Buttons <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
+1. Outer Structure  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
+2. Cancel Button  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
+3. Section 1: Image  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+4. Section 2: Quantity  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
+5. Optional Section 3: Destination  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html>  
+6. Section 4: Summary  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
+7. Section 5: Action Buttons  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
   
 ----  
 
-Previews (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section):   
+#### Previews:  
+(not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section)   
 
-Unconstrained bottle order — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
+Unconstrained bottle order  
+   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
 
-Unconstrained bottle order with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
+Unconstrained bottle order with a 'Mix and Match' set active  
+   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
 
-Minimum purchase of a case required (single case) — <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
+Minimum purchase of a case required (single case)  
+   <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
 
-Minimum purchase of a case required with a 'Mix and Match' set active — <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
+Minimum purchase of a case required with a 'Mix and Match' set active  
+   <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
 
-Minimum purchase of a case required with multiple case quantities — <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
+Minimum purchase of a case required with multiple case quantities  
+   <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
 
-Initial 'Mix and Match' order — <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
+Initial 'Mix and Match' order  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
 
-'Mix and Match' order that does not complete the set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
+'Mix and Match' order that does not complete the set  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
 
-'Mix and Match' order that completes a set — <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
+'Mix and Match' order that completes a set  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
 
-'Mix and Match' order that completes a set and still has additional items — <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
+'Mix and Match' order that completes a set and still has additional items  
+   <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
 
 ----  
+
+#### Structure
 
 'Add to Cart' modal is used universally across the website.  
 
