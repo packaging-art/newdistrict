@@ -250,7 +250,7 @@ line-height: 1;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100000;
   background: $mainbackground_color;
 }
 
@@ -488,6 +488,7 @@ line-height: 1;
   display: inline-block;
   z-index: 1000;
   position: relative;
+  white-space: nowrap;
 }
 
 .arrow_symbol {
@@ -1092,6 +1093,10 @@ position:relative;
   }
 }
 
+  .control_button + .control_button {
+    margin-left: .1em;
+  }
+
 .modal_mix_match_list {
   margin: 5.25em auto 5em;
 }
@@ -1118,9 +1123,9 @@ position:relative;
   color: hsl(0,0%,60%);
  }
 
-  .action_button_container {
-    margin-top: 3em;
-  }
+.action_button_container {
+  margin-top: 3em;
+}
 
 
 .quantity_entry, .action_button {
@@ -1139,6 +1144,7 @@ position:relative;
     padding:0 1em;
     line-height: 1.3;
   }
+
   .add {
     right:0;
     left: auto;
@@ -1159,14 +1165,144 @@ position:relative;
   }
 
 }
+
 /* Cart */
 
+.cart_indicator {
+  .control {
+    @extend .headline;
+    font-size: .8em;
+  }
+  .control_button {
+    padding: .25em .5em .35em .5em;
+  }
+}
+
 .cart_content {
+    margin-top: 2.5em;
+    margin-bottom: 6em;
+    width: 63%;
+
+  .cart_summary {
+    @extend .collection_description;
+    width: 80%;
+    font-size: 1.1em;
+    margin: 0 auto;
+    margin-top: 8em;
+    text-align: center;
+  }
+
   .major_section_header {
     .control_button {
-      margin-top: 2em;
+      margin-top: 6em;
+      font-size: .8em;
     }
+  }
 
+  .grid_title {
+    position:relative;
+    color:black;
+    text-align: left;
+    float: left;
+  }
+}
+
+.major_cart_action {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+
+  .control_button {
+    margin-top: .5em;
+  }
+}
+
+.cart_summary_header {
+  .divider_container {
+    width: 100%;
+  }
+}
+
+.major_cart_total {
+  @extend .headline;
+  font-size: .8em;
+  margin-bottom: .3em;
+
+  .price_separator {
+    vertical-align: 2px;
+  }
+}
+
+.major_cart_header + .product_cart_section {
+  margin-top: 9em;
+}
+
+.winery_name_container + .winery_product {
+}
+
+.winery_product_group {
+  padding: 1.25em 3.5em;
+  border: 1px solid lightgray;
+  margin: 0 -3.5em;
+
+  .divider_container {
+    width: 100%;
+    margin:0;
+  }
+}
+
+.winery_product {
+  margin:4em 0;
+  position: relative;
+
+  .modal_action_section {
+    width: 15em;
+    float: right;
+    margin: 0;
+
+    .individual_action {margin:0;}
+  }
+
+  .cart_item_info {
+    float:right;
+    text-align: right;
+  }
+
+  .grid_img_container {
+    width: 2.8em;
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+.winery_product + .winery_product {
+ /* border-top: 1px solid lightgray;*/
+}
+
+.winery_name_container + .winery_product_group {margin-top:5em;}
+
+.cart_winery_group {
+
+  .winery_name_container {
+    text-align: center;
+  }
+  .cart_summary {
+    margin: 3em auto;
+  }
+}
+
+.winery_cart_total {
+  text-align: center;
+  margin-top: 3.5em;
+
+  .major_title {
+    font-size: 1.9em;
+  }
+  .major_cart_action {
+    position: relative;
+    text-align: center;
+    margin-top: 1em;
   }
 }
 
