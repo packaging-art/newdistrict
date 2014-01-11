@@ -7,20 +7,7 @@ title: new district
 
 <div class='cart_wrap content_wrap'>
 
-	<div class='main_cart_header clearfix'>
-		<h2 class='major_title'>Cart Total</h2>
-
-		<div class="major_cart_action">
-			<div class='main_cart_total'>57 bottles from 3 stores<span class='price_separator'>|</span>$456 total</div>
-			<div class='control_button'>
-				<a class="">Checkout All Items Now</a>
-			</div>
-		</div>
-	</div>
-
-	<div class='main_cart_summary'>
-		<p>[Optional section to provide information about users cart] Ex. — You have 57 bottles in your cart, 50 are ready to ship and 7 are in a 'mix and match' set which requires 12 bottle minimum order. Checkout now to buy the 50 bottles, and save the 7 for later or add 5 more to complete the set and checkout all 62 bottles.</p>
-	</div>
+	{% include cart_preview/cart_header.html %}
 
 	<div class='cart_content'>
 
@@ -44,7 +31,7 @@ title: new district
 					<div class='winery_product clearfix'>
 
 						<div class='grid_img_container'>
-							<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+							<img src='img/bottle_background2v3.jpg'>
 						</div>
 
 						<div class='product_summary_content'>
