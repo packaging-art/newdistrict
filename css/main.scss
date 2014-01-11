@@ -1178,25 +1178,18 @@ position:relative;
   }
 }
 
-.cart_content {
-    margin-top: 2.5em;
+.cart_wrap {
+    margin-top: 5em;
     margin-bottom: 6em;
     width: 63%;
 
-  .cart_summary {
+  .main_cart_summary {
     @extend .collection_description;
     width: 80%;
     font-size: 1.1em;
     margin: 0 auto;
-    margin-top: 8em;
+    margin-top: 6em;
     text-align: center;
-  }
-
-  .major_section_header {
-    .control_button {
-      margin-top: 6em;
-      font-size: .8em;
-    }
   }
 
   .grid_title {
@@ -1207,34 +1200,39 @@ position:relative;
   }
 }
 
+.main_cart_header {
+  text-align: center;
+}
+
 .major_cart_action {
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: right;
+
+  .main_cart_total {
+    margin-top: .3em;
+    margin-bottom: 2em;
+  }
 
   .control_button {
     margin-top: .5em;
   }
 }
 
-.cart_summary_header {
+.cart_content_section {
   .divider_container {
     width: 100%;
   }
 }
 
-.major_cart_total {
+.main_cart_total {
   @extend .headline;
   font-size: .8em;
-  margin-bottom: .3em;
+  margin-bottom: 2.45em;
 
   .price_separator {
     vertical-align: 2px;
   }
 }
 
-.major_cart_header + .product_cart_section {
+.main_cart_header + .cart_content {
   margin-top: 9em;
 }
 
@@ -1267,10 +1265,33 @@ position:relative;
   .cart_item_info {
     float:right;
     text-align: right;
+
+    .modal_action_section {
+      width: 100%;
+      margin-bottom: .5em;
+      float: none;
+      font-size: .9em;
+
+      .individual_action {
+        width:12em;
+        float: right;
+      }
+
+    }
+
+    .quantity {
+      width: 100%;
+    }
+
+    .add, .subtract {
+      top: 0;
+      background: transparent;
+      padding: 0 .5em;
+    }
   }
 
   .grid_img_container {
-    width: 2.8em;
+    width: 4.8em;
     float: left;
     margin-right: 1em;
   }
@@ -1287,7 +1308,7 @@ position:relative;
   .winery_name_container {
     text-align: center;
   }
-  .cart_summary {
+  .main_cart_summary {
     margin: 3em auto;
   }
 }
@@ -1302,7 +1323,6 @@ position:relative;
   .major_cart_action {
     position: relative;
     text-align: center;
-    margin-top: 1em;
   }
 }
 
