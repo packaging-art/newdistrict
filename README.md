@@ -43,6 +43,7 @@ newdistrict.github.io
 8. [Section Separator](#8-section-separator)
 9. [Full Product Page](#9-full-product-page)
 10. ['Add to Cart' Modal](#10-add-to-cart-modal)
+11. [Cart Page](#11-cart-page)
 
 
 
@@ -457,6 +458,13 @@ Wineries can have a wide range of ordering options (including unconstrained orde
        
        1. A conditional 'Checkout Now' button, which would hide if the user only has a 'Mix and Match' set and it does not have enough items in it to move it to cart.
          
-       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'
+       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'  
+  
+  
+
+## Cart Page  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_banner.html>  
+Preview: <http://deadtype.ca/newdistrict>  
 
        
