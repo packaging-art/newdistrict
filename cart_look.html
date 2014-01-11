@@ -5,71 +5,87 @@ title: new district
 
 {% include main_navigation/main-nav-incart.html %}
 
-<div class='cart_content content_wrap'>
+<div class='cart_wrap content_wrap'>
 
-	<div class='major_cart_header clearfix'>
+	<div class='main_cart_header clearfix'>
 		<h2 class='major_title'>Cart Total</h2>
 
 		<div class="major_cart_action">
-			<div class='major_cart_total'>57 bottles from 3 stores<span class='price_separator'>|</span>$456 total</div>
+			<div class='main_cart_total'>57 bottles from 3 stores<span class='price_separator'>|</span>$456 total</div>
 			<div class='control_button'>
 				<a class="">Checkout All Items Now</a>
 			</div>
 		</div>
 	</div>
 
-	<div class='cart_summary'>
+	<div class='main_cart_summary'>
 		<p>[Optional section to provide information about users cart] Ex. — You have 57 bottles in your cart, 50 are ready to ship and 7 are in a 'mix and match' set which requires 12 bottle minimum order. Checkout now to buy the 50 bottles, and save the 7 for later or add 5 more to complete the set and checkout all 62 bottles.</p>
 	</div>
 
-	<div class='product_cart_section'>
+	<div class='cart_content'>
 
-		<div class='cart_summary_header'>
+		<div class='cart_content_section'>
 			{% include misc/section_separator.html label='current store' %}
-		</div>
 
-		<div class='cart_winery_group'>
+			<div class='cart_winery_group'>
 
-			<div class="winery_name_container">
-				<div class='winery_title'>
-					Mission Hill Family Estate
-				</div>
-			</div>
-
-			<div class='cart_summary'>
-				<p>[Optional section for comments or terms specific to the individual winery] Ex. Minimum order of 12 bottles required, 'Mix and Match' allowed.</p>
-			</div>
-
-			<div class='winery_product_group'>
-
-				<div class='winery_product clearfix'>
-					<div class='grid_img_container'>
-						<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+				<div class="winery_name_container">
+					<div class='winery_title'>
+						Mission Hill Family Estate
 					</div>
+				</div>
+
+				<div class='main_cart_summary'>
+					<p>[Optional section for comments or terms specific to the individual winery] Ex. Minimum order of 12 bottles required, 'Mix and Match' allowed.</p>
+				</div>
+
+				<div class='winery_product_group'>
+
+					<div class='winery_product clearfix'>
+
+						<div class='grid_img_container'>
+							<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+						</div>
+
 						<div class='product_summary_content'>
 							<div class='grid_title'>
 								<div class='major_title'>Cabernet</br>Sauvignon</div>
 								<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
 							</div>
 						</div>
-							
+								
 						<div class="cart_item_info">
-							<div class='major_cart_total'>7 bottles<span class='price_separator'>|</span>$456</div>
-							<div class='control_button'>
-								<a class="">update totals</a>
-							</div>
-							<div class='control_button'>
-								<a class="">delete item</a>
+							<section class='modal_action_section  clearfix'>
+								<div class='individual_action'>
+
+									<div class="quantity_entry">
+										<span class='subtract'>-</span><!-- control to subtract quantity -->
+										<span class='quantity'>3</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+										<span class='add'>+</span><!-- control to add quantity -->
+									</div>
+								</div>
+							</section>
+
+							<div class='main_cart_total'>7 bottles<span class='price_separator'>|</span>$456</div>
+							<div class='controls'>
+								<div class='control_button'>
+									<a class="">update totals</a>
+								</div>
+								<div class='control_button'>
+									<a class="">delete item</a>
+								</div>
 							</div>
 						</div>
-				</div>
-
-					{% include misc/section_separator.html label='+' %}
-
-				<div class='winery_product clearfix'>
-										<div class='grid_img_container'>
-						<img src='img/bottle_background3v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
 					</div>
+
+						{% include misc/section_separator.html label='+' %}
+
+					<div class='winery_product clearfix'>
+
+						<div class='grid_img_container'>
+							<img src='img/bottle_background3v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+						</div>
+
 						<div class='product_summary_content'>
 							<div class='grid_title'>
 								<div class='major_title'>Pinot Noir</div>
@@ -78,10 +94,20 @@ title: new district
 						</div>
 
 						<div class="cart_item_info">
-							
+							<section class='modal_action_section  clearfix'>
+								<div class='individual_action'>
 
-							<div class='info'>
-								<div class='major_cart_total'>3 cases (18 bottles)<span class='price_separator'>|</span>$656</div>
+									<div class="quantity_entry">
+										<span class='subtract'>-</span><!-- control to subtract quantity -->
+										<span class='quantity'>3</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+										<span class='add'>+</span><!-- control to add quantity -->
+									</div>
+								</div>
+							</section>
+
+							<div class='main_cart_total'>3 cases (18 bottles)<span class='price_separator'>|</span>$456</div>
+
+							<div class='controls'>
 								<div class='control_button'>
 									<a class="">update totals</a>
 								</div>
@@ -90,26 +116,39 @@ title: new district
 								</div>
 							</div>
 						</div>
+					</div>
 
 
-				</div>
-
-
-					{% include misc/section_separator.html label='+' %}
+						{% include misc/section_separator.html label='+' %}
 
 					<div class='winery_product clearfix'>
-											<div class='grid_img_container'>
-						<img src='img/bottle_background1v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
-					</div>
-							<div class='product_summary_content'>
-								<div class='grid_title'>
-									<div class='major_title'>Château</br>des Charmes</div>
-									<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45 per case<span class='price_separator'>|</span>750ml</div>
-								</div>
+						
+						<div class='grid_img_container'>
+							<img src='img/bottle_background1v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
+						</div>
+								
+						<div class='product_summary_content'>
+							<div class='grid_title'>
+								<div class='major_title'>Château</br>des Charmes</div>
+								<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45 per case<span class='price_separator'>|</span>750ml</div>
 							</div>
+						</div>
 
-							<div class="cart_item_info">
-								<div class='major_cart_total'>3 cases (18 bottles)<span class='price_separator'>|</span>$656</div>
+						<div class="cart_item_info">
+							<section class='modal_action_section  clearfix'>
+								<div class='individual_action'>
+
+									<div class="quantity_entry">
+										<span class='subtract'>-</span><!-- control to subtract quantity -->
+										<span class='quantity'>3</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+										<span class='add'>+</span><!-- control to add quantity -->
+									</div>
+								</div>
+							</section>
+
+							<div class='main_cart_total'>3 cases (18 bottles)<span class='price_separator'>|</span>$456</div>
+
+							<div class='controls'>
 								<div class='control_button'>
 									<a class="">update totals</a>
 								</div>
@@ -117,37 +156,39 @@ title: new district
 									<a class="">delete item</a>
 								</div>
 							</div>
-					</div>
-			</div>
-
-			<div class='winery_cart_total clearfix'>
-				<h2 class='major_title'>Total</h2>
-
-				<div class="major_cart_action">
-					<div class='major_cart_total'>57 bottles<span class='price_separator'>|</span>$456</div>
-					<div class='control_button'>
-						<a class="">Checkout items from This store only</a>
-					</div>
-
+						</div>
 				</div>
 			</div>
 
+				<div class='winery_cart_total clearfix'>
+					<h2 class='major_title'>Total</h2>
+
+					<div class="major_cart_action">
+						<div class='main_cart_total'>57 bottles<span class='price_separator'>|</span>$456</div>
+						<div class='control_button'>
+							<a class="">Checkout items from This store only</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<div class='cart_summary_header'>
+		<div class='cart_content_section'>
+
 			{% include misc/section_separator.html label='Other Stores' %}
-		</div>
+		
+			<div class='cart_winery_group'>
 
-		<div class='cart_winery_group'>
-
-			<div class="winery_name_container">
-				<div class='winery_title'>
-					Red rooster wines
+				<div class="winery_name_container">
+					<div class='winery_title'>
+						Red rooster wines
+					</div>
 				</div>
-			</div>
 
-			<div class='cart_summary'>
-				<p>Sections for comments or terms specific to the individual winery.</p>
+				<div class='main_cart_summary'>
+					<p>Sections for comments or terms specific to the individual winery.</p>
+				</div>
 			</div>
 		</div>
 	</div>

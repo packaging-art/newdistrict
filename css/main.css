@@ -199,7 +199,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label, .modal_cancel, .modal_comment, .action_label, .quantity_entry, .action_button, .cart_indicator .control, .major_cart_total {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label, .modal_cancel, .modal_comment, .action_label, .quantity_entry, .action_button, .cart_indicator .control, .main_cart_total {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -533,7 +533,7 @@ h3 {
   vertical-align: 2px;
 }
 
-.collection_description, .cart_content .cart_summary {
+.collection_description, .cart_wrap .main_cart_summary {
   margin-top: 4em;
 }
 
@@ -1144,52 +1144,50 @@ h3 {
   padding: .25em .5em .35em .5em;
 }
 
-.cart_content {
-  margin-top: 2.5em;
+.cart_wrap {
+  margin-top: 5em;
   margin-bottom: 6em;
   width: 63%;
 }
-.cart_content .cart_summary {
+.cart_wrap .main_cart_summary {
   width: 80%;
   font-size: 1.1em;
   margin: 0 auto;
-  margin-top: 8em;
+  margin-top: 6em;
   text-align: center;
 }
-.cart_content .major_section_header .control_button, .cart_content .major_section_header .action {
-  margin-top: 6em;
-  font-size: .8em;
-}
-.cart_content .grid_title {
+.cart_wrap .grid_title {
   position: relative;
   color: black;
   text-align: left;
   float: left;
 }
 
-.major_cart_action {
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: right;
+.main_cart_header {
+  text-align: center;
+}
+
+.major_cart_action .main_cart_total {
+  margin-top: .3em;
+  margin-bottom: 2em;
 }
 .major_cart_action .control_button, .major_cart_action .action {
   margin-top: .5em;
 }
 
-.cart_summary_header .divider_container {
+.cart_content_section .divider_container {
   width: 100%;
 }
 
-.major_cart_total {
+.main_cart_total {
   font-size: .8em;
-  margin-bottom: .3em;
+  margin-bottom: 2.45em;
 }
-.major_cart_total .price_separator {
+.main_cart_total .price_separator {
   vertical-align: 2px;
 }
 
-.major_cart_header + .product_cart_section {
+.main_cart_header + .cart_content {
   margin-top: 9em;
 }
 
@@ -1219,8 +1217,26 @@ h3 {
   float: right;
   text-align: right;
 }
+.winery_product .cart_item_info .modal_action_section {
+  width: 100%;
+  margin-bottom: .5em;
+  float: none;
+  font-size: .9em;
+}
+.winery_product .cart_item_info .modal_action_section .individual_action {
+  width: 12em;
+  float: right;
+}
+.winery_product .cart_item_info .quantity {
+  width: 100%;
+}
+.winery_product .cart_item_info .add, .winery_product .cart_item_info .subtract {
+  top: 0;
+  background: transparent;
+  padding: 0 .5em;
+}
 .winery_product .grid_img_container {
-  width: 2.8em;
+  width: 4.8em;
   float: left;
   margin-right: 1em;
 }
@@ -1236,7 +1252,7 @@ h3 {
 .cart_winery_group .winery_name_container {
   text-align: center;
 }
-.cart_winery_group .cart_summary {
+.cart_winery_group .main_cart_summary {
   margin: 3em auto;
 }
 
@@ -1250,7 +1266,6 @@ h3 {
 .winery_cart_total .major_cart_action {
   position: relative;
   text-align: center;
-  margin-top: 1em;
 }
 
 /* ==========================================================================
