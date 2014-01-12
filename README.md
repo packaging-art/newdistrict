@@ -419,31 +419,32 @@ Initial 'Mix and Match' order
 The following are scenarios which can exist for winery shipping — which influence how the modal will present itself. Research was done by Ben on a number of BC wineries. Winery admin will have to select one of these options (at the moment it appears we will not have comibinations):
 
 1. No constrains. Example — you can order 1 to infinity.  
-           This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear. 
+           
+            *This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear.*
 
-2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.  
-  
-         This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely. 
+2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.   
 
-3. Case based order of a single wine, - 'aka. a multiple of x'. Example, - a single wine must be ordered in sets of 6.   
-  
-          This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied. 
+         *This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely.*
+
+3. Case based order of a single wine, - 'aka. a multiple of x'. Example, - a single wine must be ordered in sets of 6.  
+
+           *This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied.*
 
 4. Case based order of a single wine, with multiple case sizes. Example, a single wine must be ordered in cases of 6 or 12 or 18, etc. Thus you can order 2*6 + 1*12 + 4 * 18. This would be a winery completely dependent on its packaging.  
-     
-           For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12. 
+    
+         *For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12.*
 
 5. 'Mix + match'  with minimum order of 'x +', aka not multiple based. Example, you must order at least 6 bottles of various wines, but can order more so 6 to infinity.   
-
-         This scenario was not present in any winery reviewed. 
+   
+         *This scenario was not present in any winery reviewed.*
 
 6. 'Mix + match' based on a specific case size. Example you can mix and match wines but they will only ship in sets of 6.
    
-         This scenario often existed for wineries offering 12 bottle cases. 
+         *This scenario often existed for wineries offering 12 bottle cases.*
 
 7. 'Mix + match' based on several case sizes. You can mix and match wines in sets of 6 and 12. But they will only ship in some sort of combination of those set numbers. Aka 6, 12, 18, 24, etc.  
-
-         The majority of wineries offer this scenario with either 6 or 12 bottle cases. 
+       
+         *The majority of wineries offer this scenario with either 6 or 12 bottle cases.*
 
 
 #### Structure
