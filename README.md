@@ -420,7 +420,7 @@ The following are scenarios which can exist for winery shipping — which influe
 
 1. No constrains. Example — you can order 1 to infinity.  
            
-            *This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear.*
+| *This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear.*
 
 2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.   
 
