@@ -1,16 +1,14 @@
 {% include misc/section_separator.html label='select quantity' %}
+
 <section class='modal_action_section clearfix'>
 	<div class='individual_action'>
-		<div class='action_label'> <!-- action labels are contextual and only appear when required to clarify the action, for example this would not appear in the case-based purchases-->
-			6-bottle cases:
-		</div>
 		<div class="quantity_entry">
 			<span class='subtract'>-</span><!-- control to subtract quantity -->
-			<span class='quantity'>3</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+			<span class='quantity'>5</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
 			<span class='add'>+</span><!-- control to add quantity -->
 		</div>
-		<div class='action_label'><!-- action labels are contextual and only appear when required to clarify the action, for example this would not appear in the case-based purchases-->
-			= 18 bottles
+		<div class='action_label quantity_caption'><!-- if single bottle orders then would say 'bottle' or 'bottles' if case based then the following-->
+			6-bottle cases = 30 bottles
 		</div>
 	</div>
 </section>

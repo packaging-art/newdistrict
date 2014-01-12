@@ -1016,8 +1016,6 @@ position:relative;
   margin: 5% auto 0;
 }
 
-
-
 .modal_cancel {
   @extend .headline;
   text-align: center;
@@ -1030,31 +1028,44 @@ position:relative;
   padding: .3em 0 .2em;
 }
 
-.modal_comment_fixed_container {
-  position: absolute;
-  bottom: 0;
-}
 
 .modal_action_section {
-  margin: 2em auto;
+  margin: 2.5em auto;
 }
 
 .modal_window_content {
   background: white;
   padding-bottom: 3em;
 
-  .grid_framed {
-    width:100%;
-    margin: 0;
-    float: inherit;
-    margin-bottom: 2em;
 
-    .modal_comment {
-      margin-bottom: 0;
-      font-size: .7em;
-      width: 90%;
+
+  .grid_img_container {width:60%;
+  margin:0 auto;
+  margin-bottom: 1.5em;
+  }
+
+    .grid_title {
+      position: relative;
+      padding: 1.2em 1em 1em;
+
+      .major_title {
+      color:black;
+      }
+    }
+
+  .modal_total {
+    @extend .headline;
+    text-align: center;
+    padding: 0 1em;
+
+    .number {
+      display: inline;
+      border-bottom: 1px solid lightgray;
+      padding-bottom: .2em;
     }
   }
+
+  .modal_total + .action_label {margin-top: 2.5em;}
 
   .highlight {color: black;}
 
@@ -1113,12 +1124,20 @@ position:relative;
 .modal_comment, .action_label {
   @extend .headline;
   font-size: .65em;
-  margin: 1em auto;
+  margin: 0 auto;
+  margin-top: 1em;
   display: block;
   width: 80%;
   text-align: center;
 }
 
+.order_specifics {
+  margin: 3.5em auto 1em;
+}
+
+.quantity_caption {
+  margin: 1em auto 0;
+}
 .action_label {
   color: hsl(0,0%,60%);
  }
@@ -1127,6 +1146,10 @@ position:relative;
   margin-top: 3em;
 }
 
+
+  .quantity_entry {
+    margin-top: .5em;
+  }
 
 .quantity_entry, .action_button {
   @extend .headline;

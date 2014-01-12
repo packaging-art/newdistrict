@@ -9,39 +9,19 @@ title: new district
 <div class='modal_window_super_container'>
 	<div class="modal_window_container clearfix">
 		<div class='modal_window_content'>
-			<section class='grid_framed clearfix'>
-				<div class='grid_img_container'>
-					<img src='img/bottle_background2v3.jpg'><!--we should generate two photos from the ones they upload and use picturefull.js to replace them for high or low resolution screens-->
-				</div>
-				<div class="wine_info_container">
-					<div class='wine_info'>
-						<div class='grid_title'>
-							<div class='major_title'>Cabernet</br>Sauvignon</div>
-							<div class='product_meta_info'>2012<span class='price_separator'>|</span>$45<span class='price_separator'>|</span>750ml</div>
-						</div>
-								<div class="modal_comment_fixed_container knockout ">
-									<div class='modal_comment'>This wine is available for purchase in 6 and 12-bottle cases.
-									</div>
-								</div>
-					</div>
-				</div>
-			</section>
-
+			{% include modal_addtocart/modal_title_image_specifics.html %}
 			{% include misc/section_separator.html label='select quantity' %}
 
 			<section class='modal_action_section clearfix'>
 				
 				<div class='individual_action'>
-					<div class='action_label'>
-						6-bottle cases:
-					</div>
 					<div class="quantity_entry">
-						<span class='subtract'>-</span>
-						<span class='quantity'>5</span>
-						<span class='add'>+</span>
+						<span class='subtract'>-</span><!-- control to subtract quantity -->
+						<span class='quantity'>5</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+						<span class='add'>+</span><!-- control to add quantity -->
 					</div>
-					<div class='action_label'>
-						= 30 bottles
+					<div class='action_label quantity_caption'><!-- if single bottle orders then would say 'bottle' or 'bottles' if case based then the following-->
+						6-bottle cases = 30 bottles
 					</div>
 				</div>
 
@@ -49,19 +29,16 @@ title: new district
 					{% include misc/section_separator.html label='+' %}
 				</div>
 
-				<div class='individual_action'>
-					<div class='action_label'>
-						12-bottle cases:
+					<div class='individual_action'>
+						<div class="quantity_entry">
+							<span class='subtract'>-</span><!-- control to subtract quantity -->
+							<span class='quantity'>3</span><!-- an indicator of quantity, should also be a free number field, meaining that a user could click on it and type the number in, if more then one quantity label is present user needs to be able to use the tab key to cycle through them-->
+							<span class='add'>+</span><!-- control to add quantity -->
+						</div>
+						<div class='action_label quantity_caption'><!-- if single bottle orders then would say 'bottle' or 'bottles' if case based then the following-->
+							12-bottle cases = 36 bottles
+						</div>
 					</div>
-					<div class="quantity_entry">
-						<span class='subtract'>-</span>
-						<span class='quantity'>2</span>
-						<span class='add'>+</span>
-					</div>
-					<div class='action_label'>
-						= 24 bottles
-					</div>
-				</div>
 
 			</section>
 
@@ -69,6 +46,9 @@ title: new district
 
 			<section class='modal_action_section clearfix'>
 				<div class='individual_action'>
+						<div class='modal_total'>
+		<div class='number'>$45 total</div> <!-- total price for the quantity selected--> 
+	</div>
 					<div class='action_label'>
 							You are adding 5 cases (2 of 12-bottle and 3 of 6-bottle cases) of <span class='highlight'>Cabernet Sauvignon 2012</span>. This equates to 54 bottles being added to your cart.
 					</div>
