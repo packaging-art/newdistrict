@@ -419,8 +419,7 @@ Initial 'Mix and Match' order
 The following are scenarios which can exist for winery shipping — which influence how the modal will present itself. Research was done by Ben on a number of BC wineries. Winery admin will have to select one of these options (at the moment it appears we will not have comibinations):
 
 1. No constrains. Example — you can order 1 to infinity.  
-
-        This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear. 
+           This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear. 
 
 2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.  
   
