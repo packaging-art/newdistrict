@@ -370,8 +370,8 @@ Files:
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html>  
 2. Cancel Button  
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html>  
-3. Section 1: Image  
-   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html>  
+3. Section 1: Title/Image/Product Specifics  
+   <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_title_image_specifics.html>  
 4. Section 2: Quantity  
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html>  
 5. Optional Section 3: Destination  
@@ -380,23 +380,22 @@ Files:
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html>  
 7. Section 5: Action Buttons  
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
-  
-----  
 
-#### Previews:  
+Example: <https://github.com/deadtype/newdistrict/blob/master/modal_addtocart.html>   
+  
+---- 
+
+#### The Main Preview  
+
+<http://deadtype.ca/newdistrict/modal_addtocart.html>  
+
+
+#### Additional Previews showing Summary section variations:  
 (not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section)   
 
-Unconstrained bottle order  
-   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html>  
-
-Unconstrained bottle order with a 'Mix and Match' set active  
-   <http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html>  
 
 Minimum purchase of a case required (single case)  
    <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
-
-Minimum purchase of a case required with a 'Mix and Match' set active  
-   <http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html>  
 
 Minimum purchase of a case required with multiple case quantities  
    <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
@@ -414,6 +413,39 @@ Initial 'Mix and Match' order
    <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
 
 ----  
+
+#### Possible Scenarios:
+
+The following are scenarios which can exist for winery shipping — which influence how the modal will present itself. Research was done by Ben on a number of BC wineries. Winery admin will have to select one of these options (at the moment it appears we will not have comibinations):
+
+1. No constrains. Example — you can order 1 to infinity.  
+
+        This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear. 
+
+2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.  
+  
+         This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely. 
+
+3. Case based order of a single wine, - 'aka. a multiple of x'. Example, - a single wine must be ordered in sets of 6.   
+  
+          This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied. 
+
+4. Case based order of a single wine, with multiple case sizes. Example, a single wine must be ordered in cases of 6 or 12 or 18, etc. Thus you can order 2*6 + 1*12 + 4 * 18. This would be a winery completely dependent on its packaging.  
+     
+           For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12. 
+
+5. 'Mix + match'  with minimum order of 'x +', aka not multiple based. Example, you must order at least 6 bottles of various wines, but can order more so 6 to infinity.   
+
+         This scenario was not present in any winery reviewed. 
+
+6. 'Mix + match' based on a specific case size. Example you can mix and match wines but they will only ship in sets of 6.
+   
+         This scenario often existed for wineries offering 12 bottle cases. 
+
+7. 'Mix + match' based on several case sizes. You can mix and match wines in sets of 6 and 12. But they will only ship in some sort of combination of those set numbers. Aka 6, 12, 18, 24, etc.  
+
+         The majority of wineries offer this scenario with either 6 or 12 bottle cases. 
+
 
 #### Structure
 
