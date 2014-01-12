@@ -4,7 +4,8 @@ newdistrict.github.io
 
 ### 1. Site Behaviour and Page Structure   
   
-  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page.  
+  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page. The goal is to have items on page and show them on user call, using subtle transitions to fade/slide them-in or out. 
+
   
   In terms of user experience there is 3 pages:  
   
@@ -13,9 +14,6 @@ newdistrict.github.io
   2. [Full Product Page](#9-full-product-page).
   
   3. Checkout Page
-
-  The goal is to have items on page and shem them on user call, using subtle transitions to fade/slide them-in or out. 
-  
 
 ### 2. Responsive Images   
 
