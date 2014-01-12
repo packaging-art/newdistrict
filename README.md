@@ -462,7 +462,8 @@ Wineries can have a wide range of ordering options (including unconstrained orde
 
 ## 11. Cart Page  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/cart_look.html>  
+Files: <https://github.com/deadtype/newdistrict/blob/master/cart_look.html>   
+
 Preview: <http://deadtype.ca/newdistrict/cart_look.html>  
 
        
