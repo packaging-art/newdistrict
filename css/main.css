@@ -1192,13 +1192,18 @@ h3 {
 }
 
 .winery_product_group {
-  padding: 1.25em 3.5em;
-  border: 1px solid lightgray;
-  margin: 0 -3.5em;
+  padding: 1.25em 4.5em;
+  margin: 0 -4.5em;
+  border: 3px solid lightgray;
+  border-left: none;
+  border-right: none;
 }
 .winery_product_group .divider_container {
   width: 100%;
   margin: 0;
+}
+.winery_product_group .overlay_label {
+  color: lightgray;
 }
 
 .winery_product {
@@ -1249,6 +1254,9 @@ h3 {
   margin-top: 5em;
 }
 
+.cart_winery_group {
+  margin: 8em 0;
+}
 .cart_winery_group .winery_name_container {
   text-align: center;
 }

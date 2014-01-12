@@ -1,0 +1,28 @@
+<div class='cart_winery_group'>
+	<div class="winery_name_container">
+		<div class='winery_title'>
+			Mission Hill Family Estate
+		</div>
+	</div>
+	<div class='main_cart_summary'>
+		<p>[Optional section for comments or terms specific to the individual winery] Ex. Minimum order of 12 bottles required, 'Mix and Match' allowed.</p>
+	</div>
+	<div class='winery_product_group'>
+		{% include cart_preview/single_cart_item.html %}
+
+		{% include misc/section_separator.html label='+' %}
+
+		{% include demo_preview_helpers/extra_cart_items.html %}
+	</div>
+	<div class='winery_cart_total clearfix'>
+		<h2 class='major_title'>Total</h2>
+		<div class="major_cart_action">
+			<div class='main_cart_total'>
+				57 bottles<span class='price_separator'>|</span>$456
+			</div>
+			<div class='control_button'>
+				<a class="">Checkout items from This store only</a>
+			</div>
+		</div>
+	</div>
+</div>
