@@ -4,7 +4,8 @@ newdistrict.github.io
 
 ### 1. Site Behaviour and Page Structure   
   
-  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page.  
+  To the user exploring the site it should feel as a single page as much as possible. Effectively as the user experiences the site, they would only see page reload on visiting the [Full Product Page](#9-full-product-page) and when proceeding to Checkout page. The goal is to have items on page and show them on user call, using subtle transitions to fade/slide them-in or out. 
+
   
   In terms of user experience there is 3 pages:  
   
@@ -13,9 +14,6 @@ newdistrict.github.io
   2. [Full Product Page](#9-full-product-page).
   
   3. Checkout Page
-
-  The goal is to have items on page and shem them on user call, using subtle transitions to fade/slide them-in or out. 
-  
 
 ### 2. Responsive Images   
 
@@ -43,6 +41,7 @@ newdistrict.github.io
 8. [Section Separator](#8-section-separator)
 9. [Full Product Page](#9-full-product-page)
 10. ['Add to Cart' Modal](#10-add-to-cart-modal)
+11. [Cart Page](#11-cart-page)
 
 
 
@@ -457,6 +456,35 @@ Wineries can have a wide range of ordering options (including unconstrained orde
        
        1. A conditional 'Checkout Now' button, which would hide if the user only has a 'Mix and Match' set and it does not have enough items in it to move it to cart.
          
-       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'
+       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'  
+  
+  
+
+## 11. Cart Page  
+
+Files: <https://github.com/deadtype/newdistrict/blob/master/cart_look.html>   
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/cart_header.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/individual_winery_format.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/single_cart_item.html>
+
+Preview: <http://deadtype.ca/newdistrict/cart_look.html>   
+
+
+The goal of this page is to lets users quickly look at their cart contents, scroll through and change quantities without leaving the context of where they are.  
+
+Ideally we hide this on page and reveal (slide up from the fixed footer) whenever user clicks the cart numbers/descriptions in the fixed footer (then they can close it by either pressing the hide cart button or the back button). Additionally this needs to have a standalone page — which looks and functions exactly the same, but has a link, which would let users reach it directly.
+
+-----
+
+First the cart shows the overall total, links to overall checkout and contextual text (this does not have to appear if there is nothing neccessary to write)
+
+After the section above we first show the store the user is currently in (if, in future, cart is reached from general marketplace page, this section is not present).
+
+After this is an alphabetical list of other stores (only showing ones with items in them), the current store is omitted from this list (if in general marketplace, all stores with items in it would show in alphabetical order).
+
+-----
+
+Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
+
 
        
