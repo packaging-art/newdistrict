@@ -463,7 +463,23 @@ Wineries can have a wide range of ordering options (including unconstrained orde
 ## 11. Cart Page  
 
 Files: <https://github.com/deadtype/newdistrict/blob/master/cart_look.html>   
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/cart_header.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/individual_winery_format.html>
+<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/single_cart_item.html>
 
-Preview: <http://deadtype.ca/newdistrict/cart_look.html>  
+Preview: <http://deadtype.ca/newdistrict/cart_look.html>   
+
+
+The goal of this page is to lets users quickly look at their cart contents, scroll through and change quantities without leaving the context of where they are.  
+
+Ideally we hide this on page and reveal (slide up from the fixed footer) whenever user clicks the cart numbers/descriptions in the fixed footer (then they can close it by either pressing the hide cart button or the back button). Additionally this needs to have a standalone page — which looks and functions exactly the same, but has a link, which would let users reach it directly.
+
+-----
+
+First the cart shows the overall total, links to overall checkout and contextual text (this does not have to appear if there is nothing neccessary to write.
+
+After the section above we first show the store the user is currently in (if, in future, cart is reached from general marketplace page, this section is not present).
+
+After this is an alphabetical list of other stores (only showing ones with items in them), the current store is omitted from this list (if in general marketplace, all stores with items in it would show in alphabetical order).
 
        
