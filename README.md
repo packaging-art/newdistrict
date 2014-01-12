@@ -476,10 +476,15 @@ Ideally we hide this on page and reveal (slide up from the fixed footer) wheneve
 
 -----
 
-First the cart shows the overall total, links to overall checkout and contextual text (this does not have to appear if there is nothing neccessary to write.
+First the cart shows the overall total, links to overall checkout and contextual text (this does not have to appear if there is nothing neccessary to write)
 
 After the section above we first show the store the user is currently in (if, in future, cart is reached from general marketplace page, this section is not present).
 
 After this is an alphabetical list of other stores (only showing ones with items in them), the current store is omitted from this list (if in general marketplace, all stores with items in it would show in alphabetical order).
+
+-----
+
+Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
+
 
        
