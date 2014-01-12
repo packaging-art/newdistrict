@@ -422,49 +422,47 @@ The following are scenarios which can exist for winery shipping — which influe
   
        *This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear.*
 
-2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.   
-
-         *This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely.*
+2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.  
+  
+       *This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely.*
 
 3. Case based order of a single wine, - 'aka. a multiple of x'. Example, - a single wine must be ordered in sets of 6.  
-
-           *This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied.*
+  
+       *This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied.*
 
 4. Case based order of a single wine, with multiple case sizes. Example, a single wine must be ordered in cases of 6 or 12 or 18, etc. Thus you can order 2*6 + 1*12 + 4 * 18. This would be a winery completely dependent on its packaging.  
-    
-         *For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12.*
+  
+       *For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12.*
 
-5. 'Mix + match'  with minimum order of 'x +', aka not multiple based. Example, you must order at least 6 bottles of various wines, but can order more so 6 to infinity.   
-   
-         *This scenario was not present in any winery reviewed.*
+5. 'Mix + match'  with minimum order of 'x +', aka not multiple based. Example, you must order at least 6 bottles of various wines, but can order more so 6 to infinity.  
+  
+       *This scenario was not present in any winery reviewed.*
 
-6. 'Mix + match' based on a specific case size. Example you can mix and match wines but they will only ship in sets of 6.
-   
-         *This scenario often existed for wineries offering 12 bottle cases.*
+6. 'Mix + match' based on a specific case size. Example you can mix and match wines but they will only ship in sets of 6.  
+  
+       *This scenario often existed for wineries offering 12 bottle cases.*
 
 7. 'Mix + match' based on several case sizes. You can mix and match wines in sets of 6 and 12. But they will only ship in some sort of combination of those set numbers. Aka 6, 12, 18, 24, etc.  
-       
-         *The majority of wineries offer this scenario with either 6 or 12 bottle cases.*
+  
+       *The majority of wineries offer this scenario with either 6 or 12 bottle cases.*
 
 
-#### Structure
-
-'Add to Cart' modal is used universally across the website.  
-
-Wineries can have a wide range of ordering options (including unconstrained orders, case orders and 'mix and match' sets) which can combine into multiple permutations. 'Add to Cart' modal is designed to organize this highly varied information into a structured, step by step process.
+#### Behaviour
 
 
-1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background, which should cover the whole site (will need a script for this). An example of this is the ['Super Scaled' transition on this site](http://tympanus.net/Development/ModalWindowEffects/). This is preview of the general look on [New District](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html). The file showing the external structure is located [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
+
+1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background, which should cover the whole site (will need a script for this). An example of this is the ['Super Scaled' transition on this site](http://tympanus.net/Development/ModalWindowEffects/). This is preview of the general look on [New District](http://deadtype.ca/newdistrict/modal_addtocart.html). The file showing the external structure is located [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
 
 2. The only way to exit or cancel out of adding the item to cart is to click the ['Cancel' button](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html), which sits below the modal window. The darkened background is transparent and scrollable, showing the site below, but is not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
 
-3. The first part of the modal is the [Image Element](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_image_section.html) — which reuses the "grid product view" design patter. The key difference comes in the text at the bottom of the image — 'modal_comment'. This is a place were we provide contextual information about the wine. Such as its availability (single bottle, case or mix and match), and any specifics about it. See the various previews for the range of possible comments.
+3. The first part of the modal is the [Image Element](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_title_image_specifics.html) — . The important part is the text at the bottom were we provide contextual information about the wine. Such as its availability (single bottle, case or mix and match), and any specifics about it. 
 
-4. The second part is the [Quantity Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html). Depending on the context it can show more or less information about the wine being added. For example in case of the uncostrained order it can exist via a simple field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained.html)). If the winery has multiple cases sizes then this expands to numerous fields with labels about and below the field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html)).  
+4. The second part is the [Quantity Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html). Depending on the context it can show contextual information about the wine being added, ex. bottles vs case. If the winery has multiple case sizes then this could expand to numerous fields with labels about and below the field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html)).  
   
-       In uncostrained case the field entry is done in single bottle orders. In the scenario where field entry is about cases the label above states the number of bottles in each case and the number below show how many bottles the case order equates to (ex. 4 6-bottle cases = 24 bottles.  
 
-5. The third part is a conditional [Destination Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html) which only appears when the product being selected is available for both regular order (unconstrained ordering and case based) and 'mix and match' AND there is an open 'mix and match' present. It provides user with information about the options of adding the product and buttons to select the options.  
+5. CURRENTLY NOT NEEDED ANYMORE — IGNORE OR READ OUT OF INTEREST (since it appears no winery will have combinations of shipping options, ex. single orders and a specific min-order 'mix and match).  
+     
+      This is a conditional [Destination Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html) which only appears when the product being selected is available for both regular order (unconstrained ordering and case based) and 'mix and match' AND there is an open 'mix and match' present. It provides user with information about the options of adding the product and buttons to select the options.  
   
        The are to put the selected quantity in 'Cart' or into 'Mix and Match' (if the selected quantity is less then or equal to the amount requried to complete the 'mix and match' set). If the selected quantity is more then required to complete the 'mix and match' set then the button would turn into 'Cart + "Mix and Match". This would complete the set and add the overflow bottles to cart. See [Example](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
   
@@ -472,13 +470,13 @@ Wineries can have a wide range of ordering options (including unconstrained orde
   
        The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear (fade-in) or use the cancel button to exit the 'add to cart' modal.   
 
-6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html). If the Destination Section (described above) was not required (if product is not available for both regular order and 'mix and match') this section appears directly after quantity. If Destination section was required, this section appears after user makes a selection.  
+6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html).  
   
-       This section provides context about the options the user have selected and outlines what quantities of what bottles are going where. It basically has 2 sections:    
+       This section provides context about what user has selected:     
 
-       1. A summary paragraph ('modal summary') outlining what bottles go where (cart, 'mix and match'), whether the users need to take any actions after, whether a new 'mix and match' set was created.  
-        
-       2. "Mix and match" summary ('modal_mix_and_match_summary') — this appears in the scenarios where destination had to be chosen and changes occured to the 'mix and match' set. This would have contain a paragraph describing what is happening to the set and a list ('modal_mix_match_list') listing the items in the set.  
+       1. Price
+       
+       2. A summary paragraph ('modal summary') outlining what bottles go where (cart, 'mix and match'), whether the users need to take any actions after, whether a new 'mix and match' set was created.  
          
          See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
 
@@ -486,9 +484,9 @@ Wineries can have a wide range of ordering options (including unconstrained orde
         
        This has two buttons: 
        
-       1. A conditional 'Checkout Now' button, which would hide if the user only has a 'Mix and Match' set and it does not have enough items in it to move it to cart.
+       1. A conditional 'Checkout' button, which would hide if the user does not have enough bottles in cart to checkout.
          
-       2. A 'Continue Shopping' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'  
+       2. A 'Explore Our Wines' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'  
   
   
 
