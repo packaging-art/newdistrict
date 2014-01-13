@@ -814,6 +814,7 @@ position:relative;
     display: none;
   }
 }
+
 .banner_preview .grid_framed:not(.active) {
   opacity: .2;
 }
@@ -824,7 +825,7 @@ position:relative;
   position: relative;
 }
 .banner.active {
-  float:left;
+  float: left;
   margin-bottom: 0;
 }
 

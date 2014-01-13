@@ -1,0 +1,148 @@
+.headline, .backend_section .individual_section_content .section_number, .table_label {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.backend_wrap {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.backend_wrap {
+  width: 1000px;
+  margin: 3.5em auto 7em;
+  background: transparent;
+}
+
+.mainheader {
+  text-align: center;
+}
+.mainheader .winery_title {
+  font-size: 1em;
+  /*1.6*/
+  border: none;
+  border: 2px solid black;
+  /*border-bottom: 3px solid red;
+  padding-left:0;
+  padding-right:0;*/
+}
+.mainheader .major_section_header {
+  margin: 6em auto 7em auto;
+}
+.mainheader .divider_container {
+  margin: .75em auto .75em;
+}
+.mainheader .view_label {
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 600;
+  font-style: normal;
+  margin-top: .5em;
+}
+.mainheader .collection_description {
+  margin-top: 0;
+}
+
+.main_nav_link {
+  margin: 0 1.5em;
+  color: lightgray;
+}
+
+.main_nav_link.active {
+  color: black;
+}
+
+nav .price_separator {
+  vertical-align: 2px;
+  color: lightgrey;
+}
+
+.backend_section .divider_container {
+  margin: 7em auto;
+}
+.backend_section .individual_section_content {
+  padding: 3.5em 1em;
+  background: #f2f2f2;
+  border: 1px solid lightgray;
+}
+.backend_section .individual_section_content .major_section_header {
+  margin: 0em auto;
+}
+.backend_section .individual_section_content .major_title {
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+.backend_section .individual_section_content .section_number {
+  float: left;
+  border: none;
+}
+.backend_section .individual_section_content .cart_controls {
+  text-align: center;
+  margin-top: 2em;
+}
+.backend_section .major_section_header {
+  margin: 0em auto 6em;
+}
+.backend_section .collection_description {
+  margin: 0;
+}
+
+.major_cart_controls {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.2em;
+}
+
+.individual_section_content + .individual_section_content {
+  margin-top: 1.25em;
+}
+
+.table_label_container {
+  padding-bottom: .3em;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 1em;
+  font-size: .8em;
+}
+
+.table_label {
+  float: left;
+}
+
+.table_label.name {
+  width: 300px;
+  text-align: center;
+}
+
+.table_label.year {
+  width: 60px;
+}
+
+.table_label.secondary {
+  width: 150px;
+  text-align: center;
+}
+
+.table_label.edit {
+  width: 40px;
+  text-align: right;
+  float: right;
+}
+
+.table_label.category_name {
+  width: 650px;
+}
+
+.individual_section_content.stock_item {
+  padding: 1.7em 2em;
+  font-size: .9em;
+  margin: 0 -2em;
+}
+.individual_section_content.stock_item .control_button {
+  float: right;
+}
+
+.individual_section_content.stock_item + .individual_section_content.stock_item {
+  margin-top: .5em;
+}
