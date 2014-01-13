@@ -1,6 +1,12 @@
 newdistrict.github.io
-=====================
-# Front-End Site Behaviour
+=====================   
+## Contents 
+[Front End Site Behaviour](#front-end-site-behavior)
+[Front End Parts](#front-end-parts)
+[Back End Interface](#back-end-interface)
+
+
+# Front End Site Behaviour
 
 ### 1. Site Behaviour and Page Structure   
   
@@ -516,7 +522,7 @@ After this is an alphabetical list of other stores (only showing ones with items
 
 Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
 
-# Back-End Interface
+# Back End Interface
 
 ## Stock Info Page  
 
