@@ -522,5 +522,5 @@ Individual items have controls on the to quickly change quantity (should not be 
 
 File: <https://github.com/deadtype/newdistrict/blob/master/backend_stockinfo.html>   
  
-Preview: <http://deadtype.ca/backend_stockinfo.html>
+Preview: <http://deadtype.ca/newdistrict/backend_stockinfo.html>
        
