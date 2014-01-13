@@ -1,9 +1,12 @@
 newdistrict.github.io
 =====================   
 ## Contents 
-[Front End Site Behaviour](#front-end-site-behavior)
-[Front End Parts](#front-end-parts)
-[Back End Interface](#back-end-interface)
+[Front End Site Behaviour](#front-end-site-behavior)  
+
+[Front End Parts](#front-end-parts)  
+
+[Back End Interface](#back-end-interface)  
+
 
 
 # Front End Site Behaviour
