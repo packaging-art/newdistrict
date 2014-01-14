@@ -1,0 +1,97 @@
+/* Location Slide */
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+}
+
+.frame {
+    border: 2px solid black;
+}
+
+.view_label {
+  font-style: italic;
+}
+.collections {float:left; display: inline-block;}
+.collections a, .view a {padding: 0; color:black;
+margin-top: 3em;}
+.view {float: right; display: inline;}
+
+.flex_container_divider {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (doesn't work very well) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.ie9 .flex_container_divider {
+  display: none;
+}
+
+.flex_border {
+
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  height:10px;
+  background: hsl(0,0%,5%);
+}
+
+.super_underscore .flex_container_divider {
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.super_underscore .flex_border {
+  -webkit-box-flex: inherit;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: inherit;
+  /* OLD - Firefox 19- */
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: inherit;
+  /* Chrome */
+  -ms-flex: inherit;
+  /* IE 10 */
+  flex: inherit;
+  width: 1.4em;
+}
+.triangle-left {
+width: 0;
+height: 0;
+border-top : 10px solid hsl(0,0%,5%);
+border-right: 10px solid transparent;
+}
+.triangle-right {
+width: 0;
+height: 0;
+border-top: 10px solid hsl(0,0%,5%);
+border-left: 10px solid transparent;
+}
+
+.flex_border.first {width:79%;}
+.flex_border.second {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+  width: 20%;
+  /* For old syntax, otherwise collapses. */
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+}
+
+.section_container {
+    margin-top: 2em;
+}

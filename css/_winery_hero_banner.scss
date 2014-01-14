@@ -1,0 +1,179 @@
+/* Winery Hero Banner */
+
+.winery_header {
+  width: 100%;
+  z-index: 1000;
+  padding: 1.35em 0 1.15em 0;
+}
+
+.winery_title {
+  color: $controls_color;
+  display: inline-block;
+  padding: .2em .5em;
+  border: 2px solid $controls_color;
+  font-size: .95em;
+  white-space: nowrap;
+}
+
+.winery_menu {
+  display: block;
+  text-align: right;
+  margin-top: -1.5em;
+}
+
+.winery_menu a, .our_wines {
+  @extend .headline;
+  display: inline-block;
+  margin: 0 0 0 2em;
+  color:$controls_color;
+  float:none;
+  font-size: .7em;
+}
+
+.our_wines {
+  position:absolute;
+  bottom:0;
+  margin:0;
+  text-align: center;
+  width:100%;
+  color: white;
+  margin-bottom: .8em;
+
+  .arrow {
+    font-size: 1.2em;
+  margin-top: .25em;
+  margin-bottom: 0;
+  }
+}
+
+.link_back {
+  @extend .headline;
+  color: black;
+  text-align: center;
+
+}
+
+.hero_slider {
+  height: 1000px; /* without a height definition location slide starts collapsed, but with this about and index page experience height jumps — need to look into this*/
+  position: relative;
+}
+
+.tint {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: hsla(0,0%,0%,.3);
+  top:0;
+}
+
+.dark.tint {
+  background: hsla(0,0%,0%,.8)!important;
+}
+
+
+.placeholder_logo {
+  width:12em;
+  width: 7em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+
+.arrow {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: .9em;
+  margin-bottom: .25em;
+  margin-top: .15em;
+}
+
+.winery_name {
+  display: inline-block;
+  border-bottom: 1px solid $brand_color;
+}
+
+/*.winery_name:before {
+  content: url(/img/arrow_down.svg);
+}*/
+
+.fixed + .major_section_header {
+  margin-top: 12em;
+  margin-bottom: 9em;
+}
+
+.winery_hero_banner + .controls_container {
+  margin-top: 2em;
+}
+
+.link_back + .controls_container {
+  margin-top: 0em;
+}
+
+.controls_container {
+  width: 100%;
+ margin-top: 1.5em;
+
+  .content_wrap {
+    position: relative;
+  }
+}
+
+.control_button {
+  @extend .headline;
+  margin-left: 0;
+  font-size: .7em;
+  color: black;
+  padding: .25em .5em .15em .5em;
+   border: 1px solid black;
+  background: hsla(0,0%,100%,.4);
+  display: inline-block;
+  z-index: 1000;
+  position: relative;
+  white-space: nowrap;
+}
+
+.arrow_symbol {
+  margin-right: .5em;
+  font-size: .85em;
+}
+
+.collection {
+  float: left;
+}
+
+.controls_container_title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 600;
+  margin-top: .15em;
+  line-height: 1.4;
+}
+
+.view {
+  float: right;
+}
+
+.major_section_header {
+  text-align: center;
+  width: 66%;
+  font-weight: 400;
+  margin: 8em auto 4em auto;
+
+  .product_meta_info {
+    font-size: .75em;
+    margin-top: .6em;
+  }
+  .price_separator {
+  margin: 0 1.5em;
+  font-size: .6em;
+  vertical-align: 2px;
+ }
+}
+
+.collection_description {
+  margin-top: 4em;
+}
+
+.major_section_header p {font-size: 1.2em;}

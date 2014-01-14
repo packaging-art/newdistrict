@@ -1,0 +1,22 @@
+/* Notification Section */
+
+.notification_message {
+  text-align: right;
+  width: 90%;
+  float: right;
+}
+
+.notification_control {
+  @extend .headline;
+  float: left;
+  padding-bottom: 0;
+  width: .7em;
+}
+
+.notification {
+  padding: 1.4em 0 1.2em 0;
+}
+
+.notification + .notification {
+  border-top: 1px solid hsl(0,0%,85%);
+}

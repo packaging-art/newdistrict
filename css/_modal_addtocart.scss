@@ -1,0 +1,199 @@
+/* Modal Add to Cart */
+
+.modal_window_super_container {
+  position:absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0,0%,0%,.8);
+  z-index: 100000;
+  height: 1200px;
+}
+
+.modal_background{
+    background: hsla(0,0%,0%,.8);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
+
+.modal_window_container {
+  padding: 0em;
+  width: 28.5%;
+  margin: 5% auto 0;
+}
+
+.modal_cancel {
+  @extend .headline;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  font-size: .8em;
+  background: transparent;
+  width: 50%;
+  margin: 2.5em auto ;
+  padding: .3em 0 .2em;
+}
+
+
+.modal_action_section {
+  margin: 2.5em auto;
+}
+
+.modal_window_content {
+  background: white;
+  padding-bottom: 3em;
+
+
+
+  .grid_img_container {width:60%;
+  margin:0 auto;
+  margin-bottom: 1.5em;
+  }
+
+    .grid_title {
+      position: relative;
+      padding: 1.2em 1em 1em;
+
+      .major_title {
+      color:black;
+      }
+    }
+
+  .modal_total {
+    @extend .headline;
+    text-align: center;
+    padding: 0 1em;
+
+    .number {
+      display: inline;
+      border-bottom: 1px solid lightgray;
+      padding-bottom: .2em;
+    }
+  }
+
+  .modal_total + .action_label {margin-top: 2.5em;}
+
+  .highlight {color: black;}
+
+  .wine_info_container {
+    padding:1.4em 1.2em 1em;
+  }
+
+  .our_wines {margin-bottom:0em;}
+
+  .divider_container {
+    margin: 1em auto 1em;
+    width: 90%;
+  }
+  .divider {
+    top: 55%;
+  }
+
+  .secondary_divider .divider_container {
+    width: 100%;
+  }
+
+  .grid_img_container {
+    max-height: 500px;
+    overflow:hidden;
+  }
+
+  .control_button {
+    width: 50%;
+    display: inline-block;
+    padding: .5em .5em .45em .5em;
+    border: 1px solid black;
+  }
+
+  .control_button + .control_button {
+    margin-top: .8em;
+  }
+}
+
+  .control_button + .control_button {
+    margin-left: .1em;
+  }
+
+.modal_mix_match_list {
+  margin: 5.25em auto 5em;
+}
+
+.modal_action_buttons {
+  text-align: center;
+  margin: 3em 0 0 0;
+}
+
+.individual_action {
+  margin: 2em auto;
+}
+
+.modal_comment, .action_label {
+  @extend .headline;
+  font-size: .65em;
+  margin: 0 auto;
+  margin-top: 1em;
+  display: block;
+  width: 80%;
+  text-align: center;
+}
+
+.order_specifics {
+  margin: 3.5em auto 1em;
+}
+
+.quantity_caption {
+  margin: 1em auto 0;
+}
+.action_label {
+  color: hsl(0,0%,60%);
+ }
+
+.action_button_container {
+  margin-top: 3em;
+}
+
+
+  .quantity_entry {
+    margin-top: .5em;
+  }
+
+.quantity_entry, .action_button {
+  @extend .headline;
+  text-align: center;
+  color:black;
+  position: relative;
+
+
+  .subtract, .add {
+    position: absolute;
+    font-size: 1.4em;
+    color: black;
+    left:0;
+    background: white;
+    padding:0 1em;
+    line-height: 1.3;
+  }
+
+  .add {
+    right:0;
+    left: auto;
+  }
+
+  .quantity, .modal_button, .action_choice {
+    width: 50%;
+    background: hsl(0,0%,80%);
+    border: 1px solid #cccccc;
+    display: inline-block;
+    padding: .2em 0;
+  }
+
+   .action_choice {
+    font-size: .7em;
+    padding: .66em .5em .5em .5em;
+    background:none;
+  }
+}

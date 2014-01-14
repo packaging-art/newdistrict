@@ -1,0 +1,27 @@
+/* Full Product Page */
+
+.focused_writeup {
+  margin: 4em auto;
+  font-size: 1.2em;
+  width: 66%;
+  text-align: center;
+  line-height: 1.55;
+}
+
+.product_summary_section {
+  width: 50%;
+  text-align: justify;
+
+  .product_summary_header {
+  width:85%
+  }
+
+}
+
+.awards {
+  text-align: center;
+
+  li + li {
+    margin-top:1em;
+  }
+}

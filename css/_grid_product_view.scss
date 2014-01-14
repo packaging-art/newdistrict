@@ -1,0 +1,100 @@
+/* Grid Product View */
+
+.grid_item {width: 33.3%; float:left;}
+
+
+.grid_title {
+  @extend .headline;
+font-size: 1.6em;
+padding: 0;
+line-height: .9;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+color: white;
+text-align: center;
+
+ .product_meta_info, .wine_volume {
+  font-size: .4em;
+  color: black;
+  margin-top:.7em;
+ }
+}
+
+.product_meta_info {
+  @extend .headline;
+  top: 0;
+}
+
+.wine_volume, .grid_price {
+  @extend .headline;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+    font-size: .7em;
+  color: black;
+  margin-top:.3em;
+}
+
+.grid_price {
+left: 0;
+right: auto
+}
+
+.price_separator {
+  margin: 0 .9em;
+font-size: .6em;
+vertical-align: 1px;
+}
+
+.action_container {
+    position:absolute;
+bottom: 0;
+width:100%;
+text-align: center;
+}
+
+.action_container.left {
+  text-align: left;
+}
+
+.action_container.right {
+  text-align: right;
+}
+
+.action {
+  @extend .control_button;
+  @extend .headline;
+background: transparent;
+display: inline-block;
+}
+
+.grid_framed {
+float: left;
+margin-right: 3%;
+margin-top:3%;
+position:relative;
+}
+
+.section_container .grid_framed:nth-of-type(-n+3) {
+  margin-top: 0;
+}
+
+.section_container .grid_framed:nth-of-type(3n) {
+  margin-right:0;
+}
+
+.wine_info_container {
+  padding: 1.3em 1.2em 1.15em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.wine_info {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
