@@ -27,10 +27,12 @@
   width: 100%;
   margin-bottom: 3%;
   position: relative;
+  display: none;
 }
 .banner.active {
   float: left;
   margin-bottom: 0;
+  display: block
 }
 
 .grid_framed.active {margin-bottom: 3%;}
