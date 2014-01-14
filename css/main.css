@@ -987,7 +987,7 @@ h3 {
   margin-top: 1em;
 }
 
-/* Modal Window */
+/* Modal Add to Cart */
 .modal_window_super_container {
   position: absolute;
   top: 0;
@@ -996,6 +996,16 @@ h3 {
   background: rgba(0, 0, 0, 0.8);
   z-index: 100000;
   height: 1200px;
+}
+
+.modal_background {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
 }
 
 .modal_window_container {

@@ -1,0 +1,52 @@
+/* Winery About */
+
+.winery_about {
+  font-size: 1.1em;
+  width: 76%;
+  padding: 0 3em;
+  line-height: 1.6;
+  /*border-left: 1px solid black;
+  border-right: 1px solid black;*/
+
+  .website {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+    padding: .6em 1.6em;
+  }
+}
+
+.separator {
+  margin: 0 1em;
+}
+
+.social_media {
+  display: inline-block;
+  text-align: center;
+  margin-top: .8em;
+  padding-top: .5em;
+}
+
+.social_media_link {
+  @extend .headline;
+  font-size: .7em;
+  margin: 0 1em;
+}
+
+.social_media img {
+  display: inline-block;
+  width: 1.5em;
+  margin:0 .8em;
+}
+
+.winery_header_content {
+  position: relative;
+}
+
+.search_button {
+width: .7em;
+float: right;
+vertical-align: 1px;
+}
