@@ -1,0 +1,109 @@
+.transition {
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+input, input:focus, input:hover, input:active {
+	@extend .transition;
+}
+
+.store_info {
+	text-align: center;
+	margin-bottom: 4em;
+
+	input {
+		text-align: center;
+	}
+
+	.secondary_divider {
+		width: 3em auto;
+
+		.overlay_label {
+			color:dimgray;
+		}
+	}
+}
+
+.secondary_divider {
+
+	.overlay_label {
+		color:dimgray;
+		white-space: nowrap;
+	}
+}
+
+input, textarea {
+	border: none;
+	background: hsl(0,0%,90%);
+	padding: .75em;
+	font-family: "minion-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2em;
+    border: 1px solid lightgray;
+    outline-style: none;
+    -webkit-transition: all 0.5s ease-out;
+    border-radius: 2px;
+}
+
+textarea {
+	padding: 2.5em;
+	text-align: center;
+}
+#about_store {
+	height:180px;
+}
+
+.small {width: 50%;}
+.medium {width: 75%;}
+.large {width: 100%;}
+
+input:hover, textarea:hover {
+	background: hsl(0,0%,95%);
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+	background: hsl(0,0%,99%);
+}
+
+label {
+	@extend .headline;
+	width: 100%;
+	display: block;
+	font-size: .7em;
+	margin-bottom: .5em;
+}
+
+fieldset + fieldset {
+	margin-top: 4em;
+}
+
+
+.form_help {
+	@extend .headline;
+	font-size:.7em;
+	color: dimgray;
+	margin-top:.5em;
+}
+
+.search {
+	margin-left: auto;
+	margin-right: auto;
+	.search_field {
+		width: 90%;
+	}
+
+	.search_button {
+		width: 9%;
+	}
+}
+
+.field_two {
+	margin-left: auto;
+	margin-right: auto;
+
+	fieldset {width:49%; float: left; margin-top: 0;}
+	:first-child {margin-right: 2%;}
+}

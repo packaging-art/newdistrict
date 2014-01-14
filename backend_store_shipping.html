@@ -1,0 +1,67 @@
+---
+layout: default_backend
+title: stock_info
+---
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link '>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link '>general info</a><span class='price_separator'>|</span><a class='main_nav_link active'>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>User accounts</a>
+					</nav>
+				</div>
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+			</div>
+		</div>
+
+	</header>
+
+		<div class='backend_section'>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='Shipping type' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class='backend_section'>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='Shipping Cost' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
+				</div>
+			</div>
+		</div>
+</div>
+
+{% include main_navigation/main-nav-backend.html %}

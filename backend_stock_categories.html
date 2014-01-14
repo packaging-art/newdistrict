@@ -1,0 +1,84 @@
+---
+layout: default_backend
+title: stock_info
+---
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link active'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link '>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link '>wines</a><span class='price_separator'>|</span><a class='main_nav_link active'>collections</a>
+					</nav>
+				</div>
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
+			</div>
+		</div>
+	</header>
+
+	<div class='backend_section'>
+
+
+			<div class='secondary_divider'>
+		{% include misc/section_separator.html label='wine collections' %}
+			</div>
+
+
+
+		<div class='table_label_container  clearfix'>
+			<div class='table_label category_name'>Collection Name</div>
+			<div class='table_label secondary'>Number of wines</div>
+			<div class='table_label secondary'>Description</div>
+			<div class='table_label secondary edit'>Edit</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label category_name'>1. Summer Reds</div>
+			<div class='table_label secondary'>5</div>
+			<div class='table_label secondary'>yes</div>
+			<div class='control_button'>
+				Edit
+			</div>
+		</div>
+
+				<div class="individual_section_content stock_item clearfix">
+			<div class='table_label category_name'>2. Winter Whites</div>
+			<div class='table_label secondary'>5</div>
+			<div class='table_label secondary'>yes</div>
+			<div class='control_button'>
+				Edit
+			</div>
+	</div>
+
+
+			<div class='major_cart_controls'>
+
+				<div class='control_button'>
+					Add New Collection
+				</div>
+			</div>
+	</div>
+
+
+
+</div>
+
+	{% include main_navigation/main-nav-backend.html %}

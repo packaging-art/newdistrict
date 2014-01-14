@@ -157,7 +157,6 @@
 
 .major_section_header {
   text-align: center;
-  width: 66%;
   font-weight: 400;
   margin: 8em auto 4em auto;
 
@@ -174,6 +173,10 @@
 
 .collection_description {
   margin-top: 4em;
+  width: 66%; 
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .major_section_header p {font-size: 1.2em;}
