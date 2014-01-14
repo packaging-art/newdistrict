@@ -519,7 +519,6 @@ h3 {
 
 .major_section_header {
   text-align: center;
-  width: 66%;
   font-weight: 400;
   margin: 8em auto 4em auto;
 }
@@ -535,6 +534,9 @@ h3 {
 
 .collection_description, .cart_wrap .main_cart_summary {
   margin-top: 4em;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .major_section_header p {

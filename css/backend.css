@@ -1,4 +1,4 @@
-.headline, .backend_section .individual_section_content .section_number, .table_label {
+.headline, .backend_section .individual_section_content .section_number, .table_label, label, .form_help {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -15,24 +15,43 @@
   margin: 3.5em auto 7em;
   background: transparent;
 }
+.backend_wrap .collection_description {
+  margin-top: 0;
+}
+.backend_wrap .major_section_header {
+  margin: 9em auto;
+}
+.backend_wrap .major_section_header.form_header {
+  margin: 9em auto 7em;
+}
 
 .mainheader {
   text-align: center;
 }
 .mainheader .winery_title {
-  font-size: 1em;
+  font-size: 1.4em;
   /*1.6*/
   border: none;
-  border: 2px solid black;
+  border: 3px solid black;
   /*border-bottom: 3px solid red;
   padding-left:0;
   padding-right:0;*/
+  margin-bottom: 1.5em;
 }
-.mainheader .major_section_header {
-  margin: 6em auto 7em auto;
+.mainheader .secondary_menu .overlay_label {
+  font-size: .75em;
 }
 .mainheader .divider_container {
   margin: .75em auto .75em;
+}
+.mainheader .primary_menu {
+  margin-bottom: 0em;
+}
+.mainheader .primary_menu .overlay_label {
+  font-size: .95em;
+}
+.mainheader .secondary_menu {
+  margin-top: .4em;
 }
 .mainheader .view_label {
   text-transform: uppercase;
@@ -41,8 +60,13 @@
   font-style: normal;
   margin-top: .5em;
 }
-.mainheader .collection_description {
-  margin-top: 0;
+
+.collection_description + .search {
+  margin-top: 4em;
+}
+
+.mainheader + .backend_section {
+  margin-top: 9em;
 }
 
 .main_nav_link {
@@ -91,8 +115,8 @@ nav .price_separator {
 
 .major_cart_controls {
   text-align: center;
-  margin-top: 2em;
-  font-size: 1.2em;
+  margin-top: 4em;
+  font-size: 1.3em;
 }
 
 .individual_section_content + .individual_section_content {
@@ -111,12 +135,16 @@ nav .price_separator {
 }
 
 .table_label.name {
-  width: 300px;
+  width: 240px;
   text-align: center;
 }
 
 .table_label.year {
   width: 60px;
+}
+
+.table_label.order_id {
+  width: 200px;
 }
 
 .table_label.secondary {
@@ -125,7 +153,7 @@ nav .price_separator {
 }
 
 .table_label.edit {
-  width: 40px;
+  width: 100px;
   text-align: right;
   float: right;
 }
@@ -141,8 +169,119 @@ nav .price_separator {
 }
 .individual_section_content.stock_item .control_button {
   float: right;
+  font-size: .75em;
 }
 
 .individual_section_content.stock_item + .individual_section_content.stock_item {
   margin-top: .5em;
+}
+
+.transition, input, input:focus, input:hover, input:active {
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.store_info {
+  text-align: center;
+  margin-bottom: 4em;
+}
+.store_info input {
+  text-align: center;
+}
+.store_info .secondary_divider {
+  width: 3em auto;
+}
+.store_info .secondary_divider .overlay_label {
+  color: dimgray;
+}
+
+.secondary_divider .overlay_label {
+  color: dimgray;
+  white-space: nowrap;
+}
+
+input, textarea {
+  border: none;
+  background: #e6e6e6;
+  padding: .75em;
+  font-family: "minion-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  border: 1px solid lightgray;
+  outline-style: none;
+  -webkit-transition: all 0.5s ease-out;
+  border-radius: 2px;
+}
+
+textarea {
+  padding: 2.5em;
+  text-align: center;
+}
+
+#about_store {
+  height: 180px;
+}
+
+.small {
+  width: 50%;
+}
+
+.medium {
+  width: 75%;
+}
+
+.large {
+  width: 100%;
+}
+
+input:hover, textarea:hover {
+  background: #f2f2f2;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+  background: #fcfcfc;
+}
+
+label {
+  width: 100%;
+  display: block;
+  font-size: .7em;
+  margin-bottom: .5em;
+}
+
+fieldset + fieldset {
+  margin-top: 4em;
+}
+
+.form_help {
+  font-size: .7em;
+  color: dimgray;
+  margin-top: .5em;
+}
+
+.search {
+  margin-left: auto;
+  margin-right: auto;
+}
+.search .search_field {
+  width: 90%;
+}
+.search .search_button {
+  width: 9%;
+}
+
+.field_two {
+  margin-left: auto;
+  margin-right: auto;
+}
+.field_two fieldset {
+  width: 49%;
+  float: left;
+  margin-top: 0;
+}
+.field_two :first-child {
+  margin-right: 2%;
 }

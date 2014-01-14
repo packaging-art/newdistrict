@@ -1,8 +1,8 @@
 .headline {
-font-family: "futura-pt",sans-serif;
-font-style: normal;
-font-weight: 700;
-text-transform: uppercase;
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .backend_wrap {
@@ -15,27 +15,53 @@ text-transform: uppercase;
 	margin: 3.5em auto 7em; 
 	background: transparent;
 
-
-}
-
-.mainheader {
-	text-align: center;
-
-	.winery_title {
-		font-size:1em;/*1.6*/
-		border: none;
-		border: 2px solid black;
-		/*border-bottom: 3px solid red;
-		padding-left:0;
-		padding-right:0;*/
+	.collection_description {
+		margin-top: 0;
 	}
 
 	.major_section_header {
-		margin: 6em auto 7em auto;
+		margin: 9em auto;
+	}
+
+		.major_section_header.form_header {
+		margin: 9em auto 7em;
+	}
+}
+
+.mainheader {
+
+	text-align: center;
+
+	.winery_title {
+		font-size:1.4em;/*1.6*/
+		border: none;
+		border: 3px solid black;
+		/*border-bottom: 3px solid red;
+		padding-left:0;
+		padding-right:0;*/
+		margin-bottom: 1.5em;
+	}
+
+
+
+	.secondary_menu .overlay_label {
+		font-size: .75em;
 	}
 
 	.divider_container {
 		margin: .75em auto .75em;
+	}
+
+	.primary_menu {
+		margin-bottom: 0em;
+
+		.overlay_label {
+		font-size: .95em;
+		}	
+	}
+
+	.secondary_menu {
+		margin-top: .4em;
 	}
 
 	.view_label {
@@ -46,9 +72,14 @@ text-transform: uppercase;
 		margin-top: .5em;
 	}
 
-	.collection_description {
-		margin-top: 0;
-	}
+
+}
+
+.collection_description + .search {
+	margin-top: 4em;
+}
+.mainheader + .backend_section {
+	margin-top: 9em;
 }
 
 .main_nav_link {
@@ -110,8 +141,8 @@ nav {
 
 .major_cart_controls {
 	text-align: center;
-	margin-top: 2em;
-	font-size: 1.2em;
+	margin-top: 4em;
+	font-size: 1.3em;
 }
 
 .individual_section_content + .individual_section_content {
@@ -131,21 +162,23 @@ nav {
 }
 
 .table_label.name {
-	width:300px;
+	width:240px;
 	text-align: center;
 }
 
 .table_label.year {
 	width:60px;
 }
-
+.table_label.order_id {
+	width:200px;
+}
 .table_label.secondary {
 	width: 150px;
 	text-align: center;
 }
 
 .table_label.edit {
-	width: 40px;
+	width: 100px;
 	text-align: right;
 	float:right;
 }
@@ -161,10 +194,14 @@ nav {
 
 	.control_button {
 		float:right;
+		font-size: .75em;
 	}
 }
 
 .individual_section_content.stock_item + .individual_section_content.stock_item {
 	margin-top:.5em;
 }
+
+@import 'form_styles';
+
 

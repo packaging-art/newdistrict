@@ -1,0 +1,99 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link active'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link active'>wines</a><span class='price_separator'>|</span><a class='main_nav_link '>collections</a>
+					</nav>
+				</div>
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>You you can find and edit all of you products, select the options below to arrange the items by. Use 'edit product' to adjust the details including price, general description, tasting notes, etc.</p>
+			</div>
+		</div>
+	</header>
+
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='all wines' %}
+		</div>
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label year'>Year</div>
+			<div class='table_label name'>Name</div>
+			<div class='table_label secondary'>Price</div>
+			<div class='table_label secondary'>Quantity</div>
+			<div class='table_label secondary'>Date Added</div>
+			<div class='table_label secondary'>Published</div>
+						<div class='table_label secondary edit'>Edit</div>
+
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label year'>2007</div>
+			<div class='table_label name'>
+				Cabernet Savignon
+			</div>
+			<div class='table_label secondary'>$45</div>
+			<div class='table_label secondary'>1543</div>
+			<div class='table_label secondary'>01.04.2012</div>
+			<div class='table_label secondary'>Yes</div>
+
+				<div class='control_button'>
+					Edit
+				</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label year'>2012</div>
+			<div class='table_label name'>
+				Pinot Noir
+			</div>
+			<div class='table_label secondary'>$32</div>
+			<div class='table_label secondary'>153</div>
+			<div class='table_label secondary'>01.04.2012</div>
+			<div class='table_label secondary'>Yes</div>
+
+				<div class='control_button'>
+					Edit
+				</div>
+		</div>
+		<div class='major_cart_controls'>
+
+				<div class='control_button'>
+					Add New wine
+				</div>
+			</div>
+
+	</div>
+
+
+
+
+</div>
+
+	{% include main_navigation/main-nav-backend.html %}

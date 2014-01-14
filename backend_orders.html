@@ -1,0 +1,87 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link '>product stock</a><span class='price_separator'>|</span><a class='main_nav_link'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link active'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link active '>all orders</a><span class='price_separator'>|</span><a class='main_nav_link '>placed</a><span class='price_separator'>|</span><a class='main_nav_link '>packed</a><span class='price_separator'>|</span><a class='main_nav_link '>Picked up</a><span class='price_separator'>|</span><a class='main_nav_link '>Delivered</a><span class='price_separator'>|</span><a class='main_nav_link '>Returns</a>
+					</nav>
+				</div>
+		</div>
+
+	</header>
+
+	<div class='major_section_header clearfix'>
+
+		<form action="/" class="search medium">
+			<fieldset class='large'>
+				<input class='search_field' type="text" placeholder="Search All Orders" />
+				<input class='search_button' type="submit" value="Go" />
+			</fieldset>
+		</form>	
+
+	</div>	
+				
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='all orders' %}
+		</div>
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label order_id'>Order ID</div>
+			<div class='table_label secondary'>Total Price</div>
+			<div class='table_label secondary'>Quantity</div>
+			<div class='table_label secondary'>Date</div>
+			<div class='table_label secondary'>Status</div>
+						<div class='table_label secondary edit'>Action</div>
+
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_id'>ZX-123456</div>
+
+			<div class='table_label secondary'>$450</div>
+			<div class='table_label secondary'>15 bottles</div>
+			<div class='table_label secondary'>01.04.2012</div>
+			<div class='table_label secondary'>Placed</div>
+
+				<div class='control_button'>
+					Move To
+				</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_id'>BC-348276</div>
+
+			<div class='table_label secondary'>$326</div>
+			<div class='table_label secondary'>3 bottles</div>
+			<div class='table_label secondary'>01.04.2012</div>
+			<div class='table_label secondary'>Picked Up</div>
+
+				<div class='control_button'>
+					Move to
+				</div>
+		</div>
+	</div>
+</div>
+
+{% include main_navigation/main-nav-backend.html %}
