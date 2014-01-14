@@ -525,11 +525,34 @@ After this is an alphabetical list of other stores (only showing ones with items
 
 Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
 
-# Back End Interface
+# Back End Interface  
 
-## Stock Info Page  
+Back end inteface is currently split into 3 tabs 'product stock', 'store settings' and 'current orders'. These names may change, and there may be another tab still added for 'product layout' — this would be the drag and drop to rearrange product order on front-end.
 
-File: <https://github.com/deadtype/newdistrict/blob/master/backend_stockinfo.html>   
+As these will have a lots of content, each has additional subtabs. The following preview show the design approach to layout and styling of these.
+
+For the purposes of the demo lets simply connect the following static pages, and then as we get more information from B/E we will create the other subtabs in those sections and activate the.
+
+## Product Stock  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html>   
  
-Preview: <http://deadtype.ca/newdistrict/backend_stockinfo.html>
+Preview: <http://deadtype.ca/newdistrict/backend_stock_wines.html>
+
+its other tab is located at <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
+
+## Store Settings  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
+ 
+Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>  
+
+## Current Orders  
+
+File: <https://github.com/deadtype/newdistrict/blob/master/backend_orders.html>   
+ 
+Preview: <http://deadtype.ca/newdistrict/backend_orders.html>  
+
+
+
        
