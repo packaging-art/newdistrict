@@ -544,7 +544,7 @@ Every section of the back end interface should have an optional text field (see 
 
 Consists of two subtabs — 'default options' and 'product order'.  
 
-File — default options — <https://github.com/deadtype/newdistrict/blob/master/backend_design_options.html>   
+File — default options — <https://github.com/deadtype/newdistrict/blob/master/backend_design_options.html>  
 Preview — <http://deadtype.ca/newdistrict/backend_design_options.html>  
 
 This section provides basic options for the winery owner to adjust the look of the website. Current two options include setting the default preview style (banner or grid) and whether the hero banner section is shown or hidden by default.  
@@ -562,14 +562,13 @@ If users switch categories to something else these should generally respect the 
 
 This section has two tabs — 'wines' and 'product order'.
 
-File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html> Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html>  
-
+File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html>  
+Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html>  
 This section provides a place to see all wines, edit them or add new ones.  
 
 File - Collections: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
- Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html>  
- 
- A place to see the created categories, edit them and add new categories.
+Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html>  
+A place to see the created categories, edit them and add new categories.
 
 This sections can lead to two additional pages: 'Create/Edit Wine' and 'Create/Edit Collection'
 
@@ -577,7 +576,7 @@ File — 'Create/Edit Wine': <https://github.com/deadtype/newdistrict/blob/maste
 Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html>  
 Fields to review/edit product.  
 
-'Create/Edit Collection': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_category.html> 
+'Create/Edit Collection': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_category.html>  
 Preview: <http://deadtype.ca/newdistrict/backend_edit_category.html>
 
 here users can edit category name, description and which wines are in it.
