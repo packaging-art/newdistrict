@@ -548,8 +548,8 @@ Consists of two subtabs — 'default options' and 'product order'
 Preview — <http://deadtype.ca/newdistrict/backend_design_options.html>
 
 This section provides basic options for the winery owner to adjust the look of the website. Current two options include setting the default preview style (banner or grid) and whether the hero banner section is shown or hidden by default.
-
-2.File - product order - <https://github.com/deadtype/newdistrict/blob/master/backend_design_order.html>  
+  
+2. File - product order - <https://github.com/deadtype/newdistrict/blob/master/backend_design_order.html>  
 Preview — <http://deadtype.ca/newdistrict/backend_design_order.html>
 
 
@@ -565,7 +565,8 @@ This section has two tabs — 'wines' and 'product order'.
 1. File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html>   
  Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html>
 
-This section provides a place to see all wines, edit them or add new ones.
+This section provides a place to see all wines, edit them or add new ones.  
+
 
 2. File - Collections: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
  Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html>
@@ -591,18 +592,18 @@ here users can edit category name, description and which wines are in it.
 Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
 
 Section to edit general store settings. 
-   
+
 2. File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>   
 
 Section lets users choose shipping related settings  
     
-3.File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
+3. File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>  
 
 Settings for the currently logged in user.   
 
-4.File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
+4. File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html> 
 
 If logged in user has access to setting user accounts and permissions this section is available.  
