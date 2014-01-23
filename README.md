@@ -591,17 +591,17 @@ here users can edit category name, description and which wines are in it.
 1. File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
 
-Section to edit general store settings. 
+Section to edit general store settings.  
 
 2. File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>   
 
-Section lets users choose shipping related settings  
-    
+Section lets users choose shipping related settings.  
+
 3. File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>  
 
-Settings for the currently logged in user.   
+Settings for the currently logged in user.  
 
 4. File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html> 
