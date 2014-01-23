@@ -524,14 +524,37 @@ After this is an alphabetical list of other stores (only showing ones with items
 -----
 
 Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
+  
+## Checkout Page   
 
+File: <https://github.com/deadtype/newdistrict/blob/master/checkout.html>
+Preview <http://deadtype.ca/newdistrict/checkout.html>
+
+This is a basic structure of the checkout page, will be supplemented with additional entry fields once Ben and Elin will go over the details.  
+  
 # Back End Interface  
 
-Back end inteface is currently split into 3 tabs 'product stock', 'store settings' and 'current orders'. These names may change, and there may be another tab still added for 'product layout' — this would be the drag and drop to rearrange product order on front-end.
+Back end inteface is currently split into 4 tabs 'store layout', 'product stock', 'store settings' and 'current orders'. 
 
 As these will have a lots of content, each has additional subtabs. The following preview show the design approach to layout and styling of these.
 
-For the purposes of the demo lets simply connect the following static pages, and then as we get more information from B/E we will create the other subtabs in those sections and activate the.
+Every section of the back end interface should have an optional text field (see previews), which Ben and Elin can use to define helper text related to the section. 
+
+## Store layout: 
+
+1.File — default options — <https://github.com/deadtype/newdistrict/blob/master/backend_design_options.html>   
+Preview — <http://deadtype.ca/newdistrict/backend_design_options.html>
+
+This section provides basic options for the winery owner to adjust the look of the website. Current two options include setting the default preview style (banner or grid) and whether the hero banner section is shown or hidden by default.
+
+2.File - product order - <https://github.com/deadtype/newdistrict/blob/master/backend_design_order.html>  
+Preview — <http://deadtype.ca/newdistrict/backend_design_order.html>
+
+
+This section enables winery owner to change the order of the products layed out by default (in either grid or banner view). This is a basic list of of all wines with controls to shift products up and down. Additionaly users should be able to drag and drop the items up and down to rearrange them.
+
+If users switch categories to something else these should generally respect the selected order (ex, if selecting 'summer reds' which only has 3 bottles, the 3 bottles shown should be in the set order), unless the category is based around a specific order (ex. year based arrangement).
+ 
 
 ## Product Stock  
 
