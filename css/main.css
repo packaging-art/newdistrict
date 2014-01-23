@@ -233,6 +233,10 @@ h3 {
   display: inline-block;
 }
 
+.cart_indicator.backend_user_controls div {
+  display: inline;
+}
+
 .winery_title, .cart_indicator {
   text-transform: uppercase;
   line-height: 1;
@@ -305,7 +309,7 @@ h3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin-bottom: -.15em;
+  margin-top: -.15em;
 }
 
 .cart_number {
@@ -482,9 +486,9 @@ h3 {
 
 .control_button, .action {
   margin-left: 0;
-  font-size: .7em;
+  font-size: .75em;
   color: black;
-  padding: .25em .5em .15em .5em;
+  padding: .3em .6em .2em .6em;
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.4);
   display: inline-block;
@@ -509,7 +513,7 @@ h3 {
   text-transform: uppercase;
   font-size: .8em;
   font-weight: 600;
-  margin-top: .15em;
+  margin-top: .35em;
   line-height: 1.4;
 }
 
@@ -828,7 +832,6 @@ h3 {
   width: 100%;
   margin-bottom: 3%;
   position: relative;
-  display: none;
 }
 
 .banner.active {
@@ -1095,7 +1098,7 @@ h3 {
 }
 
 .control_button + .control_button, .action + .control_button, .control_button + .action, .action + .action {
-  margin-left: .1em;
+  margin-left: .5em;
 }
 
 .modal_mix_match_list {
@@ -1174,9 +1177,6 @@ h3 {
 /* Cart */
 .cart_indicator .control {
   font-size: .8em;
-}
-.cart_indicator .control_button, .cart_indicator .action {
-  padding: .25em .5em .35em .5em;
 }
 
 .cart_wrap {

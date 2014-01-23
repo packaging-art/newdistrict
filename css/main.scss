@@ -227,6 +227,8 @@ font-weight: 400;
 
 .cart_indicator div {display:inline-block}
 
+.cart_indicator.backend_user_controls div {display: inline;}
+
 .winery_title, .cart_indicator {
 @extend .headline;
 text-transform: uppercase;

@@ -12,7 +12,7 @@ title: stock_info
 		<div class="divider_container primary_menu">
 			<div class="label_holder">
 				<nav class="overlay_label">
-					<a class='main_nav_link '>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+					<a class='main_nav_link'>Store Layout</a><span class='price_separator'>|</span><a class='main_nav_link'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
 				</nav>
 			</div>
 				<div class='divider'>
@@ -21,7 +21,7 @@ title: stock_info
 		<div class="divider_container secondary_menu">
 				<div class="label_holder">
 					<nav class="overlay_label">
-						<a class='main_nav_link '>general info</a><span class='price_separator'>|</span><a class='main_nav_link active'>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>User accounts</a>
+						<a class='main_nav_link '>general info</a><span class='price_separator'>|</span><a class='main_nav_link active'>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>your account</a>
 					</nav>
 				</div>
 		</div>
@@ -38,30 +38,38 @@ title: stock_info
 		<div class='backend_section'>
 
 			<div class='secondary_divider'>
-				{% include misc/section_separator.html label='Shipping type' %}
+				{% include misc/section_separator.html label='Shipping Responsibility' %}
 			</div>
 
-			<div class='major_section_header clearfix'>
-			
-				<div class='collection_description'>
-					<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
+
+			<div class="shipping_payee">
+	
+				<fieldset class='radio_form'>
+					<input type="radio" id="winery_full" name="radios" checked>
+			       	<label for="winery_full">Winery Pays Full</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="customer_full" name="radios">
+			      	<label for="customer_full">Customer Pays Full</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="winery_after" name="radios" >
+			       	<label for="winery_after">Winery pays after min order of</br><input type="text" id="min_orde_amount" value='$20' class="form-text" /></label> 
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="flat_fee" name="radios">
+			       	<label for="flat_fee">Flat Fee of</br><input type="text" id="flat_fee_amount" value='$20' class="form-text" /></label>
+				</fieldset>
+			</div>
+
+			<div class='major_cart_controls'>
+				<div class='control_button'>
+					Save Shipping Settings
 				</div>
 			</div>
+
 		</div>
 
-		<div class='backend_section'>
-
-			<div class='secondary_divider'>
-				{% include misc/section_separator.html label='Shipping Cost' %}
-			</div>
-
-			<div class='major_section_header clearfix'>
-			
-				<div class='collection_description'>
-					<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
-				</div>
-			</div>
-		</div>
 </div>
 
 {% include main_navigation/main-nav-backend.html %}

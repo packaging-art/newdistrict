@@ -1,0 +1,99 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link active'>Store Layout</a><span class='price_separator'>|</span><a class='main_nav_link'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link active'>default options</a><span class='price_separator'>|</span><a class='main_nav_link'>product order</a>
+					</nav>
+				</div>
+		</div>
+
+
+	</header>
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='Default product preview' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>You you can find and edit all of you products, select the options below to arrange the items by. Use 'edit product' to adjust the details including price, general description, tasting notes, etc.</p>
+			</div>
+		</div>
+
+		<div class="shipping_payee">
+	
+			<form>
+				<fieldset class='radio_form'>
+					<input type="radio" id="banner_view" name="radios" value="all" checked>
+			       	<label for="banner_view">Display in banner view</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="grid_view" name="radios" value="false">
+			      	<label for="grid_view">Display in grid view</label>
+			    </fieldset>
+
+			</form>
+	</div>
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='winery information preview' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>You you can find and edit all of you products, select the options below to arrange the items by. Use 'edit product' to adjust the details including price, general description, tasting notes, etc.</p>
+			</div>
+		</div>
+
+		<div class="shipping_payee">
+	
+			<form>
+				<fieldset class='radio_form'>
+					<input type="radio" id="winery_info_on" name="radios" value="all" checked>
+			       	<label for="winery_info_on">Show information section</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="winery_info_off" name="radios" value="false">
+			      	<label for="winery_info_off">Hide information section</label>
+			    </fieldset>
+			 </form>
+			</div>
+		
+		</div>
+	</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Save Store Design Settings
+			</div>
+		</div>
+
+</div>
+
+	{% include main_navigation/main-nav-backend.html %}

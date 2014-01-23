@@ -1,4 +1,4 @@
-.headline, .backend_section .individual_section_content .section_number, .table_label, label, .form_help {
+.headline, .backend_section .individual_section_content .section_number, .table_label, .position_number_container, label, .form_help {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -12,14 +12,14 @@
 
 .backend_wrap {
   width: 1000px;
-  margin: 3.5em auto 7em;
+  margin: 3.5em auto 9em;
   background: transparent;
 }
 .backend_wrap .collection_description {
   margin-top: 0;
 }
 .backend_wrap .major_section_header {
-  margin: 9em auto;
+  margin: 7em auto;
 }
 .backend_wrap .major_section_header.form_header {
   margin: 9em auto 7em;
@@ -30,13 +30,11 @@
 }
 .mainheader .winery_title {
   font-size: 1.4em;
-  /*1.6*/
   border: none;
   border: 3px solid black;
   /*border-bottom: 3px solid red;
   padding-left:0;
   padding-right:0;*/
-  margin-bottom: 1.5em;
 }
 .mainheader .secondary_menu .overlay_label {
   font-size: .75em;
@@ -46,6 +44,8 @@
 }
 .mainheader .primary_menu {
   margin-bottom: 0em;
+  width: 95%;
+  margin-top: 2em;
 }
 .mainheader .primary_menu .overlay_label {
   font-size: .95em;
@@ -66,7 +66,7 @@
 }
 
 .mainheader + .backend_section {
-  margin-top: 9em;
+  margin-top: 7em;
 }
 
 .main_nav_link {
@@ -84,7 +84,7 @@ nav .price_separator {
 }
 
 .backend_section .divider_container {
-  margin: 7em auto;
+  margin: 9em auto;
 }
 .backend_section .individual_section_content {
   padding: 3.5em 1em;
@@ -106,17 +106,20 @@ nav .price_separator {
   text-align: center;
   margin-top: 2em;
 }
+.backend_section .individual_section_content .control_button + .control_button {
+  margin-right: .5em;
+}
 .backend_section .major_section_header {
   margin: 0em auto 6em;
-}
-.backend_section .collection_description {
-  margin: 0;
 }
 
 .major_cart_controls {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 6em;
   font-size: 1.3em;
+}
+.major_cart_controls .control_button {
+  border: 2px solid black;
 }
 
 .individual_section_content + .individual_section_content {
@@ -132,10 +135,22 @@ nav .price_separator {
 
 .table_label {
   float: left;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .table_label.name {
   width: 240px;
+  text-align: center;
+}
+
+.table_label.order_number {
+  width: 100%;
+}
+
+.table.combined_name {
+  width: 40em;
+  float: left;
   text-align: center;
 }
 
@@ -159,7 +174,7 @@ nav .price_separator {
 }
 
 .table_label.category_name {
-  width: 650px;
+  width: 600px;
 }
 
 .individual_section_content.stock_item {
@@ -172,8 +187,79 @@ nav .price_separator {
   font-size: .75em;
 }
 
+.individual_user_permissions {
+  text-align: center;
+  display: inline-block;
+}
+.individual_user_permissions .table_label {
+  width: 240px;
+}
+.individual_user_permissions .table_label .label {
+  margin-bottom: 1em;
+}
+
 .individual_section_content.stock_item + .individual_section_content.stock_item {
+  margin-top: .75em;
+}
+
+.drag_drop {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.position_number_container {
+  display: inline-block;
+  width: 1.5em;
+  text-align: center;
+  margin-right: 3.7em;
+}
+.position_number_container .position_numbers_list {
+  margin: 0;
+}
+.position_number_container li {
+  padding: 1.8em 0;
+  font-size: .9em;
+}
+.position_number_container li + li {
   margin-top: .5em;
+}
+
+.position_wine_items {
+  width: 35em;
+  display: inline-block;
+}
+
+.custom_additions_group {
+  margin: 2em auto 0;
+  padding-top: 2em;
+  border-top: 1px solid lightgray;
+}
+.custom_additions_group .individual_section_content {
+  margin: 0;
+}
+
+.secondary_divider.backend .divider_container {
+  margin: .7em auto;
+  width: 30%;
+}
+.secondary_divider.backend .label_holder {
+  font-size: .7em;
+}
+
+.secondary_divider.backend.side_by_side {
+  display: inline-block;
+  width: 20%;
+}
+.secondary_divider.backend.side_by_side .divider_container {
+  width: 60%;
+}
+
+.control_button.cancel {
+  font-size: .6em;
+  border: none;
+  color: red;
 }
 
 .transition, input, input:focus, input:hover, input:active {
@@ -183,17 +269,21 @@ nav .price_separator {
   transition: all 0.5s ease-out;
 }
 
-.store_info {
+.general_form {
   text-align: center;
   margin-bottom: 4em;
 }
-.store_info input {
+.general_form input {
   text-align: center;
+  width: 100%;
 }
-.store_info .secondary_divider {
+.general_form input[type=checkbox], .general_form input[type=radio] {
+  width: inherit;
+}
+.general_form .secondary_divider {
   width: 3em auto;
 }
-.store_info .secondary_divider .overlay_label {
+.general_form .secondary_divider .overlay_label {
   color: dimgray;
 }
 
@@ -205,7 +295,7 @@ nav .price_separator {
 input, textarea {
   border: none;
   background: #e6e6e6;
-  padding: .75em;
+  padding: .8em 1.2em;
   font-family: "minion-pro",sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -213,24 +303,27 @@ input, textarea {
   border: 1px solid lightgray;
   outline-style: none;
   -webkit-transition: all 0.5s ease-out;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 textarea {
-  padding: 2.5em;
+  padding: 3em;
   text-align: center;
+  width: 100%;
+  height: 220px;
 }
 
-#about_store {
-  height: 180px;
+fieldset {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .small {
-  width: 50%;
+  width: 23em;
 }
 
 .medium {
-  width: 75%;
+  width: 47em;
 }
 
 .large {
@@ -256,21 +349,27 @@ fieldset + fieldset {
   margin-top: 4em;
 }
 
+.textfield + .textfield {
+  margin-top: 7em;
+}
+
 .form_help {
   font-size: .7em;
   color: dimgray;
   margin-top: .5em;
 }
 
-.search {
+.search, .custom_add {
   margin-left: auto;
   margin-right: auto;
 }
-.search .search_field {
-  width: 90%;
+.search .search_field, .search .custom_add_field, .custom_add .search_field, .custom_add .custom_add_field {
+  width: 86.5%;
+  text-align: left;
+  margin-right: .25%;
 }
-.search .search_button {
-  width: 9%;
+.search .search_button, .search .custom_add_button, .custom_add .search_button, .custom_add .custom_add_button {
+  width: 13%;
 }
 
 .field_two {
@@ -284,4 +383,49 @@ fieldset + fieldset {
 }
 .field_two :first-child {
   margin-right: 2%;
+}
+
+.shipping_payee {
+  margin: 0 auto;
+  text-align: center;
+}
+.shipping_payee input[type=text] {
+  width: 7em;
+  text-align: center;
+  padding: .25em;
+  font-size: 1.65em;
+  margin-top: .35em;
+  font-size: 1.5em;
+}
+
+input[type=radio], input[type=checkbox] {
+  margin-bottom: .5em;
+}
+
+input[type=checkbox] {
+  width: .8em;
+}
+
+input[type=number] {
+  padding-left: 2.2em;
+}
+
+.radio_form, .category_checkbox {
+  display: inline-block;
+  margin: 0 3.5em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.category_checkbox {
+  margin-bottom: 2em;
+}
+
+.checkbox_group {
+  padding: .5em 0em 0;
+  margin: 1.5em auto 0;
+}
+.checkbox_group li + li {
+  margin-top: .5em;
 }

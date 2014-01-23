@@ -9,12 +9,17 @@ input, input:focus, input:hover, input:active {
 	@extend .transition;
 }
 
-.store_info {
+.general_form {
 	text-align: center;
 	margin-bottom: 4em;
 
 	input {
 		text-align: center;
+		width: 100%;
+	}
+
+	input[type=checkbox], input[type=radio] {
+		width: inherit;
 	}
 
 	.secondary_divider {
@@ -37,7 +42,7 @@ input, input:focus, input:hover, input:active {
 input, textarea {
 	border: none;
 	background: hsl(0,0%,90%);
-	padding: .75em;
+	padding: .8em 1.2em;
 	font-family: "minion-pro",sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -45,19 +50,25 @@ input, textarea {
     border: 1px solid lightgray;
     outline-style: none;
     -webkit-transition: all 0.5s ease-out;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 textarea {
-	padding: 2.5em;
+	padding: 3em;
 	text-align: center;
+	width: 100%;
+	height:220px;
 }
 #about_store {
-	height:180px;
 }
 
-.small {width: 50%;}
-.medium {width: 75%;}
+fieldset {
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.small {width: 23em;}
+.medium {width: 47em;}
 .large {width: 100%;}
 
 input:hover, textarea:hover {
@@ -80,6 +91,10 @@ fieldset + fieldset {
 	margin-top: 4em;
 }
 
+.textfield + .textfield {
+	margin-top: 7em;
+}
+
 
 .form_help {
 	@extend .headline;
@@ -88,15 +103,17 @@ fieldset + fieldset {
 	margin-top:.5em;
 }
 
-.search {
+.search, .custom_add {
 	margin-left: auto;
 	margin-right: auto;
-	.search_field {
-		width: 90%;
+	.search_field, .custom_add_field {
+		width: 86.5%;
+		text-align: left;
+		margin-right: .25%;
 	}
 
-	.search_button {
-		width: 9%;
+	.search_button, .custom_add_button {
+		width: 13%;
 	}
 }
 
@@ -106,4 +123,51 @@ fieldset + fieldset {
 
 	fieldset {width:49%; float: left; margin-top: 0;}
 	:first-child {margin-right: 2%;}
+}
+
+.shipping_payee {
+	margin:0 auto;
+	text-align: center;
+
+	input[type=text] {
+		width: 7em;
+		text-align: center;
+		padding: .25em;
+		font-size: 1.65em;
+		margin-top: .35em;
+		font-size: 1.5em;
+	}
+}
+
+input[type=radio], input[type=checkbox] {
+	margin-bottom: .5em;
+}
+
+input[type=checkbox] {
+	width: .8em;
+}
+
+input[type=number] {
+	padding-left: 2.2em;
+}
+
+.radio_form, .category_checkbox {
+	display: inline-block;
+	margin: 0 3.5em;
+	text-align:center;
+	white-space: nowrap;
+	vertical-align:top;
+}
+
+.category_checkbox {
+	margin-bottom: 2em;
+}
+
+.checkbox_group {
+padding: .5em 0em 0;
+margin: 1.5em auto 0;
+
+	li + li {
+		margin-top: .5em;
+	}
 }

@@ -1,0 +1,151 @@
+---
+layout: default_backend
+title: stock_info
+---
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Create New User</a>
+		</div>
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+
+
+	<div class='backend_section'>
+
+		<form class='general_form'>
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='set user information' %}
+			</div>
+
+
+
+			<fieldset class="field_two medium">
+				<fieldset class=''>
+					<label for="username">username</label>
+					<input type="text" id="username" value='bill' class="form-text" />
+					</input>
+				</fieldset>
+				<fieldset class=''>
+					<label for="city">email</label>
+					<input type="text" id="city" value='blah@newdisctrict.ca' class="form-text" />
+					</input>
+				</fieldset>
+			</fieldset>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='create password' %}
+			</div>
+
+			<fieldset class="field_two medium">
+				<fieldset class=''>
+					<label for="city">enter new password</label>
+					<input type="text" id="city" value='**********' class="form-text" />
+					</input>
+				</fieldset>
+
+	 			<fieldset class=''>
+					<label for="postal_code">confirm new password</label>
+					<input type="text" id="postal_code" value='**********' class="form-text" />
+					</input>
+				</fieldset>
+			</fieldset>
+
+
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='set permissions' %}
+			</div>
+
+		<div class="individual_user_permissions clearfix">
+
+			<div class='table_label secondary'>
+				<label for='design'>design</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='layout' id='layout'>
+						<label for='layout'>layout</label>
+					</li>
+					<li>
+						<input type='checkbox' name='product_order' id='product_order'>
+						<label for='product_order'>product order</label>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='product_stock'>product stock</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='wines' id='wines'>
+						<label for='wines'>wines</label>
+					</li>
+					<li>
+						<input type='checkbox' name='collections' id='collections'>
+						<label for='collections'>collections</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='store_settings'>store settings</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='general_info' id='general_info'>
+						<label for='general_info'>general info</label>
+					</li>
+					<li>
+						<input type='checkbox' name='shipping' id='shipping'>
+						<label for='shipping'>shipping</label>
+					</li>
+					<li>
+						<input type='checkbox' name='user_permissions' id='user_permissions'>
+						<label for='user_permissions'>user permissions</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='order_processing'>order processing</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='order_processing' id='order_processing'>
+						<label for='order_processing'>order processing</label>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		</form>
+
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='finish' %}
+		</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Create User
+			</div>
+			<!--<div class='secondary_divider backend '>
+				{% include misc/section_separator.html label='or' %}
+			</div>--></br>
+			<div class='control_button cancel'>
+				Cancel
+			</div>
+		</div>
+
+	</div>
+</div>
+{% include main_navigation/main-nav-backend-edit.html %}
