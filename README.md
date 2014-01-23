@@ -542,11 +542,13 @@ Every section of the back end interface should have an optional text field (see 
 
 ## Store layout:   
 
-Consists of two subtabs — 'default options' and 'product order'
+Consists of two subtabs — 'default options' and 'product order'.  
 
 File — default options — <https://github.com/deadtype/newdistrict/blob/master/backend_design_options.html>   
-Preview — <http://deadtype.ca/newdistrict/backend_design_options.html> This section provides basic options for the winery owner to adjust the look of the website. Current two options include setting the default preview style (banner or grid) and whether the hero banner section is shown or hidden by default.
-  
+Preview — <http://deadtype.ca/newdistrict/backend_design_options.html>  
+
+This section provides basic options for the winery owner to adjust the look of the website. Current two options include setting the default preview style (banner or grid) and whether the hero banner section is shown or hidden by default.  
+
 File - product order - <https://github.com/deadtype/newdistrict/blob/master/backend_design_order.html>  
 Preview — <http://deadtype.ca/newdistrict/backend_design_order.html>
 
@@ -560,15 +562,20 @@ If users switch categories to something else these should generally respect the 
 
 This section has two tabs — 'wines' and 'product order'.
 
-File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html> Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html> This section provides a place to see all wines, edit them or add new ones.  
+File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html> Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html>  
+
+This section provides a place to see all wines, edit them or add new ones.  
 
 File - Collections: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
- Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html> A place to see the created categories, edit them and add new categories.
+ Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html>  
+ 
+ A place to see the created categories, edit them and add new categories.
 
 This sections can lead to two additional pages: 'Create/Edit Wine' and 'Create/Edit Collection'
 
 File — 'Create/Edit Wine': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_product.html> 
-Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html> Fields to review/edit product.  
+Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html>  
+Fields to review/edit product.  
 
 'Create/Edit Collection': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_category.html> 
 Preview: <http://deadtype.ca/newdistrict/backend_edit_category.html>
@@ -579,16 +586,20 @@ here users can edit category name, description and which wines are in it.
 ## Store Settings  
 
 File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html> Section to edit general store settings.  
+Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>  
+Section to edit general store settings.  
 
 File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html> Section lets users choose shipping related settings.  
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>  
+Section lets users choose shipping related settings.  
 
 File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>Settings for the currently logged in user.  
+Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>  
+Settings for the currently logged in user.  
 
 File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html>If logged in user has access to setting user accounts and permissions this section is available.  
+Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html>  
+If logged in user has access to setting user accounts and permissions this section is available.  
 
 This section is also lead to Edit/Create User page:
 
