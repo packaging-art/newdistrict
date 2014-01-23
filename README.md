@@ -588,25 +588,17 @@ here users can edit category name, description and which wines are in it.
 
 ## Store Settings  
 
-1. File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
+File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html> Section to edit general store settings.  
 
-Section to edit general store settings.  
+File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html> Section lets users choose shipping related settings.  
 
-2. File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>   
+File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>Settings for the currently logged in user.  
 
-Section lets users choose shipping related settings.  
-
-3. File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>  
-
-Settings for the currently logged in user.  
-
-4. File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html> 
-
-If logged in user has access to setting user accounts and permissions this section is available.  
+File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html>If logged in user has access to setting user accounts and permissions this section is available.  
 
 This section is also lead to Edit/Create User page:
 
