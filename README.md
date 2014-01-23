@@ -540,7 +540,9 @@ As these will have a lots of content, each has additional subtabs. The following
 
 Every section of the back end interface should have an optional text field (see previews), which Ben and Elin can use to define helper text related to the section. 
 
-## Store layout: 
+## Store layout:   
+
+Consists of two subtabs — 'default options' and 'product order'
 
 1.File — default options — <https://github.com/deadtype/newdistrict/blob/master/backend_design_options.html>   
 Preview — <http://deadtype.ca/newdistrict/backend_design_options.html>
@@ -556,25 +558,72 @@ This section enables winery owner to change the order of the products layed out 
 If users switch categories to something else these should generally respect the selected order (ex, if selecting 'summer reds' which only has 3 bottles, the 3 bottles shown should be in the set order), unless the category is based around a specific order (ex. year based arrangement).
  
 
-## Product Stock  
+## Product Stock   
 
-File: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html>   
- 
-Preview: <http://deadtype.ca/newdistrict/backend_stock_wines.html>
+This section has two tabs — 'wines' and 'product order'.
 
-its other tab is located at <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
+1. File — All wines: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_wines.html>   
+ Preview — <http://deadtype.ca/newdistrict/backend_stock_wines.html>
+
+This section provides a place to see all wines, edit them or add new ones.
+
+2. File - Collections: <https://github.com/deadtype/newdistrict/blob/master/backend_stock_categories.html>  
+ Preview — <http://deadtype.ca/newdistrict/backend_stock_categories.html>
+
+A place to see the created categories, edit them and add new categories.
+
+This sections can lead to two additional pages: 'Create/Edit Wine' and 'Create/Edit Collection'
+
+1. File — 'Create/Edit Wine': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_product.html> 
+Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html>
+
+Fields to review/edit product.  
+
+2. 'Create/Edit Collection': <https://github.com/deadtype/newdistrict/blob/master/backend_edit_category.html> 
+Preview: <http://deadtype.ca/newdistrict/backend_edit_category.html>
+
+here users can edit category name, description and which wines are in it.
+
 
 ## Store Settings  
 
-File: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
- 
-Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>  
+1. File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
+
+Section to edit general store settings. 
+
+2. File — Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>   
+
+Section lets users choose shipping related settings  
+
+3. File — Your Account: <https://github.com/deadtype/newdistrict/blob/master/backend_store_useraccount.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_useraccount.html>  
+
+Settings for the currently logged in user.   
+
+4. File — User Permissions: <https://github.com/deadtype/newdistrict/blob/master/backend_store_userpermissions.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_userpermissions.html> 
+
+If logged in user has access to setting user accounts and permissions this section is available.  
+
+This section is also lead to Edit/Create User page:
+
+File — Edit/Create User Page:  <https://github.com/deadtype/newdistrict/blob/master/backend_edit_user.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_user.html>  
+
 
 ## Current Orders  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/backend_orders.html>   
- 
 Preview: <http://deadtype.ca/newdistrict/backend_orders.html>  
+
+This section has a number of tabs for order stages (ex. placed, packed, picked up, delivered, returns and all orders). There is a search field which permists searching products.
+
+Clicking on any order leads to an additional page (same visual laguage as 'Edit User/Product/Category' pages) wher uses can edit the order, print waybills and move order between stages of completion
+
+File — Edit Order:  <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order.html> 
 
 
 
