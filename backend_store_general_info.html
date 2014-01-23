@@ -12,7 +12,7 @@ title: stock_info
 		<div class="divider_container primary_menu">
 			<div class="label_holder">
 				<nav class="overlay_label">
-					<a class='main_nav_link '>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+					<a class='main_nav_link'>Store Layout</a><span class='price_separator'>|</span><a class='main_nav_link'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
 				</nav>
 			</div>
 				<div class='divider'>
@@ -21,7 +21,7 @@ title: stock_info
 		<div class="divider_container secondary_menu">
 				<div class="label_holder">
 					<nav class="overlay_label">
-						<a class='main_nav_link active'>general info</a><span class='price_separator'>|</span><a class='main_nav_link '>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>User accounts</a>
+						<a class='main_nav_link active'>general info</a><span class='price_separator'>|</span><a class='main_nav_link '>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>your account</a>
 					</nav>
 				</div>
 		</div>
@@ -39,20 +39,18 @@ title: stock_info
 
 	<div class='backend_section'>
 
-		<form class='store_info'>
+		<form class='general_form'>
 			<div class='secondary_divider'>
-				{% include misc/section_separator.html label='store name' %}
+				{% include misc/section_separator.html label='about the store' %}
 			</div>
-			<fieldset>
-				<input type="text" id="store_name" value='Mission Hill Family Estate' class="form-text medium" />
+			<fieldset class='medium'>
+				<label for="store_name">name</label>
+				<input type="text" id="store_name" value='Mission Hill Family Estate' class="form-text" />
 				</input>
 			</fieldset>
 
-			<div class='secondary_divider'>
-				{% include misc/section_separator.html label='About The Store' %}
-			</div>
-
 			<fieldset>
+				<label for="about_store">description</label>
 				<textarea type="" id="about_store" class="form-text large" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
 				</textarea>
 				<p class='form_help'>350 characters max</p>
@@ -63,22 +61,22 @@ title: stock_info
 			</div>
 
 
-			<fieldset>
+			<fieldset class='medium'>
 				<label for="address">address</label>
-				<input type="text" id="address" value='#444 - 1853 Jervis Blvd.' class="form-text medium" />
+				<input type="text" id="address" value='#444 - 1853 Jervis Blvd.' class="form-text" />
 				</input>
 			</fieldset>
 
 		<fieldset class="field_two medium">
 			<fieldset>
 				<label for="city">city</label>
-				<input type="text" id="city" value='Vancouver' class="form-text large" />
+				<input type="text" id="city" value='Vancouver' class="form-text" />
 				</input>
 			</fieldset>
 
  			<fieldset>
 				<label for="postal_code">postal code</label>
-				<input type="text" id="postal_code" value='V8G 7J9' class="form-text large" />
+				<input type="text" id="postal_code" value='V8G 7J9' class="form-text" />
 				</input>
 			</fieldset>
 		</fieldset>
@@ -89,13 +87,13 @@ title: stock_info
 			<fieldset class="field_two medium">
 				<fieldset>
 					<label for="website">website</label>
-					<input type="text" id="website" value='www.missionhill.com' class="form-text large" />
+					<input type="text" id="website" value='www.missionhill.com' class="form-text " />
 					</input>
 				</fieldset>
 
 				<fieldset>
 					<label for="email">email</label>
-					<input type="text" id="email" value='contact@missionhill.com' class="form-text large" />
+					<input type="text" id="email" value='contact@missionhill.com' class="form-text " />
 					</input>
 				</fieldset>
 			</fieldset>
@@ -104,27 +102,27 @@ title: stock_info
 				{% include misc/section_separator.html label='social media' %}
 			</div>
 
-			<fieldset>
+			<fieldset class='medium'>
 				<label for="twitter">twitter</label>
-				<input type="text" id="twitter" value='twitter link' class="form-text small" />
+				<input type="text" id="twitter" value='twitter link' class="form-text" />
 				</input>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class='medium'>
 				<label for="facebook">facebook</label>
-				<input type="text" id="facebook" value='facebook link' class="form-text small" />
+				<input type="text" id="facebook" value='facebook link' class="form-text" />
 				</input>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class='medium'>
 				<label for="instagram">instagram</label>
-				<input type="text" id="instagram" value='instagram link' class="form-text small" />
+				<input type="text" id="instagram" value='instagram link' class="form-text" />
 				</input>
 			</fieldset>
 
-			<fieldset>
+			<fieldset class='medium'>
 				<label for="pinterest">pinterest</label>
-				<input type="text" id="pinterest" value='pinterest link' class="form-text small" />
+				<input type="text" id="pinterest" value='pinterest link' class="form-text" />
 				</input>
 			</fieldset>
 

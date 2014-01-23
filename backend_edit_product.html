@@ -1,0 +1,265 @@
+---
+layout: default_backend
+title: stock_info
+---
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Add New Wine</a>
+		</div>
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+
+
+	<div class='backend_section'>
+
+		<form class='general_form'>
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='basic information' %}
+			</div>
+
+
+
+			<fieldset class='medium'>
+				<label for="store_name">name</label>
+				<input type="text" id="store_name" value='Cabernet Savignon' class="form-text" />
+				</input>
+			</fieldset>
+
+			<fieldset class="field_two medium">
+
+				<fieldset class=''>
+					<label for="wine_type">wine type</label>
+					<input type="text" id="wine_type" value='Red' class="form-text" />
+					</input>
+					<p class='form_help'>ex. red, white etc.</p>
+				</fieldset>
+
+				<fieldset class=''>
+					<label for="grape_type">grape type</label>
+					<input type="text" id="grape_type" value='Blah' class="form-text" />
+					</input>
+					<p class='form_help'>ex. blah</p>
+
+				</fieldset>
+			</fieldset>
+
+			<fieldset class="field_two medium">
+
+				<fieldset class=''>
+					<label for="quantity_available">Quantity Available</label>
+					<input type="number" id="quantity_available" value='27' class="form-text" />
+					</input>
+					<p class='form_help'>bottles in stock</p>
+				</fieldset>
+
+				<fieldset class=''>
+					<label for="price">price</label>
+					<input type="number" id="price" value='45' class="form-text" />
+					</input>
+					<p class='form_help'>dollars</p>
+				</fieldset>
+			</fieldset>		
+
+			<fieldset class="field_two medium">
+
+				<fieldset class=''>
+					<label for="year_bottled">year</label>
+					<input type="number" id="year_bottled" value='1927' class="form-text" />
+					</input>
+					<p class='form_help'>bottled</p>
+
+				</fieldset>
+
+				<fieldset class=''>
+					<label for="bottle_volume">bottle volume</label>
+					<input type="number" id="bottle_volume" value='750' class="form-text" />
+					</input>
+					<p class='form_help'>ml</p>
+				</fieldset>
+			</fieldset>		
+
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='select wine category' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+				<fieldset class='category_checkbox'>
+					<input type="checkbox" id="summer_reds">
+			       	<label for="summer_reds">Summer Reds</label>
+			    </fieldset>
+			    <fieldset class='category_checkbox'>
+			    	<input type="checkbox" id="summer_whites">
+			      	<label for="summer_whites">Summer Whites</label>
+			    </fieldset>
+			    <fieldset class='category_checkbox'>
+			    	<input type="checkbox" id="fall_collection" >
+			       	<label for="fall_collection">fall collection</label> 
+			    </fieldset>
+			    <fieldset class='category_checkbox'>
+			    	<input type="checkbox" id="dinner wines">
+			       	<label for="dinner wines">dinner wines</label>
+				</fieldset>
+				<fieldset class='category_checkbox'>
+					<input type="checkbox" id="summer_reds">
+			       	<label for="summer_reds">Summer Reds</label>
+			    </fieldset>
+			    <fieldset class='category_checkbox'>
+					<input type="checkbox" id="summer_reds">
+			       	<label for="summer_reds">Summer Reds</label>
+			    </fieldset>
+			    <fieldset class='category_checkbox'>
+			    	<input type="checkbox" id="summer_whites">
+			      	<label for="summer_whites">Summer Whites</label>
+			    </fieldset>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='add custom tags' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+			<fieldset class='custom_add medium '>
+				<input class='custom_add_field' type="text" placeholder="Enter custom tag" />
+				<input class='custom_add_button' type="submit" value="Add" />
+			</fieldset>
+
+			<div class="custom_additions_group medium">
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>Tag 1</div>
+						<div class='control_button'>
+							delete tag
+						</div>
+				</div>
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>Tag 2</div>
+						<div class='control_button'>
+							delete tag
+						</div>
+				</div>
+			</div>
+
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='about the wine' %}
+			</div>
+
+			<fieldset class='large textfield'>
+				<label for="about_store">general summary</label>
+				<textarea type="" id="about_store" class="form-text " />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+			<fieldset class='medium textfield'>
+				<label for="about_store">tasting notes</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+			<fieldset class='medium textfield'>
+				<label for="about_store">food pairings</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+						<fieldset class='medium textfield'>
+				<label for="about_store">additional info</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='add awards' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+			<fieldset class='custom_add medium '>
+				<input class='custom_add_field' type="text" placeholder="Enter award name" />
+				<input class='custom_add_button' type="submit" value="Add" />
+			</fieldset>
+
+			<div class="custom_additions_group medium">
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>Award 1</div>
+						<div class='control_button'>
+							delete award
+						</div>
+				</div>
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>Award 2</div>
+						<div class='control_button'>
+							delete award
+						</div>
+				</div>
+			</div>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='show/hide' %}
+			</div>
+
+		<div class="shipping_payee">
+
+			<div class='major_section_header clearfix'>
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+				<fieldset class='radio_form'>
+					<input type="radio" id="display_wine" name="radios" value="all" checked>
+			       	<label for="display_wine">Show wine in store</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="hide_wine" name="radios" value="false">
+			      	<label for="hide_wine">Keep wine hidden for now</label>
+			    </fieldset>
+		</div>
+
+		</form>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='finish' %}
+		</div>
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Create New Wine
+			</div>
+			<!--<div class='secondary_divider backend'>
+				{% include misc/section_separator.html label='or' %}
+			</div>--></br>
+			<div class='control_button cancel'>
+				Cancel
+			</div>
+		</div>
+	</div>
+</div>
+{% include main_navigation/main-nav-backend-edit.html %}

@@ -1,0 +1,111 @@
+---
+layout: default_backend
+title: stock_info
+---
+<div class='backend_wrap'>
+
+	<header class='mainheader edit_section'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Create New Collection</a>
+		</div>
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+
+
+	<div class='backend_section'>
+
+		<form class='general_form'>
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='collection information' %}
+			</div>
+
+
+
+
+			<fieldset class='medium'>
+				<label for="category_name">name</label>
+				<input type="text" id="category_name" value='Summer Reds' class="form-text" />
+				</input>
+			</fieldset>
+
+			<fieldset>
+				<label for="about_store">description</label>
+				<textarea type="" id="about_store" class="form-text large" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+		</form>
+
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='add wines to collection' %}
+		</div>
+
+	</div>
+
+	<div class='backend_section'>
+
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label year'>Year</div>
+			<div class='table_label name'>Name</div>
+			<div class='table_label secondary'>Price</div>
+			<div class='table_label secondary'>Quantity</div>
+			<div class='table_label secondary'>In Collection</div>
+						<div class='table_label secondary edit'>Action</div>
+
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label year'>2007</div>
+			<div class='table_label name'>
+				Cabernet Savignon
+			</div>
+			<div class='table_label secondary'>$45</div>
+			<div class='table_label secondary'>1543</div>
+			<div class='table_label secondary'>No</div>
+
+				<div class='control_button'>
+					Add to Collection
+				</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label year'>2012</div>
+			<div class='table_label name'>
+				Pinot Noir
+			</div>
+			<div class='table_label secondary'>$32</div>
+			<div class='table_label secondary'>153</div>
+			<div class='table_label secondary'>Yes</div>
+				<div class='control_button'>
+					Remove from Collection
+				</div>
+		</div>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='finish' %}
+		</div>
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Save Collection
+			</div>
+			<!--<div class='secondary_divider backend'>
+				{% include misc/section_separator.html label='or' %}
+			</div>--></br>
+			<div class='control_button cancel'>
+				Cancel
+			</div>
+		</div>
+
+	</div>
+</div>
+{% include main_navigation/main-nav-backend-edit.html %}

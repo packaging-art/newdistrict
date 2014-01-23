@@ -2,6 +2,7 @@
 layout: default_backend
 title: stock_info
 ---
+
 <div class='backend_wrap'>
 
 	<header class='mainheader'>
@@ -12,7 +13,7 @@ title: stock_info
 		<div class="divider_container primary_menu">
 			<div class="label_holder">
 				<nav class="overlay_label">
-					<a class='main_nav_link '>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+					<a class='main_nav_link'>Store Layout</a><span class='price_separator'>|</span><a class='main_nav_link'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link active'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
 				</nav>
 			</div>
 				<div class='divider'>
@@ -21,7 +22,7 @@ title: stock_info
 		<div class="divider_container secondary_menu">
 				<div class="label_holder">
 					<nav class="overlay_label">
-						<a class='main_nav_link '>general info</a><span class='price_separator'>|</span><a class='main_nav_link '>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link active'>User accounts</a>
+						<a class='main_nav_link '>general info</a><span class='price_separator'>|</span><a class='main_nav_link '>Shipping</a><span class='price_separator'>|</span><a class='main_nav_link'>your account</a><span class='price_separator'>|</span><a class='main_nav_link active'>Winery staff</a>
 					</nav>
 				</div>
 		</div>
@@ -36,24 +37,161 @@ title: stock_info
 	</header>
 
 
+				
+	<div class='backend_section'>
 
-		<div class='backend_section'>
-			<div class="divider_container">
-				<div class="label_holder">
-					<nav class="overlay_label">
-						Your account
-					</nav>
-				</div>
-				<div class='divider'>
-				</div>
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='Staff Permissions' %}
+		</div>
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label order_id'>user</div>
+			<div class='table_label secondary'>Design</div>
+			<div class='table_label secondary'>Product Stock</div>
+			<div class='table_label secondary'>Store Settings</div>
+			<div class='table_label secondary'>Order Processing</div>
+						<div class='table_label secondary edit'>Action</div>
+
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_id'>Steve</div>
+
+			<div class='table_label secondary'>
+				<label for='design'>design</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='layout' id='layout'>
+						<label for='layout'>layout</label>
+					</li>
+					<li>
+						<input type='checkbox' name='product_order' id='product_order'>
+						<label for='product_order'>product order</label>
+					</li>
+				</ul>
+
 			</div>
 
-			<div class='major_section_header clearfix'>
-			
-				<div class='collection_description'>
-					<p>You can create wine collections which can be used to focus on and explore your products. The default store organization is by year. Once you create some categories and add wines to them, your customers will be able to focus on them, read detailed descriptions and explore the included products.</p>
+			<div class='table_label secondary'>
+				<label for='product_stock'>product stock</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='wines' id='wines'>
+						<label for='wines'>wines</label>
+					</li>
+					<li>
+						<input type='checkbox' name='collections' id='collections'>
+						<label for='collections'>collections</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='store_settings'>store settings</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='general_info' id='general_info'>
+						<label for='general_info'>general info</label>
+					</li>
+					<li>
+						<input type='checkbox' name='shipping' id='shipping'>
+						<label for='shipping'>shipping</label>
+					</li>
+					<li>
+						<input type='checkbox' name='user_permissions' id='user_permissions'>
+						<label for='user_permissions'>user permissions</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='order_processing'>order processing</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='order_processing' id='order_processing'>
+						<label for='order_processing'>order processing</label>
+					</li>
+
+				</ul>
+			</div>
+				<div class='control_button'>
+					Edit User
 				</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_id'>Bill</div>
+
+			<div class='table_label secondary'>
+				<label for='design'>design</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='layout' id='layout'>
+						<label for='layout'>layout</label>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='product_stock'>product stock</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='wines' id='wines'>
+						<label for='wines'>wines</label>
+					</li>
+					<li>
+						<input type='checkbox' name='collections' id='collections'>
+						<label for='collections'>collections</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='store_settings'>store settings</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='general_info' id='general_info'>
+						<label for='general_info'>general info</label>
+					</li>
+					<li>
+						<input type='checkbox' name='shipping' id='shipping'>
+						<label for='shipping'>shipping</label>
+					</li>
+					<li>
+						<input type='checkbox' name='user_permissions' id='user_permissions'>
+						<label for='user_permissions'>user permissions</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class='table_label secondary'>
+				<label for='order_processing'>order processing</label>
+				<ul class='checkbox_group'>
+					<li>
+						<input type='checkbox' name='order_processing' id='order_processing'>
+						<label for='order_processing'>order processing</label>
+					</li>
+
+				</ul>
+			</div>
+				<div class='control_button'>
+					Edit User
+				</div>
+		</div>
+	</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Save Permissions
+			</div>
+			<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='or' %}
+			</div>
+			<div class='control_button'>
+				Create New User
 			</div>
 		</div>
 </div>
+
 {% include main_navigation/main-nav-backend.html %}

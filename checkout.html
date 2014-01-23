@@ -1,0 +1,122 @@
+---
+layout: default
+title: new district
+---
+
+{% include main_navigation/main-nav-incart.html %}
+<div class='cart_wrap content_wrap'>
+	<div class='main_cart_header clearfix'>
+		<h2 class='major_title'>Checkout</h2>
+		<div class="major_cart_action">
+			<div class='main_cart_total'>57 bottles from 3 stores<span class='price_separator'>|</span>$456 total</div>
+		</div>
+		<div class='main_cart_summary'>
+	<p>[Optional section to provide information about users cart] Ex. — You have 57 bottles in your cart, 50 are ready to ship and 7 are in a 'mix and match' set which requires 12 bottle minimum order. Checkout now to buy the 50 bottles, and save the 7 for later or add 5 more to complete the set and checkout all 62 bottles.</p>
+</div>
+	</div>
+
+
+	<div class='backend_section'>
+
+			<form class='general_form'>
+				<div class='secondary_divider'>
+					{% include misc/section_separator.html label='your information' %}
+				</div>
+
+
+				<fieldset class='medium'>
+					<label for="customer_name">name</label>
+					<input type="text" id="customer_name" value='Peter Peterson' class="form-text" />
+					</input>
+				</fieldset>
+
+				<fieldset class='medium'>
+					<label for="address">address</label>
+					<input type="text" id="address" value='#444 - 1853 Jervis Blvd.' class="form-text" />
+					</input>
+				</fieldset>
+
+				<fieldset class="field_two medium">
+					<fieldset>
+						<label for="city">city</label>
+						<input type="text" id="city" value='Vancouver' class="form-text" />
+						</input>
+					</fieldset>
+
+		 			<fieldset>
+						<label for="postal_code">postal code</label>
+						<input type="text" id="postal_code" value='V8G 7J9' class="form-text" />
+						</input>
+					</fieldset>
+				</fieldset>
+			</form>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='ship to' %}
+			</div>
+
+			<div class="shipping_payee">
+				<form>
+					<fieldset class='radio_form'>
+						<input type="radio" id="same_as_address" name="radios" value="all" >
+				       	<label for="same_as_address">Same address as billing</label>
+				    </fieldset>
+				    <fieldset class='radio_form'>
+				    	<input type="radio" id="grid_view" name="radios" value="false" checked>
+				      	<label for="grid_view">add a different address</label>
+				    </fieldset>
+				</form>
+			</div>
+
+				<form class='general_form'>
+					<div class='secondary_divider'>
+						{% include misc/section_separator.html label='shipping address' %}
+					</div>
+					 <fieldset class='medium'>
+						<label for="address">address</label>
+						<input type="text" id="address" value='#444 - 1853 Jervis Blvd.' class="form-text" />
+						</input>
+					</fieldset>
+
+					<fieldset class="field_two medium">
+						<fieldset>
+							<label for="city">city</label>
+							<input type="text" id="city" value='Vancouver' class="form-text" />
+							</input>
+						</fieldset>
+
+			 			<fieldset>
+							<label for="postal_code">postal code</label>
+							<input type="text" id="postal_code" value='V8G 7J9' class="form-text" />
+							</input>
+						</fieldset>
+					</fieldset>
+				</form>
+
+				<form class='general_form'>
+					<div class='secondary_divider'>
+						{% include misc/section_separator.html label='payment info' %}
+					</div>
+
+						<!--<fieldset class='medium'>
+							<label for="customer_name">name</label>
+							<input type="text" id="customer_name" value='Peter Peterson' class="form-text" />
+							</input>
+						</fieldset>
+
+						<select name="CardType" id="CardType" class="">
+							<option value="">Please Select ...&nbsp;</option>
+							<option value="VISA">VISA&nbsp;</option>
+							<option value="MasterCard">MasterCard&nbsp;</option>
+							<option value="AMEX">AMEX&nbsp;</option>
+						</select>-->
+				</form>
+
+				<div class='major_cart_controls'>
+			<div class='control_button'>
+				Place Order
+			</div>
+		</div>
+	</div>
+
+</div>

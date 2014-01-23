@@ -1,0 +1,99 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+<div class='backend_wrap'>
+
+	<header class='mainheader'>
+		<div class='winery_title'>
+			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link active'>Store Layout</a><span class='price_separator'>|</span><a class='main_nav_link'>product stock</a><span class='price_separator'>|</span><a class='main_nav_link'>store settings</a><span class='price_separator'>|</span><a class='main_nav_link'>current orders</a>
+				</nav>
+			</div>
+				<div class='divider'>
+				</div>
+		</div>
+		<div class="divider_container secondary_menu">
+				<div class="label_holder">
+					<nav class="overlay_label">
+						<a class='main_nav_link '>default options</a><span class='price_separator'>|</span><a class='main_nav_link active'>product order</a>
+					</nav>
+				</div>
+		</div>
+
+
+	<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>You you can find and edit all of you products, select the options below to arrange the items by. Use 'edit product' to adjust the details including price, general description, tasting notes, etc.</p>
+			</div>
+		</div>
+	</header>
+
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='change product order' %}
+		</div>
+
+		<div class='drag_drop'>
+			<div class='position_number_container'>
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label order_number'>1</div>
+				</div>
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label order_number'>2</div>
+				</div>
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label order_number'>3</div>
+				</div>
+			</div>
+			<div class="position_wine_items">
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>2007 Cabernet Savignon</div>
+						<div class='control_button'>
+							Move down
+						</div>
+				</div>
+
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>2012 Pinot Noir</div>
+						<div class='control_button'>
+							Move down
+						</div>
+						<div class='control_button'>
+							Move Up
+						</div>
+				</div>
+
+				<div class="individual_section_content stock_item clearfix">
+					<div class='table_label combined_name'>2012 Blah</div>
+						<div class='control_button'>
+							Move Up
+						</div>
+				</div>
+
+			</div>
+		</div>
+
+					<div class='major_cart_controls'>
+
+				<div class='control_button'>
+					Save Product Order
+				</div>
+			</div>
+	</div>
+
+
+
+
+</div>
+
+	{% include main_navigation/main-nav-backend.html %}
