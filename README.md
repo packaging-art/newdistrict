@@ -255,8 +255,8 @@ Preview: <http://deadtype.ca/newdistrict/backend_edit_order_shippinginfo.html>
 Edit Order - Status Refund:   
 
 File — Edit Order Refund Info:   
-<https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_refundinfo.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_edit_order_refundinfo.html> 
+<https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_returninfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_returninfo.html> 
 
 
 
