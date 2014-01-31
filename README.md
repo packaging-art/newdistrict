@@ -1,5 +1,10 @@
 newdistrict.github.io
 =====================   
+### Admin Login 
+
+File: <https://github.com/deadtype/newdistrict/blob/master/admin_login.html>  
+Preview: <http://deadtype.ca/newdistrict/admin_login.html> 
+
 
 ### General preview/footer 
 
