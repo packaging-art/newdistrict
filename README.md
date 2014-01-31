@@ -9,6 +9,12 @@ Preview: <http://deadtype.ca/newdistrict/>
 
 This shows full site preview and specifically the footer design.
 
+## Fixed Article Page
+
+File: <https://github.com/deadtype/newdistrict/blob/master/_includes/misc/footer_infopage.html>  
+Preview: <http://deadtype.ca/newdistrict/footer_infopage.html>   
+
+A small helper component used to separate sections of content. For example it can be used to segregate production years in the product section.
 
 ### Notifications
 
