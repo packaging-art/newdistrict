@@ -114,28 +114,8 @@ Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/product_f
 <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html>  
 <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html>
 
-Preview: <http://deadtype.ca/newdistrict>   
+Preview: <http://deadtype.ca/newdistrict/product_full_page.html>   
 
-This page is reached via the more info link in Banner View. The design recycles components used on other pages.  
-
-It starts with fixed [navigation pattern](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_controls.html) similar to the [Wine Categories/Controls](#4-wine-categoriescontrols) but adjusted for the actions needed on this page:  
-
-The left link duplicates the functionality of the back button. It needs to be be aware of the state of the previous page and reflect if in the wording. For example, — if user reached the 'Full Product Page' from product view focused on 'Summer 2007 Reds Collection' this button would say "Back to Summer 2007 Reds". It should also have a max character limit after it which it would be appended with an ellipsis. This prevents the design breaking in case of excessively long names, while retaining its contextual information.  
-
-The link on the righ is 'add to cart'.  
-
-In the middle once again we have the winery title, which behaves identically to the extensive interactions described in the [Wine Categories/Controls](#4-wine-categoriescontrols). If page is scrolled down, clicking it smooth scrolls the user to the top of the page. If user is at the top of the page, the arrow fades in and clicking either he arrow or the winery title, unhides the [Winery Hero Banner/Navigation](#3-winery-hero-bannernavigation) and smooth scrolls to the top.
-
-----   
-
-Below the fixed navigation we recycle the [Wine Title/Meta info pattern](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_intro.html) used on the 'Grid Product View' to show the wine title and information such as 'price', 'volume' and 'year of make'. 
-
-
-This is follow by an image below, this may be the same image used on banner or a different image alltogether. Likely uploaded by B/E it will need to accept two versions: portrait for small screens and landscape for larger. 1x and 2X versions will be needed.
-
-Past the image we get into the 'wine summary', which is simply the extended version of the text that appeared in the 'Banner Product View'.  
-
-Below it are several sections such as 'Tasting Notes', 'Food pairings', 'Additional Notes'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_info_section.html)) and 'Awards'([template](https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_list_entry.html)). These will be editable by winery owners in the backend.  
 
 ## 10. 'Add to Cart' Modal  
 
@@ -157,146 +137,13 @@ Files:
 
 Example: <https://github.com/deadtype/newdistrict/blob/master/modal_addtocart.html>   
   
----- 
-
-#### The Main Preview  
-
-<http://deadtype.ca/newdistrict/modal_addtocart.html>  
-
-
-#### Additional Previews showing Summary section variations:  
-(not covering all possibilities, but showcasing ways to deal with variations in each 'add to cart' modal section)   
-
-
-Minimum purchase of a case required (single case)  
-   <http://deadtype.ca/newdistrict/modal_addtocart_single_case.html>  
-
-Minimum purchase of a case required with multiple case quantities  
-   <http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html>  
-
-Initial 'Mix and Match' order  
-   <http://deadtype.ca/newdistrict/modal_addtocart_mix.html>  
-
-'Mix and Match' order that does not complete the set  
-   <http://deadtype.ca/newdistrict/modal_addtocart_mix_partial.html>  
-
-'Mix and Match' order that completes a set  
-   <http://deadtype.ca/newdistrict/modal_addtocart_mix_complete.html>  
-
-'Mix and Match' order that completes a set and still has additional items  
-   <http://deadtype.ca/newdistrict/modal_addtocart_mix_overflow.html>  
-
-----  
-
-#### Possible Scenarios:
-
-The following are scenarios which can exist for winery shipping — which influence how the modal will present itself. Research was done by Ben on a number of BC wineries. Winery admin will have to select one of these options (at the moment it appears we will not have comibinations):
-
-1. No constrains. Example — you can order 1 to infinity.  
-  
-       *This scenario seemed to be present in about a quarter of the wineries. How they actually pack and ship these quantities was not clear.*
-
-2. Minimum order of 'x +', single wine only. Example — you must order at least 6 bottles of a single wine, but can order more so 6 to infinity.  
-  
-       *This scenario was not present in any of the wineries reviewed. Scenario 3 and 7 are far more likely.*
-
-3. Case based order of a single wine, - 'aka. a multiple of x'. Example, - a single wine must be ordered in sets of 6.  
-  
-       *This scenario was common but normally overlapped with scenario 7. In one example a particular order was not eligible for mix and match but the minimum of 6 still applied.*
-
-4. Case based order of a single wine, with multiple case sizes. Example, a single wine must be ordered in cases of 6 or 12 or 18, etc. Thus you can order 2*6 + 1*12 + 4 * 18. This would be a winery completely dependent on its packaging.  
-  
-       *For many wineries the minimum order sizes were largely dependent on packaging sizes. For extremely simple ecommerce systems complete cases were often sold in 6 or 12.*
-
-5. 'Mix + match'  with minimum order of 'x +', aka not multiple based. Example, you must order at least 6 bottles of various wines, but can order more so 6 to infinity.  
-  
-       *This scenario was not present in any winery reviewed.*
-
-6. 'Mix + match' based on a specific case size. Example you can mix and match wines but they will only ship in sets of 6.  
-  
-       *This scenario often existed for wineries offering 12 bottle cases.*
-
-7. 'Mix + match' based on several case sizes. You can mix and match wines in sets of 6 and 12. But they will only ship in some sort of combination of those set numbers. Aka 6, 12, 18, 24, etc.  
-  
-       *The majority of wineries offer this scenario with either 6 or 12 bottle cases.*
-
-
-#### Behaviour
-
-
-
-1. On clicking the 'add to cart' button anywhere on the site the modal window fades-in while simultaneously darkening the background, which should cover the whole site (will need a script for this). An example of this is the ['Super Scaled' transition on this site](http://tympanus.net/Development/ModalWindowEffects/). This is preview of the general look on [New District](http://deadtype.ca/newdistrict/modal_addtocart.html). The file showing the external structure is located [here](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_outer_structure.html).  
-
-2. The only way to exit or cancel out of adding the item to cart is to click the ['Cancel' button](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_cancel.html), which sits below the modal window. The darkened background is transparent and scrollable, showing the site below, but is not clickable. This ensures no accidental clickouts happen, which could confuse the user. An example is at [modal cancel](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
-
-3. The first part of the modal is the [Image Element](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_title_image_specifics.html) — . The important part is the text at the bottom were we provide contextual information about the wine. Such as its availability (single bottle, case or mix and match), and any specifics about it. 
-
-4. The second part is the [Quantity Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_quantity_section.html). Depending on the context it can show contextual information about the wine being added, ex. bottles vs case. If the winery has multiple case sizes then this could expand to numerous fields with labels about and below the field ([Example](http://deadtype.ca/newdistrict/modal_addtocart_multiple_cases.html)).  
-  
-
-5. CURRENTLY NOT NEEDED ANYMORE — IGNORE OR READ OUT OF INTEREST (since it appears no winery will have combinations of shipping options, ex. single orders and a specific min-order 'mix and match).  
-     
-      This is a conditional [Destination Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_destination_section.html) which only appears when the product being selected is available for both regular order (unconstrained ordering and case based) and 'mix and match' AND there is an open 'mix and match' present. It provides user with information about the options of adding the product and buttons to select the options.  
-  
-       The are to put the selected quantity in 'Cart' or into 'Mix and Match' (if the selected quantity is less then or equal to the amount requried to complete the 'mix and match' set). If the selected quantity is more then required to complete the 'mix and match' set then the button would turn into 'Cart + "Mix and Match". This would complete the set and add the overflow bottles to cart. See [Example](http://deadtype.ca/newdistrict/modal_addtocart_unconstrained_plusmix.html).  
-  
-       The situation is similar for ordering cases. For example when ordering a 6-bottle case and at the same time having a 12-bottle 'mix and match' set open (that must have at least 6 or more bottle spots available, if less then it is impossible to add the case and thus the option should not appear) then this option would present itself as well (See [Preview](http://deadtype.ca/newdistrict/modal_addtocart_single_case_plusmix.html)). Same pattern as above to overflow and multiple case orders, — put all in cart or put some in cart and augment the 'mix and match' set with a suitable case.  
-  
-       The options described above start unselected. While they are unselected no next section appears for the user. Effectively they can either select one of the options to have the next section appear (fade-in) or use the cancel button to exit the 'add to cart' modal.   
-
-6. The fourth part is the [Summary Section](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_summary_section.html).  
-  
-       This section provides context about what user has selected:     
-
-       1. Price
-       
-       2. A summary paragraph ('modal summary') outlining what bottles go where (cart, 'mix and match'), whether the users need to take any actions after, whether a new 'mix and match' set was created.  
-         
-         See examples for various ways the summary section can appear. For the paragrahs we will likely get B/E to define the wording and then we will replace thin like bottle numbers accoring to context.   
-
-7. The fifth section is the [Action Buttons](https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html).   
-        
-       This has two buttons: 
-       
-       1. A conditional 'Checkout' button, which would hide if the user does not have enough bottles in cart to checkout.
-         
-       2. A 'Explore Our Wines' button which takes user back to the context they were in — what ever page they were on when they clicked 'add to cart'  
-  
-  
 
 ## 11. Cart Page  
 
-Files: <https://github.com/deadtype/newdistrict/blob/master/cart_look.html>   
-<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/cart_header.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/individual_winery_format.html>
-<https://github.com/deadtype/newdistrict/blob/master/_includes/cart_preview/single_cart_item.html>
-
-Preview: <http://deadtype.ca/newdistrict/cart_look.html>   
+Files: <https://github.com/deadtype/newdistrict/blob/master/cart_overall_look.html>   
+Preview: <http://deadtype.ca/newdistrict/cart_overall_look.html>   
 
 
-The goal of this page is to lets users quickly look at their cart contents, scroll through and change quantities without leaving the context of where they are.  
-
-Ideally we hide this on page and reveal (slide up from the fixed footer) whenever user clicks the cart numbers/descriptions in the fixed footer (then they can close it by either pressing the hide cart button or the back button). Additionally this needs to have a standalone page — which looks and functions exactly the same, but has a link, which would let users reach it directly.
-
------
-
-First the cart shows the overall total, links to overall checkout and contextual text (this does not have to appear if there is nothing neccessary to write)
-
-After the section above we first show the store the user is currently in (if, in future, cart is reached from general marketplace page, this section is not present).
-
-After this is an alphabetical list of other stores (only showing ones with items in them), the current store is omitted from this list (if in general marketplace, all stores with items in it would show in alphabetical order).
-
------
-
-Individual items have controls on the to quickly change quantity (should not be able to move below 1 - that is reserved for delete item), update totals - which updates cart total with the changed quantities (this may not be necessary if it is possible to dynamically update numbers arross the page without a hit to performance), and delete item.
-  
-## Checkout Page   
-
-File: <https://github.com/deadtype/newdistrict/blob/master/checkout.html>
-Preview <http://deadtype.ca/newdistrict/checkout.html>
-
-This is a basic structure of the checkout page, will be supplemented with additional entry fields once Ben and Elin will go over the details.  
-  
 # Back End Interface  
 
 Back end inteface is currently split into 4 tabs 'store layout', 'product stock', 'store settings' and 'current orders'. 
@@ -380,8 +227,38 @@ This section has a number of tabs for order stages (ex. placed, packed, picked u
 
 Clicking on any order leads to an additional page (same visual laguage as 'Edit User/Product/Category' pages) wher uses can edit the order, print waybills and move order between stages of completion
 
-File — Edit Order:  <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order.html>   
-Preview: <http://deadtype.ca/newdistrict/backend_edit_order.html> 
+
+Edit Order — Status Placed:
+
+File — Edit Order Customer Info:  <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_customerinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_customerinfo.html>   
+
+File — Edit Order Order Info:  <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_orderinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_orderinfo.html>   
+
+
+----- 
+
+Edit Order - Status Delivered:   
+
+File — Edit Order Transport Info:   
+<https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_transportinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_transportinfo.html>  
+
+File — Edit Order Shipping Info:   
+<https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_shippinginfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_shippinginfo.html>   
+
+
+----
+
+Edit Order - Status Refund:   
+
+File — Edit Order Refund Info:   
+<https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_refundinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_refundinfo.html> 
+
+
 
 
 
