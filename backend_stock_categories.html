@@ -5,8 +5,14 @@ title: stock_info
 <div class='backend_wrap'>
 
 	<header class='mainheader'>
-		<div class='winery_title'>
-			<a href='/newdistrict'>Mission Hill Family Estate</a>
+		<div class='main_cart_header clearfix'>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>Mission Hill Estate</div>
+			</div>
+			<h2 class='major_title'>Administrator Settings</h2>
+			<!--<div class="major_cart_action">
+				<div class='main_cart_total subheading'>User: Bill</div>
+			</div>-->
 		</div>
 
 		<div class="divider_container primary_menu">
@@ -34,6 +40,7 @@ title: stock_info
 		</div>
 	</header>
 
+
 	<div class='backend_section'>
 
 
@@ -41,17 +48,24 @@ title: stock_info
 		{% include misc/section_separator.html label='wine collections' %}
 			</div>
 
-
-
 		<div class='table_label_container  clearfix'>
 			<div class='table_label category_name'>Collection Name</div>
-			<div class='table_label secondary'>Number of wines</div>
-			<div class='table_label secondary'>Description</div>
+			<div class='table_label secondary'>Wines Included</div>
+			<div class='table_label secondary'>Description added</div>
 			<div class='table_label secondary edit'>Edit</div>
 		</div>
 
 		<div class="individual_section_content stock_item clearfix">
-			<div class='table_label category_name'>1. Summer Reds</div>
+			<div class='table_label category_name'>Our Wines (Default)</div>
+			<div class='table_label secondary'>All Wines</div>
+			<div class='table_label secondary'>yes</div>
+			<div class='control_button'>
+				Edit
+			</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label category_name'>Summer Reds</div>
 			<div class='table_label secondary'>5</div>
 			<div class='table_label secondary'>yes</div>
 			<div class='control_button'>
@@ -60,7 +74,7 @@ title: stock_info
 		</div>
 
 				<div class="individual_section_content stock_item clearfix">
-			<div class='table_label category_name'>2. Winter Whites</div>
+			<div class='table_label category_name'>Winter Whites</div>
 			<div class='table_label secondary'>5</div>
 			<div class='table_label secondary'>yes</div>
 			<div class='control_button'>
@@ -72,7 +86,7 @@ title: stock_info
 			<div class='major_cart_controls'>
 
 				<div class='control_button'>
-					Add New Collection
+					Create New Collection
 				</div>
 			</div>
 	</div>

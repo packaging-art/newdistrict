@@ -117,18 +117,18 @@
   }
 }
 
-.control_button {
+.control_button, .cart_indicator .control_button {
   @extend .headline;
   margin-left: 0;
   font-size: .75em;
   color: black;
-  padding: .3em .6em .2em .6em;
-   border: 1px solid black;
+  padding: .6em 1em .6em 1em;
+  border: 1px solid black;
   background: hsla(0,0%,100%,.4);
   display: inline-block;
   z-index: 1000;
   position: relative;
-  white-space: nowrap;
+  line-height: 1.1;
 }
 
 .arrow_symbol {
@@ -172,11 +172,13 @@
 }
 
 .collection_description {
-  margin-top: 4em;
   width: 66%; 
   margin-left: auto;
   margin-right: auto;
+}
 
+.major_title + .collection_description, .view_label + .collection_description {
+  margin-top: 4em;
 }
 
 .major_section_header p {font-size: 1.2em;}

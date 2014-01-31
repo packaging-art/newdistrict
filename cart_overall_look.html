@@ -1,0 +1,73 @@
+---
+layout: default
+title: new district
+---
+
+{% include product_preview_info_controls/cart_look_controls.html %}
+{% include main_navigation/main-nav-incart.html %}
+<div class='cart_wrap content_wrap'>
+	<div class='main_cart_header clearfix'>
+		<div class="major_cart_action">
+			<div class='main_cart_total'>new district</div>
+		</div>
+		<h2 class='major_title'>Cart Total</h2>
+		<div class="major_cart_action">
+			<div class='main_cart_total subheading'>57 bottles from 3 stores<span class='price_separator'>|</span>$456 total</div>
+		</div>
+		<div class='main_cart_summary'>
+			<p>[Optional section to provide information about users cart] Ex. — You have 57 bottles in your cart, 50 are ready to ship and 7 are in a 'mix and match' set which requires 12 bottle minimum order. Checkout now to buy the 50 bottles, and save the 7 for later or add 5 more to complete the set and checkout all 62 bottles.</p>
+		</div>
+	</div>
+	<div class='cart_content'>
+		{% include misc/section_separator.html label='Individual Store Totals' %}
+		<div class='cart_content_section'>
+			<div class='cart_winery_group overview'>
+				<div class='winery_cart clearfix'>
+					<div class='product_summary_content'>
+						<div class='cart_overview_title'>
+							<div class='major_title'>Black Hills Family Estate</div>
+						</div>
+						<div class="major_cart_action">
+							<div class='main_cart_total subheading'>12 bottles<span class='price_separator'>|</span>$456 total</div>
+						</div>
+					</div>						
+					<div class='controls'>
+						<div class='control_button'>
+							<a class="">Edit Cart Contents</a>
+						</div>
+						<div class='control_button'>
+							<a class="">Checkout This Cart Alone</a>
+						</div>
+						<div class='control_button'>
+							<a class="">Delete Cart Contents</a>
+						</div>
+					</div>
+				</div>
+				<div class='secondary_divider'>
+					{% include misc/section_separator.html label='+' %}
+				</div>
+				<div class='winery_cart clearfix'>
+					<div class='product_summary_content'>
+						<div class='cart_overview_title'>
+							<div class='major_title'>Mission Hill</div>
+						</div>
+						<div class="major_cart_action">
+							<div class='main_cart_total subheading'>6 bottles<span class='price_separator'>|</span>$322 total</div>
+						</div>
+					</div>						
+					<div class='controls'>
+						<div class='control_button'>
+							<a class="">Edit Cart Contents</a>
+						</div>
+						<div class='control_button'>
+							<a class="">Checkout This Cart Alone</a>
+						</div>
+						<div class='control_button'>
+							<a class="">Delete Cart Contents</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

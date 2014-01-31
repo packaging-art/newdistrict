@@ -1,0 +1,32 @@
+---
+layout: default
+title: new district
+---
+<div class='modal_context_background'>
+	{% include demo_preview_helpers/modal_background_content.html %}
+</div>
+<div class='modal_window_super_container'>
+	<div class="modal_window_container clearfix">
+		<div class='modal_title'>
+			Select View
+		</div>
+		<div class='modal_title control'>
+			×
+		</div>
+		<div class='modal_window_content categories_list'>
+			<div class='modal_explanation '>
+				[Optional Text] Explore our wines quickly by browsing the whole collection 'At A Glance' or view high resolution imager and expanded descriptions in 'editorial view'.
+			</div>
+			{% include misc/section_separator.html label='Choose View Style' %}
+
+			<section class='modal_action_buttons'>
+				<span class='control_button'>At a Glance</span> <!-- 'checkout now' button an the divider below appear contextually, for example if the store only has mix and match ordering system and the user has not added enough bottles to cart they would not appear-->
+				<div class='secondary_divider'>
+					{% include misc/section_separator.html label='or' %}
+				</div>
+				<span class='control_button'>Editorial</span> <!--this button is always present-->
+			</section>
+
+		</div>
+	</div>
+</div>

@@ -37,8 +37,12 @@
 .major_cart_action {
 
   .main_cart_total {
-    margin-top: .3em;
-    margin-bottom: 2em;
+    margin-top: .5em;
+    margin-bottom: .25em;
+  }
+
+  .main_cart_total.subheading {
+    @extend .headline;
   }
 
   .control_button {
@@ -53,9 +57,10 @@
 }
 
 .main_cart_total {
-  @extend .headline;
   font-size: .8em;
   margin-bottom: 2.45em;
+  font-weight: 600;
+  text-transform: uppercase;
 
   .price_separator {
     vertical-align: 2px;
@@ -159,5 +164,28 @@
   .major_cart_action {
     position: relative;
     text-align: center;
+  }
+}
+
+.winery_cart {
+  text-align: center;
+}
+.cart_overview_title {
+  @extend .headline;
+  font-size: 1.6em;
+}
+
+.product_summary_content {
+  text-align: center;
+}
+
+.overview  {
+
+  .main_cart_total {
+    margin-top: 0;
+  }
+
+  .controls {
+  margin-top: 3em;
   }
 }
