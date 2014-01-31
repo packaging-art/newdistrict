@@ -1,7 +1,7 @@
 newdistrict.github.io
 =====================   
 
-## 1. General preview/footer 
+### General preview/footer 
 
 File: <https://github.com/deadtype/newdistrict/blob/master/index.html>  
 Preview: <http://deadtype.ca/newdistrict/>  
@@ -10,37 +10,30 @@ Preview: <http://deadtype.ca/newdistrict/>
 This shows full site preview and specifically the footer design.
 
 
-## 2. Notifications
+### Notifications
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/main_navigation/main-nav-cart_notifications.html>  
 Preview: <http://deadtype.ca/newdistrict/notifications_demo.html>
 
 
-## 3. Winery Hero Banner/Navigation
+### Winery Hero Banner/Navigation
 
 Preview: <http://deadtype.ca/newdistrict>
 
-1. [Winery Title/Navigation](#1-winery-titlenavigation)
-2. [Winery Hero Photo Slide](#2-winery-hero-photo-slide)
-3. [Location Slide](#3-location-slide)
-4. [About Slide](#4-about-slide)
-5. [Contact Slide](#5-contact-slide)
 
-
-
-### 1. Winery Title/Navigation  
+### Winery Title/Navigation  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/slider_navigation.html>  
 Preview: <http://deadtype.ca/newdistrict/>
 
 
-### 2. Winery Hero Photo Slide  
+### Winery Hero Photo Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/hero_photo_slide.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
 
-### 3. Location Slide  
+### Location Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide.html>  
 MAP API Call code: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/location_slide_api_call.html>  
@@ -59,33 +52,31 @@ var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
 ```  
 
 
-### 4. About Slide  
+### About Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/about_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/about_slide_demo.html>  
 
-### 5. Contact Slide  
+### Contact Slide  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/hero_banner/contact_slide.html>  
 Preview: <http://deadtype.ca/newdistrict/contact_slide_demo.html>  
 
 
---- 
-
-## 4. Wine Categories/Controls   
+## Wine Categories/Controls   
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview_info_controls/product_selection_controls.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
 
-## 5. Wine Category Info  
+## Wine Category Info  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview_info_controls/product_selection_info.html>  
 Preview: <http://deadtype.ca/newdistrict/product_preview.html>  
 
 
   
-## 6. Grid Product View  
+## Grid Product View  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_grid.html>  
 Preview: <http://deadtype.ca/newdistrict/product_preview.html>  
@@ -93,21 +84,20 @@ Preview: <http://deadtype.ca/newdistrict/product_preview.html>
 Preview: <http://deadtype.ca/newdistrict/product_grid_focusedon_banner.html> 
 
 
-
-## 7. Banner Product View  
+## Banner Product View  
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/product_preview/product_view_banner.html>  
 Preview: <http://deadtype.ca/newdistrict>  
 
 
-## 8. Section Separator 
+## Section Separator 
 
 File: <https://github.com/deadtype/newdistrict/blob/master/_includes/misc/section_separator.html>  
 Preview: <http://deadtype.ca/newdistrict>   
 
 A small helper component used to separate sections of content. For example it can be used to segregate production years in the product section.
 
-## 9. Full Product Page  
+## Full Product Page  
   
 Files:  <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_controls.html> 
 <https://github.com/deadtype/newdistrict/blob/master/_includes/product_full_page/product_full_page_intro.html>  
@@ -136,12 +126,27 @@ Files:
    <https://github.com/deadtype/newdistrict/blob/master/_includes/modal_addtocart/modal_action_section.html>  
 
 Example: <https://github.com/deadtype/newdistrict/blob/master/modal_addtocart.html>   
-  
 
-## 11. Cart Page  
+## 'Select category' Modal 
+
+File: <https://github.com/deadtype/newdistrict/blob/master/modal_selectcategory.html>  
+Preview: <http://deadtype.ca/newdistrict/modal_selectcategory.html>   
+
+## 'Select View' Modal 
+
+File: <https://github.com/deadtype/newdistrict/blob/master/modal_selectview.html>  
+Preview: <http://deadtype.ca/newdistrict/modal_selectview.html>   
+
+
+## Cart Page  
 
 Files: <https://github.com/deadtype/newdistrict/blob/master/cart_overall_look.html>   
 Preview: <http://deadtype.ca/newdistrict/cart_overall_look.html>   
+
+## 'Success Order' page 
+
+File: <https://github.com/deadtype/newdistrict/blob/master/order_successful.html>  
+Preview: <http://deadtype.ca/newdistrict/order_successful.html> 
 
 
 # Back End Interface  
