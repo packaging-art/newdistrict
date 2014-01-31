@@ -16,37 +16,39 @@ title: stock_info
 			</div>-->
 		</div>
 
+
+
+	</header>
+	<div class='backend_section'>
+
 		<div class='major_section_header clearfix'>
 		
 			<div class='collection_description'>
 				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
 			</div>
 		</div>
+		<form class='general_form'>
+			<fieldset class="field_two medium">
+				<fieldset>
+					<label for="username">username</label>
+					<input type="text" id="username" value='super_user' class="form-text" />
+					</input>
+				</fieldset>
 
-	</header>
-		{% include misc/section_separator.html label='enter your information' %}
-
-	<form class='general_form'>
-		<fieldset class="field_two medium">
-			<fieldset>
-				<label for="username">username</label>
-				<input type="text" id="username" value='super_user' class="form-text" />
-				</input>
+	 			<fieldset>
+					<label for="password">password</label>
+					<input type="text" id="password" value='********' class="form-text" />
+					</input>
+				</fieldset>
 			</fieldset>
+		</form>
 
- 			<fieldset>
-				<label for="password">password</label>
-				<input type="text" id="password" value='********' class="form-text" />
-				</input>
-			</fieldset>
-		</fieldset>
-	</form>
-
-			<div class='major_cart_controls'>
-			<div class='control_button'>
-				Login
+				<div class='major_cart_controls'>
+				<div class='control_button'>
+					Login
+				</div>
 			</div>
-		</div>
+	</div>
 </div>
 
 {% include main_navigation/main-nav-cart.html %}
