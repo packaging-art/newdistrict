@@ -1,18 +1,23 @@
-.headline, .backend_section .individual_section_content .section_number, .table_label, .position_number_container, label, .form_help {
+.headline, .backend_section .individual_section_content .section_number, .table_label, .position_number_container, .column.titles, label, .form_help {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.backend_wrap {
+.backend_wrap, .regular_wrap {
   margin-right: auto;
   margin-left: auto;
 }
 
+.regular_wrap {
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+
 .backend_wrap {
   width: 1000px;
-  margin: 3.5em auto 9em;
+  margin: 1.5em auto 9em;
   background: transparent;
 }
 .backend_wrap .collection_description {
@@ -23,6 +28,13 @@
 }
 .backend_wrap .major_section_header.form_header {
   margin: 9em auto 7em;
+}
+.backend_wrap .control_button {
+  white-space: nowrap;
+}
+
+.backend_user_controls {
+  font-size: .9em;
 }
 
 .mainheader {
@@ -45,7 +57,7 @@
 .mainheader .primary_menu {
   margin-bottom: 0em;
   width: 95%;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 .mainheader .primary_menu .overlay_label {
   font-size: .95em;
@@ -72,6 +84,7 @@
 .main_nav_link {
   margin: 0 1.5em;
   color: lightgray;
+  white-space: nowrap;
 }
 
 .main_nav_link.active {
@@ -135,13 +148,18 @@ nav .price_separator {
 
 .table_label {
   float: left;
-  margin-top: .2em;
-  margin-bottom: .2em;
+  margin-top: .3em;
+  margin-bottom: .3em;
+}
+
+.drag_drop .position_wine_items .table_label {
+  /*text-align:left;*/
+  white-space: nowrap;
 }
 
 .table_label.name {
   width: 240px;
-  text-align: center;
+  text-align: left;
 }
 
 .table_label.order_number {
@@ -154,12 +172,27 @@ nav .price_separator {
   text-align: center;
 }
 
+.table_label.order_name {
+  text-align: left;
+  width: 400px;
+}
+
 .table_label.year {
-  width: 60px;
+  width: 100px;
+}
+
+.table_label.order_position {
+  width: 110px;
+  text-align: left;
 }
 
 .table_label.order_id {
   width: 200px;
+}
+
+.table_label.price {
+  width: 100px;
+  text-align: center;
 }
 
 .table_label.secondary {
@@ -214,6 +247,7 @@ nav .price_separator {
   width: 1.5em;
   text-align: center;
   margin-right: 3.7em;
+  vertical-align: top;
 }
 .position_number_container .position_numbers_list {
   margin: 0;
@@ -227,8 +261,8 @@ nav .price_separator {
 }
 
 .position_wine_items {
-  width: 35em;
-  display: inline-block;
+  /*width: 35em;
+  display: inline-block;*/
 }
 
 .custom_additions_group {
@@ -250,7 +284,7 @@ nav .price_separator {
 
 .secondary_divider.backend.side_by_side {
   display: inline-block;
-  width: 20%;
+  width: 15%;
 }
 .secondary_divider.backend.side_by_side .divider_container {
   width: 60%;
@@ -260,6 +294,29 @@ nav .price_separator {
   font-size: .6em;
   border: none;
   color: red;
+}
+
+.column {
+  width: 50%;
+  float: left;
+  padding: 0 2em;
+}
+.column li + li {
+  margin-top: 2em;
+}
+.column ul {
+  margin: 0;
+}
+
+.column.titles {
+  text-align: right;
+}
+
+.column.information {
+  text-align: left;
+  border-left: 2px solid lightgray;
+  font-size: 1.1em;
+  line-height: 1.1;
 }
 
 .transition, input, input:focus, input:hover, input:active {

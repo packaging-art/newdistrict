@@ -44,15 +44,16 @@ right: auto
 
 .price_separator {
   margin: 0 .9em;
-font-size: .6em;
-vertical-align: 1px;
+  font-size: .6em;
+  vertical-align: 1px;
 }
 
 .action_container {
     position:absolute;
-bottom: 0;
-width:100%;
-text-align: center;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    font-size: .9em;
 }
 
 .action_container.left {

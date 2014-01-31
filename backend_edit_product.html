@@ -2,20 +2,26 @@
 layout: default_backend
 title: stock_info
 ---
+
+{% include product_preview_info_controls/navigation_controls.html %}
+
 <div class='backend_wrap'>
 
 	<header class='mainheader'>
-		<div class='winery_title'>
-			<a href='/newdistrict'>Add New Wine</a>
-		</div>
-
-			<div class='major_section_header clearfix'>
-			
-				<div class='collection_description'>
-					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
-				</div>
+		<div class='main_cart_header clearfix'>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>Mission Hill Estate</div>
 			</div>
-
+			<h2 class='major_title'>Edit Wine Info</h2>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>2007 Cabernet Savignon</div>
+			</div>
+		</div>
+		<div class='major_section_header clearfix'>
+			<div class='collection_description'>
+				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+			</div>
+		</div>
 	</header>
 
 
@@ -184,12 +190,60 @@ title: stock_info
 				<p class='form_help'>350 characters max</p>
 			</fieldset>
 
-						<fieldset class='medium textfield'>
+				<fieldset class='medium textfield'>
 				<label for="about_store">additional info</label>
 				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
 				</textarea>
 				<p class='form_help'>350 characters max</p>
 			</fieldset>
+
+			<fieldset class='medium textfield'>
+				<label for="about_store">Reviews</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+			<fieldset class='medium textfield'>
+				<label for="about_store">Winemakers Notes</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+			<fieldset class='medium textfield'>
+				<label for="about_store">Technical Notes</label>
+				<textarea type="" id="about_store" class="form-text" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='Product SKU' %}
+			</div>
+
+			<fieldset class='medium'>
+				<label for="product_sku">SKU</label>
+				<input type="text" id="product_sku" value='ZXCV18976' class="form-text" />
+				</input>
+			</fieldset>
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='Unique Bottle' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>If your product has a special bottle that does not fit into the standard cases, and has to be shipped separately select the option below</p>
+				</div>
+			</div>
+
+			<fieldset class='category_checkbox'>
+					<input type="checkbox" id="unique_bottle">
+			       	<label for="unique_bottle">this product has a unique bottle and ships standalone</label>
+			       				       
+			    </fieldset>
 
 
 			<div class='secondary_divider'>

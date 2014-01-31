@@ -1,0 +1,100 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+{% include product_preview_info_controls/navigation_controls.html %}
+
+<div class='backend_wrap clearfix'>
+
+	<header class='mainheader edit_section'>
+
+		<div class='main_cart_header clearfix'>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>Mission Hill Estate</div>
+			</div>
+			<h2 class='major_title'>Order ZX-125375</h2>
+			<div class="major_cart_action">
+				<div class='main_cart_total subheading'>Status: being returned</div>
+			</div>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link'>Customer Info</a><span class='price_separator'>|</span><a class='main_nav_link'>Order Info</a><span class='price_separator'>|</span><a class='main_nav_link '>Transport Info</a><span class='price_separator'>|</span><a class='main_nav_link'>Shipping info</a> <span class='price_separator'>|</span><a class='main_nav_link active'>Return info</a>
+				</nav>
+			</div>
+			<div class='divider'>
+			</div>
+		</div>
+
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='refund details' %}
+		</div>
+
+		<form class='general_form'>
+			<fieldset class='small'>
+				<label for="refund_amount">Refund Amount</label>
+				<input type="number" id="refund_amount" value='446' class="form-text" />
+				</input>
+				<p class='form_help'>dollars</p>
+
+			</fieldset>
+
+			<fieldset>
+				<label for="refund_description">refund description</label>
+				<textarea type="" id="refund_description" class="form-text large" />Red Roosters is world class facility that will give our guests an exceptional sit down tasting experience immersed in the middle of the Black Hills terroir. The spectacular 3000 sq foot tasting area and wine shop is located on the Black Sage Road, just a few hundred yards further south from its original location.
+				</textarea>
+				<p class='form_help'>350 characters max</p>
+			</fieldset>
+		</form>
+
+		
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='process refund' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+			</div>
+		</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Print Refund Waybill
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Process Refund
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Issue refund Receipt
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+{% include main_navigation/main-nav-backend.html %}

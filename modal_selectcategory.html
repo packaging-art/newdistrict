@@ -1,0 +1,36 @@
+---
+layout: default
+title: new district
+---
+<div class='modal_context_background'>
+	{% include demo_preview_helpers/modal_background_content.html %}
+</div>
+<div class='modal_window_super_container'>
+	<div class="modal_window_container clearfix">
+		<div class='modal_title'>
+			Select Collection
+		</div>
+		<div class='modal_title control'>
+			×
+		</div>
+		<div class='modal_window_content categories_list'>
+			<div class='modal_explanation '>
+				[Optional Text] We have organized our wines in specific collections for you to explore. Select from the ones below to see a detailed description and focus the products.
+			</div>
+			{% include misc/section_separator.html label='Our collections' %}
+
+			<section class='modal_action_buttons'>
+				<span class='control_button'>Our Wines</span> <!-- 'checkout now' button an the divider below appear contextually, for example if the store only has mix and match ordering system and the user has not added enough bottles to cart they would not appear-->
+				<div class='secondary_divider'>
+					{% include misc/section_separator.html label='+' %}
+				</div>
+				<span class='control_button'>Summer Reds</span> <!--this button is always present-->
+				<div class='secondary_divider'>
+					{% include misc/section_separator.html label='+' %}
+				</div>
+				<span class='control_button'>Super Delicious Wines, Things and Whatnots</span>
+			</section>
+
+		</div>
+	</div>
+</div>

@@ -199,7 +199,7 @@ Helper
 /* ==========================================================================
 Headers
    ========================================================================== */
-.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label, .modal_cancel, .modal_window_content .modal_total, .modal_comment, .action_label, .quantity_entry, .action_button, .cart_indicator .control, .main_cart_total {
+.headline, h1, h2, .winery_title, .cart_indicator, .notification_control, .winery_menu a, .our_wines, .link_back, .control_button, .action, .cart_indicator .control_button, .cart_indicator .action, .social_media_link, .grid_title, .product_meta_info, .wine_volume, .grid_price, .banner_title, .overlay_label, .modal_title, .modal_title.control, .modal_cancel, .modal_window_content .modal_total, .modal_comment, .action_label, .quantity_entry, .action_button, .cart_indicator .control, .major_cart_action .main_cart_total.subheading, .cart_overview_title {
   font-family: "futura-pt",sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -299,10 +299,12 @@ h3 {
 }
 
 .cart_item + .cart_item:before {
-  content: '+';
-  margin: 0 .6em;
-  font-size: .9em;
+  content: '/';
+  margin: 0 1.2em;
+  font-size: 1em;
+  font-weight: 400;
   vertical-align: 2px;
+  color: gray;
 }
 
 .cart_indicator {
@@ -484,17 +486,17 @@ h3 {
   position: relative;
 }
 
-.control_button, .action {
+.control_button, .action, .cart_indicator .control_button, .cart_indicator .action {
   margin-left: 0;
   font-size: .75em;
   color: black;
-  padding: .3em .6em .2em .6em;
+  padding: .6em 1em .6em 1em;
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.4);
   display: inline-block;
   z-index: 1000;
   position: relative;
-  white-space: nowrap;
+  line-height: 1.1;
 }
 
 .arrow_symbol {
@@ -537,10 +539,13 @@ h3 {
 }
 
 .collection_description, .cart_wrap .main_cart_summary {
-  margin-top: 4em;
   width: 66%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.major_title + .collection_description, .cart_wrap .major_title + .main_cart_summary, .view_label + .collection_description, .cart_wrap .view_label + .main_cart_summary {
+  margin-top: 4em;
 }
 
 .major_section_header p {
@@ -762,6 +767,7 @@ h3 {
   bottom: 0;
   width: 100%;
   text-align: center;
+  font-size: .9em;
 }
 
 .action_container.left {
@@ -994,19 +1000,23 @@ h3 {
   margin-top: 1em;
 }
 
+.order_success_controls {
+  text-align: center;
+  margin-top: 7em;
+}
+
 /* Modal Add to Cart */
 .modal_window_super_container {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 100000;
   height: 1200px;
 }
 
 .modal_background {
-  background: rgba(0, 0, 0, 0.8);
   height: 100%;
   left: 0;
   position: fixed;
@@ -1017,8 +1027,27 @@ h3 {
 
 .modal_window_container {
   padding: 0em;
-  width: 28.5%;
+  width: 30%;
   margin: 5% auto 0;
+  position: relative;
+}
+
+.modal_title {
+  text-align: left;
+  color: white;
+  font-size: 1.5em;
+  background: transparent;
+  margin: 0 auto .8em;
+  line-height: 1;
+}
+
+.modal_title.control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2.4em;
+  margin-top: -5px;
+  line-height: 1;
 }
 
 .modal_cancel {
@@ -1032,13 +1061,32 @@ h3 {
   padding: .3em 0 .2em;
 }
 
+.categories_list {
+  /*@extend .headline;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.1;*/
+}
+.categories_list .control_button, .categories_list .action {
+  border: none;
+}
+.categories_list li + li {
+  margin-top: 1.5em;
+}
+
 .modal_action_section {
   margin: 2.5em auto;
 }
 
 .modal_window_content {
   background: white;
-  padding-bottom: 3em;
+  padding: 3em 1.5em 4.5em;
+}
+.modal_window_content .modal_explanation {
+  text-align: center;
+  margin-top: 1.95em;
 }
 .modal_window_content .grid_img_container {
   width: 60%;
@@ -1047,7 +1095,7 @@ h3 {
 }
 .modal_window_content .grid_title {
   position: relative;
-  padding: 1.2em 1em 1em;
+  padding: 0em 1em 1em;
 }
 .modal_window_content .grid_title .major_title {
   color: black;
@@ -1074,24 +1122,25 @@ h3 {
   margin-bottom: 0em;
 }
 .modal_window_content .divider_container {
-  margin: 1em auto 1em;
-  width: 90%;
+  margin: 4em auto;
+  width: 95%;
 }
 .modal_window_content .divider {
   top: 55%;
 }
 .modal_window_content .secondary_divider .divider_container {
-  width: 100%;
+  width: 50%;
+  margin: 1em auto;
 }
 .modal_window_content .grid_img_container {
   max-height: 500px;
   overflow: hidden;
 }
 .modal_window_content .control_button, .modal_window_content .action {
-  width: 50%;
+  width: 70%;
   display: inline-block;
-  padding: .5em .5em .45em .5em;
   border: 1px solid black;
+  padding: .95em 1em .95em 1em;
 }
 .modal_window_content .control_button + .control_button, .modal_window_content .action + .control_button, .modal_window_content .control_button + .action, .modal_window_content .action + .action {
   margin-top: .8em;
@@ -1124,7 +1173,7 @@ h3 {
 }
 
 .order_specifics {
-  margin: 3.5em auto 1em;
+  margin: 3.5em auto 0;
 }
 
 .quantity_caption {
@@ -1203,8 +1252,8 @@ h3 {
 }
 
 .major_cart_action .main_cart_total {
-  margin-top: .3em;
-  margin-bottom: 2em;
+  margin-top: .5em;
+  margin-bottom: .25em;
 }
 .major_cart_action .control_button, .major_cart_action .action {
   margin-top: .5em;
@@ -1217,6 +1266,8 @@ h3 {
 .main_cart_total {
   font-size: .8em;
   margin-bottom: 2.45em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .main_cart_total .price_separator {
   vertical-align: 2px;
@@ -1309,6 +1360,53 @@ h3 {
 .winery_cart_total .major_cart_action {
   position: relative;
   text-align: center;
+}
+
+.winery_cart {
+  text-align: center;
+}
+
+.cart_overview_title {
+  font-size: 1.6em;
+}
+
+.product_summary_content {
+  text-align: center;
+}
+
+.overview .main_cart_total {
+  margin-top: 0;
+}
+.overview .controls {
+  margin-top: 3em;
+}
+
+.general_footer {
+  position: relative;
+  text-align: center;
+}
+
+.footer_section {
+  width: 33%;
+  padding: 0 1em;
+  text-align: center;
+  width: 30%;
+  padding: 0 1em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer_section .winery_title + ul {
+  margin-top: 1.75em;
+}
+.footer_section li + li {
+  margin-top: .5em;
+}
+
+.middle_separator {
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid lightgray;
 }
 
 /* ==========================================================================

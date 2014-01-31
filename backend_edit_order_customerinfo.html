@@ -1,0 +1,102 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+{% include product_preview_info_controls/navigation_controls.html %}
+
+<div class='backend_wrap clearfix'>
+
+	<header class='mainheader edit_section'>
+
+		<div class='main_cart_header clearfix'>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>Mission Hill Estate</div>
+			</div>
+			<h2 class='major_title'>Order ZX-125375</h2>
+			<div class="major_cart_action">
+				<div class='main_cart_total subheading'>Status: Placed</div>
+			</div>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link active'>Customer Info</a><span class='price_separator'>|</span><a class='main_nav_link'>Order Info</a>
+				</nav>
+			</div>
+			<div class='divider'>
+			</div>
+		</div>
+
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='customer information' %}
+		</div>
+
+		<div class='two_column_list clearfix'>
+			<div class='column titles'>
+				<ul>
+					<li>Date Placed</li>
+					<li>Name</li>
+					<li>Email</li>
+					<li>Phone Number</li>
+					<li>Address</li>
+				</ul>
+			</div> 
+			<div class='column information'>
+				<ul>
+					<li>01.04.2014</li>
+					<li>Steve Stevenson</li>
+					<li>stevestevenson@stevestevenson.ca</li>
+					<li>604 832 0027</li>
+					<li>#64 - 1890 Stevenson Blvd, Vancouver, BC</li>
+				</ul>
+			</div> 
+		</div>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='process order' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+			</div>
+		</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Print Waybill
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Process Order
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Add to Cart
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+{% include main_navigation/main-nav-backend.html %}

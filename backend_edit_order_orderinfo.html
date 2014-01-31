@@ -1,0 +1,146 @@
+---
+layout: default_backend
+title: stock_info
+---
+
+{% include product_preview_info_controls/navigation_controls.html %}
+
+<div class='backend_wrap clearfix'>
+
+	<header class='mainheader edit_section'>
+
+		<div class='main_cart_header clearfix'>
+			<div class="major_cart_action">
+				<div class='main_cart_total'>Mission Hill Estate</div>
+			</div>
+			<h2 class='major_title'>Order ZX-125375</h2>
+			<div class="major_cart_action">
+				<div class='main_cart_total subheading'>Status: Placed</div>
+			</div>
+		</div>
+
+		<div class="divider_container primary_menu">
+			<div class="label_holder">
+				<nav class="overlay_label">
+					<a class='main_nav_link'>Customer Info</a><span class='price_separator'>|</span><a class='main_nav_link active'>Order Info</a>
+				</nav>
+			</div>
+			<div class='divider'>
+			</div>
+		</div>
+
+
+			<div class='major_section_header clearfix'>
+			
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+	</header>
+
+	<div class='backend_section'>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='Box 1' %}
+		</div>
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label order_name'>Wine</div>
+			<div class='table_label year'>Year</div>
+			<div class='table_label price'>Price</div>
+			<div class='table_label secondary'>Quantity</div>
+			<div class='table_label secondary edit'>Total</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_name'>Cabernet Savignon</div>
+			<div class='table_label year'>2007</div>
+			<div class='table_label price'>$45</div>
+			<div class='table_label secondary'>7</div>
+			<div class='table_label secondary edit'>$456</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_name'>Pinot Noir</div>
+			<div class='table_label year'>2012</div>
+			<div class='table_label price'>$32</div>
+			<div class='table_label secondary'>5</div>
+			<div class='table_label secondary edit'>$200</div>
+		</div>
+
+				<div class='secondary_divider'>
+			{% include misc/section_separator.html label='Box 2' %}
+		</div>
+
+		<div class='table_label_container clearfix'>
+			<div class='table_label order_name'>Wine</div>
+			<div class='table_label year'>Year</div>
+			<div class='table_label price'>Price</div>
+			<div class='table_label secondary'>Quantity</div>
+			<div class='table_label secondary edit'>Total</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_name'>Pinot Noir</div>
+			<div class='table_label year'>2012</div>
+			<div class='table_label price'>$45</div>
+			<div class='table_label secondary'>3</div>
+			<div class='table_label secondary edit'>$456</div>
+		</div>
+
+		<div class="individual_section_content stock_item clearfix">
+			<div class='table_label order_name'>Pinot Noir</div>
+			<div class='table_label year'>2012</div>
+			<div class='table_label price'>$32</div>
+			<div class='table_label secondary'>9</div>
+			<div class='table_label secondary edit'>$200</div>
+		</div>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='overall total' %}
+		</div>
+
+		<div class='winery_cart_total clearfix'>
+			<h2 class='major_title'>57 bottles<span class='price_separator'>|</span>$456</h2>
+
+		</div>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='process order' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+		
+			<div class='collection_description'>
+				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+			</div>
+		</div>
+
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Print Waybill
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Process Order
+			</div>
+						<div class='secondary_divider backend side_by_side'>
+				{% include misc/section_separator.html label='&' %}
+			</div>
+			<div class='control_button'>
+				Add to Cart
+			</div>
+		</div>
+
+		
+
+
+
+	</div>
+
+</div>
+
+{% include main_navigation/main-nav-backend.html %}

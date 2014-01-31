@@ -35,10 +35,12 @@
 }
 
 .cart_item + .cart_item:before {
-  content: '+';
-  margin: 0 .6em;
-  font-size: .9em;
-  vertical-align: 2px;
+content: '/';
+margin: 0 1.2em;
+font-size: 1em;
+font-weight: 400;
+vertical-align: 2px;
+color:hsl(0,0%,50%);
 }
 
 .cart_indicator {

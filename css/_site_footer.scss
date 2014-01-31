@@ -1,0 +1,33 @@
+.general_footer {
+position: relative;
+text-align: center;
+}
+
+.footer_section {
+	width:33%;
+	padding: 0 1em;
+	text-align: center;
+	    width: 30%;
+    padding: 0 1em;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+
+	.winery_title + ul {
+		margin-top: 1.75em;
+	}
+	li + li {margin-top: .5em;}
+}
+
+.winery_footer {
+
+}
+
+.middle_separator {
+	width: 1px;
+	height: 100%;
+		border-right: 1px solid lightgray;
+
+}
+.project_footer {
+	}
