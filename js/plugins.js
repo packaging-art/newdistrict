@@ -21,10 +21,11 @@
     }
 }());
 
+
 // Place any jQuery/helper plugins in here.
 
 function viewport() {
-    var height = $(window).height();
+    var height = (window.innerHeight ? window.innerHeight : $w.height());
     var menu_height = $(".mainnav").outerHeight();
     var header_height = $(".winery_header").outerHeight();
     var view_adjust = height - menu_height - header_height;
