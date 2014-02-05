@@ -32,8 +32,6 @@ Merged multiple boxes (containing orders) sections into a single 'items ordered'
 
 ---  
 
----
-
 File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_returninfo.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_edit_order_returninfo.html>   
 
