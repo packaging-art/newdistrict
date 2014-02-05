@@ -7,14 +7,14 @@ Updates to backend files:
 File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
 
-Moved to 'point of origin' secrtion to backend shipping section. 
+Moved to 'point of origin' section to backend shipping section. 
 
 ----
 
 File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>  
 
-Added 'point of origin' secrtion to backend shipping section. Added 'shipping containers' heading title to the section, this will be used to implement the 'container classes' part of the back end. This will be created today.
+Added 'point of origin' section to backend shipping section. Added 'shipping containers' heading title to the section, this will be used to implement the 'container classes' part of the back end. This will be created today.
 
 ---
 
