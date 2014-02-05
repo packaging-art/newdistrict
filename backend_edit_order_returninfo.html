@@ -37,6 +37,12 @@ title: stock_info
 				</div>
 			</div>
 
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Print Refund Waybill
+			</div>
+		</div>
+
 	</header>
 
 	<div class='backend_section'>
@@ -62,7 +68,48 @@ title: stock_info
 			</fieldset>
 		</form>
 
-		
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='return receipt' %}
+		</div>
+
+		<div class='winery_cart_total clearfix'>
+			<div class='two_column_list clearfix'>
+				<div class='column titles'>
+					<ul>
+						<li>Product Total</li>
+						<li>---</li>
+						<li>Bottle Deposit</li>
+						<li>Customer Shipping</li>
+						<li>Order Subtotal</li>
+						<li>---</li>
+						<li>Shipping Cost</li>
+						<li>Transaction Fee</li>
+						<li>Net Revenue</li>
+						<li>---</li>
+						<li>Return Shipping Cost</li>
+						<li>Refunded Amount</li>
+						<li>Net Balance</li>
+					</ul>
+				</div> 
+				<div class='column information'>
+					<ul>
+						<li>12 Bottles = $261.80</li>
+						<li>---</li>
+						<li>$0.12/Bottle = $1.20</li>
+						<li>$20.00</li>
+						<li>$283.00</li>
+						<li>---</li>
+						<li>$32.15</li>
+						<li>$14.15</li>
+						<li>$236.70</li>
+						<li>---</li>
+						<li>$32.15</li>
+						<li>$(260.00)</li>
+						<li>$(55.45)</li>
+					</ul>
+				</div> 
+			</div>
+		</div>
 
 		<div class='secondary_divider'>
 			{% include misc/section_separator.html label='process refund' %}
