@@ -37,12 +37,19 @@ title: stock_info
 				</div>
 			</div>
 
+		<div class='major_cart_controls'>
+			<div class='control_button'>
+				Print Waybill
+			</div>
+
+		</div>
+
 	</header>
 
 	<div class='backend_section'>
 
 		<div class='secondary_divider'>
-			{% include misc/section_separator.html label='Box 1' %}
+			{% include misc/section_separator.html label='items ordered' %}
 		</div>
 
 		<div class='table_label_container clearfix'>
@@ -69,41 +76,42 @@ title: stock_info
 			<div class='table_label secondary edit'>$200</div>
 		</div>
 
-				<div class='secondary_divider'>
-			{% include misc/section_separator.html label='Box 2' %}
-		</div>
 
-		<div class='table_label_container clearfix'>
-			<div class='table_label order_name'>Wine</div>
-			<div class='table_label year'>Year</div>
-			<div class='table_label price'>Price</div>
-			<div class='table_label secondary'>Quantity</div>
-			<div class='table_label secondary edit'>Total</div>
-		</div>
-
-		<div class="individual_section_content stock_item clearfix">
-			<div class='table_label order_name'>Pinot Noir</div>
-			<div class='table_label year'>2012</div>
-			<div class='table_label price'>$45</div>
-			<div class='table_label secondary'>3</div>
-			<div class='table_label secondary edit'>$456</div>
-		</div>
-
-		<div class="individual_section_content stock_item clearfix">
-			<div class='table_label order_name'>Pinot Noir</div>
-			<div class='table_label year'>2012</div>
-			<div class='table_label price'>$32</div>
-			<div class='table_label secondary'>9</div>
-			<div class='table_label secondary edit'>$200</div>
-		</div>
 
 		<div class='secondary_divider'>
-			{% include misc/section_separator.html label='overall total' %}
+			{% include misc/section_separator.html label='winery receipt' %}
 		</div>
 
 		<div class='winery_cart_total clearfix'>
-			<h2 class='major_title'>57 bottles<span class='price_separator'>|</span>$456</h2>
+			<div class='two_column_list clearfix'>
+				<div class='column titles'>
+					<ul>
+						<li>Product Total</li>
+						<li>---</li>
+						<li>Bottle Deposit</li>
+						<li>Customer Shipping</li>
+						<li>Order Subtotal</li>
+						<li>---</li>
+						<li>Shipping Cost</li>
+						<li>Transaction Fee</li>
+						<li>Net Revenue</li>
+					</ul>
+				</div> 
+				<div class='column information'>
+					<ul>
+						<li>12 Bottles = $261.80</li>
+						<li>---</li>
+						<li>$0.12/Bottle = $1.20</li>
+						<li>$20.00</li>
+						<li>$283.00</li>
+						<li>---</li>
+						<li>$32.15</li>
+						<li>$14.15</li>
+						<li>$236.70</li>
 
+					</ul>
+				</div> 
+			</div>
 		</div>
 
 		<div class='secondary_divider'>
@@ -131,7 +139,7 @@ title: stock_info
 				{% include misc/section_separator.html label='&' %}
 			</div>
 			<div class='control_button'>
-				Add to Cart
+				Cancel Order
 			</div>
 		</div>
 
