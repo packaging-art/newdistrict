@@ -122,6 +122,10 @@ nav .price_separator {
 .backend_section .individual_section_content .control_button + .control_button {
   margin-right: .5em;
 }
+.backend_section .individual_section_subrow + .individual_section_subrow {
+  margin-top: 1em;
+  font-size: .75em;
+}
 .backend_section .major_section_header {
   margin: 0em auto 6em;
 }

@@ -11,10 +11,8 @@ title: stock_info
 		<div class='main_cart_header clearfix'>
 			<div class="major_cart_action">
 				<div class='main_cart_total'>Mission Hill Estate</div>
-			</div>
-			<h2 class='major_title'>Edit Wine Info</h2>
-			<div class="major_cart_action">
-				<div class='main_cart_total'>2007 Cabernet Savignon</div>
+				<h2 class='major_title'>Edit Wine Info</h2>
+				<div class='main_cart_total subheading'>2007 Cabernet Savignon</div>
 			</div>
 		</div>
 		<div class='major_section_header clearfix'>
@@ -93,6 +91,29 @@ title: stock_info
 					<p class='form_help'>ml</p>
 				</fieldset>
 			</fieldset>		
+
+			<div class='secondary_divider'>
+				{% include misc/section_separator.html label='select shipping container class' %}
+			</div>
+
+			<div class='major_section_header clearfix'>
+				<div class='collection_description'>
+					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
+				</div>
+			</div>
+
+				<fieldset class='radio_form'>
+					<input type="radio" id="container_class_1" name="radios" value="all" checked>
+			       	<label for="container_class_1">12 bottle</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="container_class_2" name="radios" value="false">
+			      	<label for="container_class_2">6 bottle</label>
+			    </fieldset>
+			    <fieldset class='radio_form'>
+			    	<input type="radio" id="container_class_3" name="radios" value="false">
+			      	<label for="container_class_3">3 bottle</label>
+			    </fieldset>
 
 
 			<div class='secondary_divider'>
