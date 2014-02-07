@@ -5,12 +5,16 @@ newdistrict.github.io
 File — Store Settings Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>
 
-Added layout for showcasing container classes, selecting them to edit and adding new ones.
+Added layout for showcasing shipping container classes, selecting them to edit and adding new ones.
 
 ---
 
 File — Store Edit Product Page: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_product.html>   
 Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html>
+
+Updated layout with a way to select shipping container class for the product.
+
+---
 
 
 ### Updates 02.05.14
