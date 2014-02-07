@@ -1,5 +1,12 @@
 newdistrict.github.io
 ===================== 
+### Updates 02.06.14
+
+File — Store Settings Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>
+
+Added
+
 ### Updates 02.05.14
 
 Updates to backend files:  
