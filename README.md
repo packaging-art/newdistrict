@@ -16,6 +16,11 @@ Updated layout with a way to select shipping container class for the product.
 
 ---
 
+File — Store Edit Container Class: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_containerclass.html>
+Preview: <http://deadtype.ca/newdistrict/backend_edit_containerclass.html>  
+
+Added layout for creating and editing container classes.
+
 
 ### Updates 02.05.14
 
