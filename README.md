@@ -1,5 +1,68 @@
 newdistrict.github.io
-=====================   
+===================== 
+### Updates 02.06.14
+
+File — Store Settings Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>
+
+Added layout for showcasing shipping container classes, selecting them to edit and adding new ones.
+
+---
+
+File — Store Edit Product Page: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_product.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_product.html>
+
+Updated layout with a way to select shipping container class for the product.
+
+---
+
+File — Store Edit Container Class: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_containerclass.html>
+Preview: <http://deadtype.ca/newdistrict/backend_edit_containerclass.html>  
+
+Added layout for creating and editing container classes.
+
+
+### Updates 02.05.14
+
+Updates to backend files:  
+
+File — General info: <https://github.com/deadtype/newdistrict/blob/master/backend_store_general_info.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_general_info.html>   
+
+Moved to 'point of origin' section to backend shipping section. 
+
+----
+
+File — Store Settings Shipping: <https://github.com/deadtype/newdistrict/blob/master/backend_store_shipping.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_store_shipping.html>  
+
+Added 'point of origin' section to backend shipping section. Added 'shipping containers' heading title to the section, this will be used to implement the 'container classes' part of the back end. This will be created today.
+
+---
+
+File — Order Customer Info: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_customerinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_customerinfo.html>   
+
+Duplicated 'Print waybill' button to show prominently on screen.   
+
+---
+
+File — Order Information: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_orderinfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_orderinfo.html>   
+
+Merged multiple boxes (containing orders) sections into a single 'items ordered' section. Added 'winery receipt' section which summarizes orders financial totals.   
+
+---  
+
+File — Order Refund Information: <https://github.com/deadtype/newdistrict/blob/master/backend_edit_order_returninfo.html>   
+Preview: <http://deadtype.ca/newdistrict/backend_edit_order_returninfo.html>   
+
+Added 'return receipt' section which summarizes returns financial totals.
+  
+  
+
+## Site Parts
+
 ### Admin Login 
 
 File: <https://github.com/deadtype/newdistrict/blob/master/admin_login.html>  
