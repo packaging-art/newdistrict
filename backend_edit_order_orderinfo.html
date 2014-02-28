@@ -31,7 +31,7 @@ title: stock_info
 
 
 			<div class='major_section_header clearfix'>
-			
+
 				<div class='collection_description'>
 					<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
 				</div>
@@ -96,7 +96,7 @@ title: stock_info
 						<li>Transaction Fee</li>
 						<li>Net Revenue</li>
 					</ul>
-				</div> 
+				</div>
 				<div class='column information'>
 					<ul>
 						<li>12 Bottles = $261.80</li>
@@ -110,16 +110,98 @@ title: stock_info
 						<li>$236.70</li>
 
 					</ul>
-				</div> 
+				</div>
 			</div>
 		</div>
+
+		<div class='secondary_divider'>
+			{% include misc/section_separator.html label='schedule pickup' %}
+		</div>
+
+		<div class='major_section_header clearfix'>
+
+			<div class='collection_description'>
+				<p>Helper text explaining details of scheduling pickup.</p>
+			</div>
+			<!-- the following is just an example of how 'pick up adress' and '# of packages' should look, this is just for the demo-->
+			<div class='winery_cart_total clearfix'>
+				<div class='two_column_list clearfix'>
+					<div class='column titles'>
+						<ul>
+							<li>Pick Up Adress</li>
+							<li>Number of Packages</li>
+						</ul>
+					</div>
+					<div class='column information'>
+						<ul>
+							<li>2480 Pickleton Avenue, Charlestown, Alaska</li>
+							<li>10</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- This format should actually be used, is the one that currently works on live site
+			<table class="table">
+			  <thead>
+			    <tr>
+			      <th>Pick Up Adress</th>
+			      <th>Number of Packages</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>2480 Pickleton Avenue, Charlestown, Alaska</td>
+			      <td>10</td>
+			    </tr>
+			  <tr>
+			  </tbody>
+			</table>-->
+
+		</div>
+
+
+		<div class='general_form'>
+
+			<fieldset>
+				<div class="input"><label>Pick-Up date</label> <!-- This one was requested as "calendar would be ideal" — I am not sure what is available through the system you are using, could be as simple as drop down -->
+					<select>
+						<option value=""></option>
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="input"><label>Ready Time</label>
+					<select>
+						<option value=""></option>
+					</select>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div class="input"><label>Latest time available</label>
+					<select>
+						<option value=""></option>
+					</select>
+				</div>
+			</fieldset>
+
+
+			<fieldset class='medium'>
+				<label for="special_instructions">Location of packages or special instructions </label>
+				<input type="" id="special_instructions" />
+				<p class='form_help'>25 characters max</p>
+			</fieldset>
+
+		</div>
+
 
 		<div class='secondary_divider'>
 			{% include misc/section_separator.html label='process order' %}
 		</div>
 
 		<div class='major_section_header clearfix'>
-		
+
 			<div class='collection_description'>
 				<p>Use the fields below to edit your store information. This is used for administrative purposes and for storefront design on home, location, about and contact sections of the customer facing website.</p>
 			</div>
@@ -143,7 +225,7 @@ title: stock_info
 			</div>
 		</div>
 
-		
+
 
 
 
